@@ -3,6 +3,13 @@ import WorldWind from '@nasaworldwind/worldwind';
 
 class Map extends Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      companyData: []
+    }
+  }
+
   componentDidMount() {
     // Tell WorldWind to log only warnings and errors.
     WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_WARNING);
@@ -31,6 +38,12 @@ class Map extends Component {
       layers[l].layer.enabled = layers[l].enabled;
       wwd.addLayer(layers[l].layer);
     }
+
+    fetch('http://localhost:8080/api/connection/get')
+      .then(response => response.json())
+      .then(response => this.setState({
+        companyData: response
+      }));
   }
 
   render() {
