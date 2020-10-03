@@ -16,9 +16,9 @@ public class CompanyRepository {
 	@Autowired
 	MongoClient mongoClient;
 
-	public List<String> getCompaniesInArea(Double startingLatitude, Double startingLongitude, Double endingLatitude, Double endingLongitude) {
+	public List<String> getCompaniesInArea(String startingLatitude, String startingLongitude, String endingLatitude, String endingLongitude) {
 		MongoOperations mongoOps = new MongoTemplate(MongoClients.create(), "mongodb_data");
-		String query = String.format("{location:{$geoWithin :{$box: [[%d,%d], [%d0,%d]]}}}",startingLatitude, startingLongitude, endingLatitude, endingLongitude );
+		String query = String.format("{location:{$geoWithin :{$box: [[%s,%s], [%s,%s]]}}}",startingLatitude, startingLongitude, endingLatitude, endingLongitude );
 		List<String> doc = mongoOps.find(new BasicQuery(query), String.class, "company");
 		return doc;
 	}

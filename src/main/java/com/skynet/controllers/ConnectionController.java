@@ -4,6 +4,7 @@ import com.mongodb.client.model.geojson.Point;
 import com.mongodb.client.model.geojson.Position;
 import com.skynet.dto.CompanyConnectionDto;
 import com.skynet.dto.ContractDTO;
+import com.skynet.dto.GpsCoordinate;
 import com.skynet.dto.ScreenGpsCoordinates;
 import com.skynet.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ public class ConnectionController {
         CompanyConnectionDto connection = new CompanyConnectionDto();
         connection.setName("test");
         connection.setProject(Arrays.asList("test-project"));
-        connection.setLocation(new Point(new Position(43.371745, -79.783879)));
+        connection.setLocation(new GpsCoordinate("20.04", "10.00"));
 
         var sub = new CompanyConnectionDto();
         var contract = new ContractDTO();
@@ -38,7 +39,7 @@ public class ConnectionController {
         contract.setStartDate(new Date(2010, 03, 22));
         contract.setEndDate(new Date(2015, 03, 22));
         sub.setContract(contract);
-        sub.setLocation(new Point(new Position(40.04, 20.00)));
+        sub.setLocation(new GpsCoordinate("40.04", "20.00"));
         sub.setName("test-sub-name");
 
         connection.getSub().add(sub);

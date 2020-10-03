@@ -5,10 +5,12 @@ import com.mongodb.client.model.geojson.Position;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Document(collection = "company")
 public class CompanyJPA implements Serializable {
-    private String project;
+    private List<String> project = new ArrayList<>();
     private String name;
     private Point location;
 
@@ -16,11 +18,11 @@ public class CompanyJPA implements Serializable {
 
     }
 
-    public String getProject() {
+    public List<String> getProject() {
         return project;
     }
 
-    public void setProject(String project) {
+    public void setProject(List<String> project) {
         this.project = project;
     }
 
