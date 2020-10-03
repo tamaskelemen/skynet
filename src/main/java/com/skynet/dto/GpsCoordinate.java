@@ -2,27 +2,31 @@ package com.skynet.dto;
 
 public class GpsCoordinate {
 
-    private String lat;
-    private String lon;
+    private String latitude;
+    private String longitude;
+
+    public GpsCoordinate() {
+
+    }
 
     public GpsCoordinate(String lat, String lon) {
-        this.lat = lat;
-        this.lon = lon;
+        this.latitude = lat;
+        this.longitude = lon;
     }
 
-    public String getLat() {
-        return lat;
+    public String getLatitude() {
+        return latitude;
     }
 
-    public void setLat(String lat) {
-        this.lat = lat;
+    public void setLatitude(String lat) {
+        this.latitude = lat;
     }
 
-    public String getLon() {
-        return lon;
+    public String getLongitude() {
+        return longitude;
     }
 
-    public void setLon(String lon) {
-        this.lon = lon;
+    public void setLongitude(String lon) {
+        this.longitude = lon;
     }
 }

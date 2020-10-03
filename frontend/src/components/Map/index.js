@@ -47,17 +47,18 @@ class Map extends Component {
       .then(response => this.setState({
         companyData: response,
       }));
+      let call = true;
 
     wwd.addEventListener('wheel', (event) => {
-      let endPointPosition;
       let startPointPosition;
-      const xStartPoint = 1;
-      const yStartPoint = 1;
+      const xStartPoint = 300;
+      const yStartPoint = 300;
       const startPoint = wwd.pick(wwd.canvasCoordinates(xStartPoint, yStartPoint));
-      if (startPoint.objects.length === 1 && startPoint.objects[0].isTerrain){
+      if (startPoint.objects.length === 1 && startPoint.objects[0].isTerrain) {
         startPointPosition = { latitude: startPoint.objects[0].position.latitude, longitude: startPoint.objects[0].position.longitude}
       }
 
+      let endPointPosition;
       const xEndPoint = 1000;
       const yEndPoint = 1000;
       const endPoint = wwd.pick(wwd.canvasCoordinates(xEndPoint, yEndPoint));
@@ -65,10 +66,30 @@ class Map extends Component {
       if ( endPoint.objects.length === 1 && endPoint.objects[0].isTerrain) {
         endPointPosition = { latitude: endPoint.objects[0].position.latitude, longitude: endPoint.objects[0].position.longitude}
       }
+
+      if(endPointPosition && startPointPosition && call) {
+        call = false;
+        this.postData(API_URL + '/connection/get-companies', {
+          endPointPosition, startPointPosition
+        }).then(result => {
+          call = true
+        });
+      }
     });
+  }
 
+  postData = async (url = '', data = {}) => {
+    const response = await fetch(
+      url, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+        body: JSON.stringify(data)
+      }
+    );
 
-
+    return response.json();
   }
 
   render() {

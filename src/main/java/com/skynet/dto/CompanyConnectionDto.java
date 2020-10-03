@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CompanyConnectionDto {
-    private String project;
+    private List<String> project = new ArrayList<>();
     private String name;
     private Point location;
     private List<CompanyConnectionDto> sub = new ArrayList<>();
@@ -16,11 +16,11 @@ public class CompanyConnectionDto {
 
     }
 
-    public String getProject() {
+    public List<String> getProject() {
         return project;
     }
 
-    public void setProject(String project) {
+    public void setProject(List<String> project) {
         this.project = project;
     }
 

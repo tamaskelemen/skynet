@@ -9,7 +9,6 @@ public class ContractDTO {
 	private Date endDate;
 
 	public ContractDTO() {
-
 	}
 
 	public String getDescription() {

@@ -4,14 +4,12 @@ import com.mongodb.client.model.geojson.Point;
 import com.mongodb.client.model.geojson.Position;
 import com.skynet.dto.CompanyConnectionDto;
 import com.skynet.dto.ContractDTO;
-import com.skynet.dto.GpsCoordinate;
+import com.skynet.dto.ScreenGpsCoordinates;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -25,7 +23,7 @@ public class ConnectionController {
         var connections = new ArrayList<CompanyConnectionDto>();
         CompanyConnectionDto connection = new CompanyConnectionDto();
         connection.setName("test");
-        connection.setProject("test-project");
+        connection.setProject(Arrays.asList("test-project"));
         connection.setLocation(new Point(new Position(43.371745, -79.783879)));
 
         var sub = new CompanyConnectionDto();
@@ -44,4 +42,11 @@ public class ConnectionController {
         return connections;
     }
 
+    @PostMapping(value = "/get-companies",
+            produces = MediaType.APPLICATION_JSON_VALUE,
+            consumes = MediaType.APPLICATION_JSON_VALUE)
+    @CrossOrigin(origins = "http://localhost:3000")
+    public List<CompanyConnectionDto> getCompanies(@RequestBody ScreenGpsCoordinates screenGpsCoordinates) {
+        return null;
+    }
 }
