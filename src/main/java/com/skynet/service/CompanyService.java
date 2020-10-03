@@ -2,6 +2,7 @@ package com.skynet.service;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
+import com.mongodb.client.model.geojson.Point;
 import com.mongodb.client.model.geojson.Position;
 import com.skynet.jpa.CompanyJPA;
 import com.skynet.repositories.CompanyRepository;
@@ -23,7 +24,7 @@ public class CompanyService {
 	public void insertTestData() {
 		CompanyJPA companyJPA = new CompanyJPA();
 		companyJPA.setName("test company");
-		companyJPA.setLocation(new Position(10.0, 15.0));
+		companyJPA.setLocation(new Point(new Position(10.0, 15.0)));
 		companyJPA.setProject("test project");
 		companyRepository.save(companyJPA);
 	}

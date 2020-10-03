@@ -1,5 +1,6 @@
 package com.skynet.jpa;
 
+import com.mongodb.client.model.geojson.Point;
 import com.mongodb.client.model.geojson.Position;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -9,7 +10,7 @@ import java.io.Serializable;
 public class CompanyJPA implements Serializable {
     private String project;
     private String name;
-    private Position location;
+    private Point location;
 
     public CompanyJPA(){
 
@@ -31,11 +32,11 @@ public class CompanyJPA implements Serializable {
         this.name = name;
     }
 
-    public Position getLocation() {
+    public Point getLocation() {
         return location;
     }
 
-    public void setLocation(Position location) {
+    public void setLocation(Point location) {
         this.location = location;
     }
 }
