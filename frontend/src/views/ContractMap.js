@@ -16,9 +16,9 @@ class ContractMap extends Component {
   deriveEdge = location => {
     return {
       lat: parseFloat(location.latitude),
-      lon: parseFloat(location.longitude)
-    }
-  }
+      lon: parseFloat(location.longitude),
+    };
+  };
 
   parseApiData = response => {
     const connections = [];
@@ -31,14 +31,14 @@ class ContractMap extends Component {
 
       companies.push({
         ...node,
-        location: this.deriveEdge(node.location)
+        location: this.deriveEdge(node.location),
       });
 
       if (!node.sub.length) {
         continue;
       }
 
-      const edge1 = this.deriveEdge(node.location)
+      const edge1 = this.deriveEdge(node.location);
 
       node.sub.forEach(subNode => {
         const edge2 = this.deriveEdge(subNode.location);
@@ -58,6 +58,18 @@ class ContractMap extends Component {
       .then(response => response.json())
       .then(this.parseApiData);
   }
+
+  postData = async (url = '', data = {}) => {
+    const response = await fetch(
+      url, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+        body: JSON.stringify(data),
+      });
+  };
+
 
   render() {
     const { connections, companies } = this.state;

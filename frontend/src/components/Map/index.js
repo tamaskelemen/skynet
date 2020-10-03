@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import WorldWind from '@nasaworldwind/worldwind';
 import { Popover } from 'antd';
+import { API_URL } from '../../common/constants';
 
 class Map extends Component {
   wwd = undefined;
@@ -224,54 +225,39 @@ class Map extends Component {
       wwd.addLayer(layers[l].layer);
     }
 
-    fetch(API_URL + '/connection/get')
-      .then(response => response.json())
-      .then(response => this.setState({
-        companyData: response,
-      }));
-      let call = true;
-
+    let call = true;
     wwd.addEventListener('wheel', (event) => {
-      let startPointPosition;
-      const xStartPoint = 300;
-      const yStartPoint = 300;
-      const startPoint = wwd.pick(wwd.canvasCoordinates(xStartPoint, yStartPoint));
-      if (startPoint.objects.length === 1 && startPoint.objects[0].isTerrain) {
-        startPointPosition = { latitude: startPoint.objects[0].position.latitude, longitude: startPoint.objects[0].position.longitude}
-      if (startPoint.objects.length === 1 && startPoint.objects[0].isTerrain) {
-        startPointPosition = { latitude: startPoint.objects[0].position.latitude, longitude: startPoint.objects[0].position.longitude };
-      }
+        let startPointPosition;
+        const xStartPoint = 300;
+        const yStartPoint = 300;
+        const startPoint = wwd.pick(wwd.canvasCoordinates(xStartPoint, yStartPoint));
+        if (startPoint.objects.length === 1 && startPoint.objects[0].isTerrain) {
+          startPointPosition = { latitude: startPoint.objects[0].position.latitude, longitude: startPoint.objects[0].position.longitude };
+          if (startPoint.objects.length === 1 && startPoint.objects[0].isTerrain) {
+            startPointPosition = { latitude: startPoint.objects[0].position.latitude, longitude: startPoint.objects[0].position.longitude };
+          }
 
-      let endPointPosition;
-      const xEndPoint = 1000;
-      const yEndPoint = 1000;
-      const endPoint = wwd.pick(wwd.canvasCoordinates(xEndPoint, yEndPoint));
+          let endPointPosition;
+          const xEndPoint = 1000;
+          const yEndPoint = 1000;
+          const endPoint = wwd.pick(wwd.canvasCoordinates(xEndPoint, yEndPoint));
 
-      if (endPoint.objects.length === 1 && endPoint.objects[0].isTerrain) {
-        endPointPosition = { latitude: endPoint.objects[0].position.latitude, longitude: endPoint.objects[0].position.longitude };
-      }
+          if (endPoint.objects.length === 1 && endPoint.objects[0].isTerrain) {
+            endPointPosition = { latitude: endPoint.objects[0].position.latitude, longitude: endPoint.objects[0].position.longitude };
+          }
 
-      if(endPointPosition && startPointPosition && call) {
-        call = false;
-        this.postData(API_URL + '/connection/get-companies', {
-          endPointPosition, startPointPosition
-        }).then(result => {
-          call = true
-        });
-      }
-    });
-  }
-
-  postData = async (url = '', data = {}) => {
-    const response = await fetch(
-      url, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        method: 'POST',
-        body: JSON.stringify(data)
-      }
+          if (endPointPosition && startPointPosition && call) {
+            call = false;
+            this.postData(API_URL + '/connection/get-companies', {
+              endPointPosition, startPointPosition,
+            }).then(result => {
+              call = true;
+            });
+          }
+        }
+      },
     );
+
     // Listen for mouse moves and highlight the placemarks that the cursor rolls over.
     wwd.addEventListener('mousemove', this.handlePick);
 
@@ -281,7 +267,6 @@ class Map extends Component {
     document.onmousemove = this.handleMouseMove;
   }
 
-    return response.json();
   componentWillUnmount() {
     this.wwd.removeEventListener('mousemove', this.handlePick);
     document.onmousemove = undefined;
@@ -290,13 +275,13 @@ class Map extends Component {
   showTooltip = highlightedItems =>
     !!highlightedItems.find(item => item.layer && item.layer.displayName === 'Placemarks');
   deriveTooltipContent = highlightedItems => {
-    const company = highlightedItems.find(item => item.layer && item.layer.displayName === 'Placemarks')
+    const company = highlightedItems.find(item => item.layer && item.layer.displayName === 'Placemarks');
     return JSON.stringify(company && company.label.name);
-  }
+  };
 
   render() {
     const { width, height, highlightedItems } = this.state;
-    console.log(highlightedItems, this.showTooltip(highlightedItems), this.deriveTooltipContent(highlightedItems))
+    console.log(highlightedItems, this.showTooltip(highlightedItems), this.deriveTooltipContent(highlightedItems));
     return (
       <div>
         <Popover content={<span>{this.deriveTooltipContent(highlightedItems)}</span>} title="Title" visible={this.showTooltip(highlightedItems)}>
