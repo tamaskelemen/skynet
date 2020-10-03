@@ -1,21 +1,14 @@
 import React, { Component } from 'react';
 import Map from '../components/Map';
-import Sidebar from '../components/Sidebar';
-import { Layout } from 'antd';
-
-const { Sider } = Layout;
+import Menus from '../components/Menus';
 
 class MainMap extends Component {
   render() {
+    const { activePage, handlePageChange } = this.props;
     return (
-      <Layout>
-        <Sider width={300} theme="light">
-          <Sidebar />
-        </Sider>
-        <Layout>
-          <Map />
-        </Layout>
-      </Layout>
+      <Menus activePage={activePage} handlePageChange={handlePageChange}>
+        <Map />
+      </Menus>
     );
   }
 }

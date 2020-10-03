@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import WorldWind from '@nasaworldwind/worldwind';
+import { API_URL } from '../../common/constants';
 
 class Map extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      companyData: []
-    }
+      companyData: [],
+      width: 1000,
+      height: 1000,
+    };
   }
 
   componentDidMount() {
@@ -39,14 +42,27 @@ class Map extends Component {
       wwd.addLayer(layers[l].layer);
     }
 
-    fetch('http://localhost:8080/api/connection/get')
+    fetch(API_URL + '/connection/get')
       .then(response => response.json())
       .then(response => this.setState({
-        companyData: response
+        companyData: response,
       }));
   }
 
+  // updateDimensions = () => {
+  //   this.setState({ width: window.innerWidth, height: window.innerHeight });
+  // };
+  //
+  // componentDidMount() {
+  //   window.addEventListener('resize', this.updateDimensions);
+  // }
+  //
+  // componentWillUnmount() {
+  //   window.removeEventListener('resize', this.updateDimensions);
+  // }
+
   render() {
+    const { width, height } = this.state;
     return (
       <div>
         <canvas id="canvasOne" width="1000" height="1000">
