@@ -4,14 +4,27 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Sub {
+public class CompanyConnectionDto {
+    private String project;
     private String description;
     private String price;
     private Date startDate;
     private Date endDate;
     private String name;
     private GpsCoordinate location;
-    private List<Sub> sub = new ArrayList<>();
+    private List<CompanyConnectionDto> sub = new ArrayList<>();
+
+    public CompanyConnectionDto(){
+
+    }
+
+    public String getProject() {
+        return project;
+    }
+
+    public void setProject(String project) {
+        this.project = project;
+    }
 
     public String getDescription() {
         return description;
@@ -61,11 +74,11 @@ public class Sub {
         this.location = location;
     }
 
-    public List<Sub> getSub() {
+    public List<CompanyConnectionDto> getSub() {
         return sub;
     }
 
-    public void setSub(List<Sub> sub) {
+    public void setSub(List<CompanyConnectionDto> sub) {
         this.sub = sub;
     }
 }
