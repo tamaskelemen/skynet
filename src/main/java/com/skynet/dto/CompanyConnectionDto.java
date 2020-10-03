@@ -1,19 +1,28 @@
 package com.skynet.dto;
 
 import com.mongodb.client.model.geojson.Point;
+import org.bson.types.ObjectId;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CompanyConnectionDto {
+    private ObjectId id;
     private List<String> project = new ArrayList<>();
     private String name;
-    private Point location;
+    private GpsCoordinate location;
     private List<CompanyConnectionDto> sub = new ArrayList<>();
     private ContractDTO contract;
 
     public CompanyConnectionDto(){
+    }
 
+    public ObjectId getId() {
+        return id;
+    }
+
+    public void setId(ObjectId id) {
+        this.id = id;
     }
 
     public List<String> getProject() {
@@ -32,11 +41,11 @@ public class CompanyConnectionDto {
         this.name = name;
     }
 
-    public Point getLocation() {
+    public GpsCoordinate getLocation() {
         return location;
     }
 
-    public void setLocation(Point location) {
+    public void setLocation(GpsCoordinate location) {
         this.location = location;
     }
 
