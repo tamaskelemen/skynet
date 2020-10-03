@@ -42,3 +42,18 @@
 .ant-layout-sider {
   color: white;
 }
+
+.logo {
+  width: 150px;
+  height: 31px;
+  float: left;
+  color: white;
+  font-size: 1.3em;
+}
+
+.menu-button {
+  float: left;
+  margin-top: 16px;
+  margin-left: -6px;
+  margin-right: 16px;
+}
