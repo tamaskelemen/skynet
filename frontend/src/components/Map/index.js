@@ -47,19 +47,29 @@ class Map extends Component {
       .then(response => this.setState({
         companyData: response,
       }));
-  }
 
-  // updateDimensions = () => {
-  //   this.setState({ width: window.innerWidth, height: window.innerHeight });
-  // };
-  //
-  // componentDidMount() {
-  //   window.addEventListener('resize', this.updateDimensions);
-  // }
-  //
-  // componentWillUnmount() {
-  //   window.removeEventListener('resize', this.updateDimensions);
-  // }
+    wwd.addEventListener('wheel', (event) => {
+      let endPointPosition;
+      let startPointPosition;
+      const xStartPoint = 1;
+      const yStartPoint = 1;
+      const startPoint = wwd.pick(wwd.canvasCoordinates(xStartPoint, yStartPoint));
+      if (startPoint.objects.length === 1 && startPoint.objects[0].isTerrain){
+        startPointPosition = { latitude: startPoint.objects[0].position.latitude, longitude: startPoint.objects[0].position.longitude}
+      }
+
+      const xEndPoint = 1000;
+      const yEndPoint = 1000;
+      const endPoint = wwd.pick(wwd.canvasCoordinates(xEndPoint, yEndPoint));
+
+      if ( endPoint.objects.length === 1 && endPoint.objects[0].isTerrain) {
+        endPointPosition = { latitude: endPoint.objects[0].position.latitude, longitude: endPoint.objects[0].position.longitude}
+      }
+    });
+
+
+
+  }
 
   render() {
     const { width, height } = this.state;
