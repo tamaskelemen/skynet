@@ -5,6 +5,8 @@ import com.mongodb.client.model.geojson.Position;
 import com.skynet.dto.CompanyConnectionDto;
 import com.skynet.dto.ContractDTO;
 import com.skynet.dto.ScreenGpsCoordinates;
+import com.skynet.service.CompanyService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +18,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/connection")
 public class ConnectionController {
+
+    @Autowired
+    CompanyService companyService;
 
     @GetMapping(value = "/get", produces = MediaType.APPLICATION_JSON_VALUE)
     @CrossOrigin(origins = "http://localhost:3000")
@@ -46,7 +51,7 @@ public class ConnectionController {
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
     @CrossOrigin(origins = "http://localhost:3000")
-    public List<CompanyConnectionDto> getCompanies(@RequestBody ScreenGpsCoordinates screenGpsCoordinates) {
-        return null;
+    public List<String> getCompanies(@RequestBody ScreenGpsCoordinates screenGpsCoordinates) {
+        return companyService.getCompaniesInArea(screenGpsCoordinates);
     }
 }
