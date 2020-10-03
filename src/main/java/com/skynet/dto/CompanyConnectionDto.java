@@ -1,6 +1,5 @@
 package com.skynet.dto;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -12,7 +11,7 @@ public class CompanyConnectionDto {
     private Date endDate;
     private String name;
     private GpsCoordinate location;
-    private List<CompanyConnectionDto> sub = new ArrayList<>();
+    private List<CompanyConnectionDto> sub;
 
     public CompanyConnectionDto(){
 
