@@ -267,6 +267,17 @@ class Map extends Component {
     document.onmousemove = this.handleMouseMove;
   }
 
+  postData = async (url = '', data = {}) => {
+    const response = await fetch(
+      url, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+        body: JSON.stringify(data),
+      });
+  };
+
   componentWillUnmount() {
     this.wwd.removeEventListener('mousemove', this.handlePick);
     document.onmousemove = undefined;
@@ -281,13 +292,13 @@ class Map extends Component {
 
   render() {
     const { width, height, highlightedItems } = this.state;
-    console.log(highlightedItems, this.showTooltip(highlightedItems), this.deriveTooltipContent(highlightedItems));
+    const canvasHeight = window.innerHeight - 64;
     return (
-      <div>
+      <div className="map-container">
         <Popover content={<span>{this.deriveTooltipContent(highlightedItems)}</span>} title="Title" visible={this.showTooltip(highlightedItems)}>
           <div style={{ position: 'absolute', top: this.mouseY, left: this.mouseX }} />
         </Popover>,
-        <canvas id="canvasOne" width="1000" height="1000" style={{ backgroundColor: 'black' }}>
+        <canvas id="canvasOne" width="900" height={canvasHeight} style={{ backgroundColor: 'black' }}>
           Your browser does not support HTML5 Canvas.
         </canvas>
       </div>
