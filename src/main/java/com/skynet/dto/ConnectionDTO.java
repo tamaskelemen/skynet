@@ -1,5 +1,6 @@
 package com.skynet.dto;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ConnectionDTO {
@@ -7,7 +8,7 @@ public class ConnectionDTO {
     private String project;
     private String name;
     private GpsCoordinate location;
-    private List<Sub> sub;
+    private List<Sub> sub = new ArrayList<>();
 
     public String getProject() {
         return project;
