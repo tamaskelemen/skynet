@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import WorldWind from '@nasaworldwind/worldwind';
-import { getConnection } from '../../RestService';
 
 class Map extends Component {
 
