@@ -49,9 +49,9 @@ public class CompanyService {
 		companyRepositoryJPA.save(companyJPA);
 	}
 
-	public CompanyConnectionDto getTestData() {
+	public CompanyConnectionDto getCompanyByProjectName(String projectName) {
 		MongoOperations mongoOps = new MongoTemplate(MongoClients.create(), "mongodb_data");
-		BasicQuery basicQuery = new BasicQuery("{project: \"test project\"}");
+		BasicQuery basicQuery = new BasicQuery("{project: \"%s\"}", projectName);
 		String doc = mongoOps.findOne(basicQuery, String.class, "company");
 
 		return parse(doc);

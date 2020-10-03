@@ -6,10 +6,7 @@ import com.skynet.jpa.CompanyJPA;
 import com.skynet.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -34,8 +31,8 @@ public class CompanyController {
 	@GetMapping(value = "/get", produces = MediaType.APPLICATION_JSON_VALUE,
 	 consumes = MediaType.APPLICATION_JSON_VALUE)
 	@CrossOrigin(origins = "http://localhost:3000")
-	public CompanyConnectionDto testCompanyGet() {
-		return companyService.getTestData();
+	public CompanyConnectionDto testCompanyGet(@RequestParam String projectName) {
+		return companyService.getCompanyByProjectName(projectName);
 	}
 
 }
