@@ -1,7 +1,7 @@
 package com.skynet.controllers;
 
-import com.skynet.dto.GpsCoordinate;
 import com.skynet.dto.CompanyConnectionDto;
+import com.skynet.dto.GpsCoordinate;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,4 +38,5 @@ public class ConnectionController {
 
         return connections;
     }
+
 }
