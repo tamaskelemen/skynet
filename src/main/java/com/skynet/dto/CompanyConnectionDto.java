@@ -1,24 +1,35 @@
 package com.skynet.dto;
 
+import com.mongodb.client.model.geojson.Point;
+import org.bson.types.ObjectId;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class CompanyConnectionDto {
-    private String project;
+    private ObjectId id;
+    private List<String> project = new ArrayList<>();
     private String name;
     private GpsCoordinate location;
     private List<CompanyConnectionDto> sub = new ArrayList<>();
     private ContractDTO contract;
 
     public CompanyConnectionDto(){
-
     }
 
-    public String getProject() {
+    public ObjectId getId() {
+        return id;
+    }
+
+    public void setId(ObjectId id) {
+        this.id = id;
+    }
+
+    public List<String> getProject() {
         return project;
     }
 
-    public void setProject(String project) {
+    public void setProject(List<String> project) {
         this.project = project;
     }
 

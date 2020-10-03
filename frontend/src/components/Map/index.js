@@ -11,7 +11,6 @@ class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      wwd: undefined,
       highlightedItems: [],
       width: 1000,
       height: 1000,
@@ -225,16 +224,25 @@ class Map extends Component {
       wwd.addLayer(layers[l].layer);
     }
 
+    fetch(API_URL + '/connection/get')
+      .then(response => response.json())
+      .then(response => this.setState({
+        companyData: response,
+      }));
+      let call = true;
+
     wwd.addEventListener('wheel', (event) => {
-      let endPointPosition;
       let startPointPosition;
-      const xStartPoint = 1;
-      const yStartPoint = 1;
+      const xStartPoint = 300;
+      const yStartPoint = 300;
       const startPoint = wwd.pick(wwd.canvasCoordinates(xStartPoint, yStartPoint));
+      if (startPoint.objects.length === 1 && startPoint.objects[0].isTerrain) {
+        startPointPosition = { latitude: startPoint.objects[0].position.latitude, longitude: startPoint.objects[0].position.longitude}
       if (startPoint.objects.length === 1 && startPoint.objects[0].isTerrain) {
         startPointPosition = { latitude: startPoint.objects[0].position.latitude, longitude: startPoint.objects[0].position.longitude };
       }
 
+      let endPointPosition;
       const xEndPoint = 1000;
       const yEndPoint = 1000;
       const endPoint = wwd.pick(wwd.canvasCoordinates(xEndPoint, yEndPoint));
@@ -242,8 +250,28 @@ class Map extends Component {
       if (endPoint.objects.length === 1 && endPoint.objects[0].isTerrain) {
         endPointPosition = { latitude: endPoint.objects[0].position.latitude, longitude: endPoint.objects[0].position.longitude };
       }
-    });
 
+      if(endPointPosition && startPointPosition && call) {
+        call = false;
+        this.postData(API_URL + '/connection/get-companies', {
+          endPointPosition, startPointPosition
+        }).then(result => {
+          call = true
+        });
+      }
+    });
+  }
+
+  postData = async (url = '', data = {}) => {
+    const response = await fetch(
+      url, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+        body: JSON.stringify(data)
+      }
+    );
     // Listen for mouse moves and highlight the placemarks that the cursor rolls over.
     wwd.addEventListener('mousemove', this.handlePick);
 
@@ -253,6 +281,7 @@ class Map extends Component {
     document.onmousemove = this.handleMouseMove;
   }
 
+    return response.json();
   componentWillUnmount() {
     this.wwd.removeEventListener('mousemove', this.handlePick);
     document.onmousemove = undefined;
