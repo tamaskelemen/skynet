@@ -51,7 +51,8 @@ public class CompanyService {
 
 	public CompanyConnectionDto getCompanyByProjectName(String projectName) {
 		MongoOperations mongoOps = new MongoTemplate(MongoClients.create(), "mongodb_data");
-		BasicQuery basicQuery = new BasicQuery("{project: \"%s\"}", projectName);
+		String queryString = String.format("{project: \"%s\"}", projectName);
+		BasicQuery basicQuery = new BasicQuery(queryString);
 		String doc = mongoOps.findOne(basicQuery, String.class, "company");
 
 		return parse(doc);
@@ -67,8 +68,11 @@ public class CompanyService {
 	}
 
 	private CompanyConnectionDto parse(String doc) {
-		try{
+		if (doc == null ) {
+			return null;
+		}
 
+		try{
 			JsonNode node = objectMapper.readTree(doc);
 			ObjectId id = objectMapper.treeToValue(node.get("_id"), ObjectId.class);
 			CompanyConnectionDto dto = new CompanyConnectionDto();

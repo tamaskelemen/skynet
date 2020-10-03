@@ -224,7 +224,9 @@ class Map extends Component {
       layers[l].layer.enabled = layers[l].enabled;
       wwd.addLayer(layers[l].layer);
     }
-
+    
+    // this.searchProject(wwd);
+    
     let call = true;
     wwd.addEventListener('wheel', (event) => {
         let startPointPosition;
@@ -265,6 +267,42 @@ class Map extends Component {
     var tapRecognizer = new WorldWind.TapRecognizer(wwd, this.handlePick);
 
     document.onmousemove = this.handleMouseMove;
+  }
+
+  searchProject(wwd) {
+    this.getData('http://localhost:8080/api' + '/company/get', { projectName: 'test project'})
+    .then(result => {
+      wwd.navigator.lookAtLocation.latitude = result.location.latitude;
+      wwd.navigator.lookAtLocation.longitude = result.location.longitude;
+      wwd.navigator.range = 2e6; // 2 million meters above the ellipsoid
+
+      wwd.redraw();
+      console.log(result)
+    });
+  }
+
+  getData = async (url = '', data = {}) => {
+    const queryParam = this.parseQueryParams(data);
+    console.log(queryParam);
+    const response = await fetch(url + queryParam, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    return await response.json();
+  }
+
+  parseQueryParams = (data = {}) => {
+    let queryParam = '?';
+    for ( const property in data) {
+      queryParam += property;
+      queryParam += '=';
+      queryParam += data[property];
+      queryParam += '&';
+    }
+
+    return queryParam;
   }
 
   postData = async (url = '', data = {}) => {
