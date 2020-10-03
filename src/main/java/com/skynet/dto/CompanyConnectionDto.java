@@ -1,18 +1,14 @@
 package com.skynet.dto;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class CompanyConnectionDto {
     private String project;
-    private String description;
-    private String price;
-    private Date startDate;
-    private Date endDate;
     private String name;
     private GpsCoordinate location;
     private List<CompanyConnectionDto> sub = new ArrayList<>();
+    private ContractDTO contract;
 
     public CompanyConnectionDto(){
 
@@ -24,38 +20,6 @@ public class CompanyConnectionDto {
 
     public void setProject(String project) {
         this.project = project;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public Date getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-
-    public Date getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
     }
 
     public String getName() {
@@ -80,5 +44,13 @@ public class CompanyConnectionDto {
 
     public void setSub(List<CompanyConnectionDto> sub) {
         this.sub = sub;
+    }
+
+    public ContractDTO getContract() {
+        return contract;
+    }
+
+    public void setContract(ContractDTO contract) {
+        this.contract = contract;
     }
 }

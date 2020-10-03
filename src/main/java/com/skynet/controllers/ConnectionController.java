@@ -1,6 +1,7 @@
 package com.skynet.controllers;
 
 import com.skynet.dto.CompanyConnectionDto;
+import com.skynet.dto.ContractDTO;
 import com.skynet.dto.GpsCoordinate;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -26,12 +27,14 @@ public class ConnectionController {
         connection.setLocation(new GpsCoordinate("48.04", "17.00"));
 
         var sub = new CompanyConnectionDto();
-        sub.setDescription("test description");
+        var contract = new ContractDTO();
+        contract.setDescription("test description");
+        contract.setPrice("10000");
+        contract.setStartDate(new Date(2010, 03, 22));
+        contract.setEndDate(new Date(2015, 03, 22));
+        sub.setContract(contract);
         sub.setLocation(new GpsCoordinate("48.04", "20.00"));
         sub.setName("test-sub-name");
-        sub.setPrice("10000");
-        sub.setStartDate(new Date(2010, 03, 22));
-        sub.setEndDate(new Date(2015, 03, 22));
 
         connection.getSub().add(sub);
         connections.add(connection);
