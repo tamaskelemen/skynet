@@ -1,8 +1,8 @@
-package com.example.demo.controllers;
+package com.skynet.controllers;
 
-import com.example.demo.dto.ConnectionDTO;
-import com.example.demo.dto.GpsCoordinate;
-import com.example.demo.dto.Sub;
+import com.skynet.dto.ConnectionDTO;
+import com.skynet.dto.GpsCoordinate;
+import com.skynet.dto.Sub;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
