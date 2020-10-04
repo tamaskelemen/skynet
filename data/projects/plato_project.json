@@ -1,0 +1,106 @@
+[{
+"project": "PLATO",
+"name": "European Space Agency",
+"location": "",
+"sub": [ {
+ "description": "Principal Investigator, PMC management, System engineering, Performance monitoring & assessment, Data Processing System, Fast Electronics Unit including Fine Guidance System, Telescope Optical Units thermal hardware, Front-end Electronics of the fast telescopes",
+ "price": "800000000",
+ "startDate": "01/01/2026",
+ "endDate":"12/31/2034",
+ "locationName": "German Aerospace Center (DLR)",
+ "location":"valami",
+ "sub": [
+ 	{
+	"description": "Telescope Optical Units, Instrument Control Unit",
+  	"price": "", 
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "Italian Space Agency",
+	"location": ""
+	},
+	{
+	"description": "Focal Plane Assemblies, Main Electronic Unit, Contribution to camera integration, testing and calibration",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "Ministry of Economy and Competitiveness, Spain",
+	"location": ""
+	},
+	{
+	"description": "Software data processing for the normal telescopes, Contribution to Fast Front-End Electronics, Contribution to camera integration, testing and calibration",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "Centre national d'études spatiales, France",
+	"location": ""
+	},
+	{
+	"description": "Optical Ground Support Equipment, Multilayer Insulation",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "Fundação para a Ciência e Tecnologia, Portugal",
+	"location": ""
+	},
+	{
+	"description": "Front-End Electronics of the normal telescopes",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "UK Space Agency",
+	"location": ""
+	},
+	{
+	"description": "Contribution to camera integration, testing and calibration",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "SRON Netherlands Institute for Space Research",
+	"location": ""
+	},
+	{
+	"description": "Contribution to the Broadband Filtering Coating of the fast telescopes",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "Swedish National Space Agency",
+	"location": ""
+	},
+	{
+	"description": "Router and Data Compression Unit in the Instrument Control Unit, On-board data compression algorithms",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "Aeronautics and Space Agency, Austria",
+	"location": ""
+	},
+	{
+	"description": "Camera integration, testing and calibration",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "Belgian Federal Science Policy Office",
+	"location": ""
+	},
+	{
+	"description": "Telescope Optical Units mechanical structure",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "Swiss Space Office",
+	"location": ""
+	},
+	{
+	"description": "CCDs, Ancillary Electronic Units, Central Part Procurement Agency (CPPA)",
+  	"price": "",
+	"startDate": "07/17/2017",
+	"endDate": "01/05/2026",
+	"locationName": "European Space Agency",
+	"location": ""
+	}
+
+	
+]
+}
+]
+}]

@@ -44,7 +44,7 @@ with open(data_csv) as csvfile:
                 }
             }
             new_id = company_col.insert_one(company).inserted_id
-            company_id_map[row[0]] = new_id
+            company_id_map[row[1]] = new_id
 
         if len(row) == 11:
                 type = row[10]
@@ -65,13 +65,17 @@ with open(data_csv) as csvfile:
             contracts.append({
                 "companyId": company_id_map[row[0]],
                 "simple_contracts": [{
-                    "companyId": row[1],
+                    "companyId": company_id_map[row[1]],
                     "contractId": contract_id
                     }
                     ]
                 })
         else:
-           contracts[matching_company[0]["simple_contracts"]].append({"contractId": contract_id, "companyId":row[1]})
+            for i, j in enumerate(contracts):
+                if j["companyId"] == company_id_map[row[0]]:
+                    index = i
+            currList = contracts[index]
+            currList["simple_contracts"].append({"contractId": contract_id, "companyId":company_id_map[row[1]]})
 
 print(contracts)
 simple_contracts.insert_many(contracts)
