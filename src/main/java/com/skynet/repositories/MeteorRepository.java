@@ -28,7 +28,7 @@ public class MeteorRepository {
     MongoClient mongoClient;
 
     public List<String> findAllMagnitude(Optional<String> shower, Date startDate, Date endDate) {
-        MongoOperations mongoOps = new MongoTemplate(mongoClient, "admin");
+        MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
 
         if (!shower.isEmpty() && startDate != null && endDate != null) {
             return mongoOps.find(Query.query(new Criteria().andOperator(Criteria.where("start_date").gte(startDate).lt(endDate)

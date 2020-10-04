@@ -16,7 +16,7 @@ public class IAUMembersRepository {
     MongoClient mongoClient;
 
     public List<String> findAll() {
-        MongoOperations mongoOps = new MongoTemplate(mongoClient, "admin");
+        MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
         return mongoOps.find(new BasicQuery("{}"), String.class, "iau_members");
     }
 }

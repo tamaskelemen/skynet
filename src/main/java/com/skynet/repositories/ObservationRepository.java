@@ -18,7 +18,7 @@ public class ObservationRepository {
     MongoClient mongoClient;
 
     public List<String> findAll(Date startDate, Date endDate) {
-        MongoOperations mongoOps = new MongoTemplate(mongoClient, "admin");
+        MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
         return mongoOps.find(Query.query(Criteria.where("observation_date").gte(startDate).lt(endDate)),
                 String.class,
                 "globe_dust");
