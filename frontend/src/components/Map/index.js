@@ -618,9 +618,29 @@ class Map extends Component {
       return company.label[this.state.clubData[1]];
     }
     if (company) {
+      this.setState({ hoverTitle: 'Institution' });
       return company && company.label.name;
     } else {
-      return JSON.stringify(connection && connection.label);
+      this.setState({ hoverTitle: 'Collaboration' });
+      return (
+        <div>
+          {
+            connection && connection.label && connection.label.price &&
+            <span>Value: ${connection.label.price}000</span>
+          }
+          {
+            connection && connection.label && connection.label.description && (
+              <div>
+                <div>Contracts:</div>
+                <ul>
+                  {connection && connection.label && connection.label.description.map(d => <li>{d}</li>)}
+                </ul>
+              </div>
+            )
+          }
+        </div>
+      );
+      // return JSON.stringify(connection && connection.label);
     }
     return company && company.label.name;
   };
