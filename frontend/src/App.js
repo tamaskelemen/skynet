@@ -15,6 +15,8 @@ class App extends Component {
         return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />;
       case 1:
         return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />;
+      case 2:
+        return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />
       default:
         return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />;
     }

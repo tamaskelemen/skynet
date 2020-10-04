@@ -8,7 +8,8 @@ class ContractMap extends Component {
     connections: [],
     companies: [],
     projects: [],
-    searchValue: ''
+    searchValue: '',
+    observations: []
   };
 
   deriveColor = contract => {
@@ -108,13 +109,24 @@ class ContractMap extends Component {
     }
   }
 
+  observationsChanged = (event) => {
+    const startDate=event[0].format('yyyy-MM-DD');
+    const endDate=event[1].format('yyyy-MM-DD');
+
+    this.getData('http://localhost:8080/api/observation/getAll', { startDate, endDate})
+      .then(response => this.setState({observations: response}));
+  }
 
   render() {
-    const { connections, companies, searchValue , projects} = this.state;
+    const { connections, companies, searchValue , projects, observations } = this.state;
     const { activePage, handlePageChange } = this.props;
     return (
-      <Menus activePage={activePage} handlePageChange={handlePageChange} searchValueChanged={this.searchValueChanged} searchValue={searchValue}>
-        <Map connections={connections} companies={companies} project={projects}/>
+      <Menus activePage={activePage} 
+             handlePageChange={handlePageChange}
+             searchValueChanged={this.searchValueChanged}
+             observationsChange={this.observationsChanged}
+             searchValue={searchValue}>
+        <Map connections={connections} companies={companies} project={projects} observations={observations}/>
       </Menus>
     );
   }

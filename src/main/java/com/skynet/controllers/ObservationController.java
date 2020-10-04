@@ -5,6 +5,7 @@ import com.skynet.dto.ObservationDTO;
 import com.skynet.service.ObservationService;
 import org.apache.tomcat.jni.Local;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,6 +27,7 @@ public class ObservationController {
 
     @RequestMapping(value = "/getAll", produces = MediaType.APPLICATION_JSON_VALUE,
         consumes = MediaType.APPLICATION_JSON_VALUE)
+    @CrossOrigin(origins = "http://localhost:3000")
     public List<ObservationDTO> getAll(@RequestParam String startDate,
                                        @RequestParam String endDate
     ) {
