@@ -626,7 +626,7 @@ class Map extends Component {
         <div>
           {
             connection && connection.label && connection.label.price &&
-            <span>Value: ${connection.label.price}000</span>
+            <span>Value: ${connection.label.price}</span>
           }
           {
             connection && connection.label && connection.label.description && (
