@@ -13,8 +13,10 @@ class Map extends Component {
     super(props);
     this.state = {
       highlightedItems: [],
-      width: 1000,
-      height: 1000,
+      tooltip: {
+        visible: false,
+        content: {},
+      },
     };
   }
 
@@ -51,8 +53,8 @@ class Map extends Component {
       const { edge1, edge2, color } = line;
 
       var pathPositions = [];
-      pathPositions.push(new WorldWind.Position(edge1.lat, edge1.lon, 1e5));
-      pathPositions.push(new WorldWind.Position(edge2.lat, edge2.lon, 1e5));
+      pathPositions.push(new WorldWind.Position(edge1.lat, edge1.lon, 1.5e5));
+      pathPositions.push(new WorldWind.Position(edge2.lat, edge2.lon, 1.5e5));
       // Create the path.
       var path = new WorldWind.Path(pathPositions, null);
       path.altitudeMode = WorldWind.GREAT_CIRCLE; // The path's altitude stays relative to the terrain's altitude.
@@ -63,13 +65,13 @@ class Map extends Component {
       // Create and assign the path's attributes.
       var pathAttributes = new WorldWind.ShapeAttributes(null);
       pathAttributes.outlineColor = new WorldWind.Color(color.r, color.g, color.b, color.a);
-      pathAttributes.interiorColor = new WorldWind.Color(color.r, color.g, color.b, color.a);
+      pathAttributes.interiorColor = new WorldWind.Color(color.r, color.g, color.b, 0.2);
       pathAttributes.drawVerticals = path.extrude; //Draw verticals only when extruding.
       path.attributes = pathAttributes;
 
       // Create and assign the path's highlight attributes.
       var highlightAttributes = new WorldWind.ShapeAttributes(pathAttributes);
-      highlightAttributes.outlineColor = WorldWind.Color.RED;
+      highlightAttributes.outlineColor = WorldWind.Color.WHITE;
       highlightAttributes.interiorColor = new WorldWind.Color(1, 1, 1, 0.5);
       path.highlightAttributes = highlightAttributes;
 
@@ -78,6 +80,8 @@ class Map extends Component {
     });
 
     wwd.addLayer(pathsLayer);
+
+    // this.drawPlacemark();
   };
 
   drawCompanies = companies => {
@@ -89,7 +93,7 @@ class Map extends Component {
       placemarkLayer = new WorldWind.RenderableLayer('Placemarks');
 
     // Set up the common placemark attributes.
-    placemarkAttributes.imageScale = 2;
+    placemarkAttributes.imageScale = 1.5;
     placemarkAttributes.imageOffset = new WorldWind.Offset(
       WorldWind.OFFSET_FRACTION, 0.3,
       WorldWind.OFFSET_FRACTION, 0.0);
@@ -103,7 +107,7 @@ class Map extends Component {
 
     // For each placemark image, create a placemark with a label.
     companies.forEach(company => {
-      const { lat, lon } = company.location;
+      const { location: { lat, lon }, imageSource } = company;
 
       // Create the placemark and its label.
       placemark = new WorldWind.Placemark(new WorldWind.Position(lat, lon, 1e5), true, null);
@@ -113,14 +117,15 @@ class Map extends Component {
       // Create the placemark attributes for this placemark. Note that the attributes differ only by their
       // image URL.
       placemarkAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
-      placemarkAttributes.imageSource = './plain-red.png';
+      placemarkAttributes.imageSource = imageSource || './plain-red.png';
+      placemarkAttributes.imageOffset = new WorldWind.Offset(WorldWind.OFFSET_FRACTION, 0.5, WorldWind.OFFSET_FRACTION, 0.5);
       placemark.attributes = placemarkAttributes;
 
       // Create the highlight attributes for this placemark. Note that the normal attributes are specified as
       // the default highlight attributes so that all properties are identical except the image scale. You could
       // instead vary the color, image, or other property to control the highlight representation.
       highlightAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
-      highlightAttributes.imageScale = 2.2;
+      // highlightAttributes.imageScale = 2.2;
       placemark.highlightAttributes = highlightAttributes;
 
       // Add the placemark to the layer.
@@ -130,6 +135,26 @@ class Map extends Component {
     // Add the placemarks layer to the WorldWindow's layer list.
     wwd.addLayer(placemarkLayer);
   };
+
+  // drawPlacemark = () => {
+  //   var shapesLayer = new WorldWind.RenderableLayer('Surface Shapes');
+  //
+  //   var attributes = new WorldWind.ShapeAttributes(null);
+  //   attributes.outlineColor = WorldWind.Color.BLUE;
+  //   attributes.interiorColor = new WorldWind.Color(0, 1, 1, 0.5);
+  //
+  //   let i = new WorldWind.Location(35, -120);
+  //   setTimeout(() => {
+  //     i = new WorldWind.Location(-35, -120);
+  //     this.wwd.redraw();
+  //   }, 2000);
+  //
+  //   // Create a surface circle with a radius of 200 km.
+  //   var circle = new WorldWind.SurfaceCircle(i, 200e3, attributes);
+  //   shapesLayer.addRenderable(circle);
+  //
+  //   this.wwd.addLayer(shapesLayer);
+  // };
 
   // The common pick-handling function.
   handlePick = o => {
@@ -179,7 +204,10 @@ class Map extends Component {
       wwd.redraw(); // redraw to make the highlighting changes take effect on the screen
     }
 
-    this.setState({ highlightedItems });
+    this.setState({
+      highlightedItems,
+      tooltip: { visible: this.showTooltip(highlightedItems), content: this.deriveTooltipContent(highlightedItems) },
+    });
   };
 
   handleMouseMove = (event) => {
@@ -211,10 +239,10 @@ class Map extends Component {
   componentDidMount() {
     // Tell WorldWind to log only warnings and errors.
     WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_WARNING);
-    
+
     // Create the WorldWindow.
     var wwd = this.wwd = new WorldWind.WorldWindow('canvasOne');
-    
+
     // Create and add layers to the WorldWindow.
     var layers = [
       // Imagery layers.
@@ -297,21 +325,22 @@ class Map extends Component {
     document.onmousemove = undefined;
   }
 
-  showTooltip = highlightedItems =>
-    !!highlightedItems.find(item => item.layer && item.layer.displayName === 'Placemarks');
+  showTooltip = highlightedItems => {
+    return !!highlightedItems.find(item => item.layer && (item.layer.displayName === 'Placemarks' || item.layer.displayName === 'Paths'));
+  };
   deriveTooltipContent = highlightedItems => {
     const company = highlightedItems.find(item => item.layer && item.layer.displayName === 'Placemarks');
     return JSON.stringify(company && company.label.name);
   };
 
   render() {
-    const { width, height, highlightedItems } = this.state;
+    const { tooltip: { visible, content } } = this.state;
     const canvasHeight = window.innerHeight - 64;
     return (
       <div className="map-container">
-        <Popover content={<span>{this.deriveTooltipContent(highlightedItems)}</span>} title="Title" visible={this.showTooltip(highlightedItems)}>
+        <Popover content={<span>{content}</span>} title="Title" visible={visible}>
           <div style={{ position: 'absolute', top: this.mouseY, left: this.mouseX }} />
-        </Popover>,
+        </Popover>
         <canvas id="canvasOne" width="900" height={canvasHeight} style={{ backgroundColor: 'black' }}>
           Your browser does not support HTML5 Canvas.
         </canvas>

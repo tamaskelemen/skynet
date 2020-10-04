@@ -26,7 +26,7 @@ class Index extends Component {
       <Layout>
         <Header className="header">
           <Button ghost className="menu-button" onClick={this.handleCollapseClick}><MenuOutlined /></Button>
-          <div className="logo">JagerMilkyWay</div>
+          <div className="logo"><img src="./logo.png" alt="" />JägerMilkyWay</div>
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={[activePage]}>
             <Menu.Item key="0" onClick={() => handlePageChange('0')}><SolutionOutlined />Space contracts</Menu.Item>
             <Menu.Item key="1" onClick={() => handlePageChange('1')}><PieChartOutlined />Space projects</Menu.Item>
