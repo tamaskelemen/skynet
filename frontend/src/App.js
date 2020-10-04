@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import ContractMap from './views/ContractMap';
+import MeteorMap from './views/MeteorMap';
 import ObservationMap from './views/ObservationMap';
 import ProjectMap from './views/ProjectMap';
+import MemberMap from './views/Members'
 
 class App extends Component {
   state = {
@@ -19,6 +21,10 @@ class App extends Component {
         return <ProjectMap activePage={activePage} handlePageChange={handlePageChange} />;
       case '2':
         return <ObservationMap activePage={activePage} handlePageChange={handlePageChange} />;
+      case '3':
+        return <MeteorMap activePage={activePage} handlePageChange={handlePageChange} />;
+      case '4':
+        return <MemberMap activePage={activePage} handlePageChange={handlePageChange} />;
       default:
         return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />;
     }

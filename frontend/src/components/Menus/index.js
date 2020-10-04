@@ -18,7 +18,16 @@ class Index extends Component {
   };
 
   render() {
-    const { children, activePage, handlePageChange, searchValueChanged, searchValue, observationsChange, animation, setAnimation } = this.props;
+    const { 
+      children,
+      activePage,
+      handlePageChange,
+      searchValueChanged,
+      searchValue,
+      observationsChange,
+      animation,
+      setAnimation,
+      meteorChanged } = this.props;
     const { collapsed } = this.state;
     const layout = {
       labelCol: { span: 8 },
@@ -34,6 +43,8 @@ class Index extends Component {
             <Menu.Item key="0" onClick={() => handlePageChange('0')}><SolutionOutlined />Space contracts</Menu.Item>
             <Menu.Item key="1" onClick={() => handlePageChange('1')}><PieChartOutlined />Space projects</Menu.Item>
             <Menu.Item key="2" onClick={() => handlePageChange('2')}>Observations</Menu.Item>
+            <Menu.Item key="3" onClick={() => handlePageChange('3')}>Meteors</Menu.Item>
+            <Menu.Item key="4" onClick={() => handlePageChange('4')}>IAU Members</Menu.Item>
           </Menu>
         </Header>
 
@@ -75,6 +86,14 @@ class Index extends Component {
                   showTime={{ format: 'HH:mm' }}
                   format="YYYY-MM-DD HH:mm"
                   onChange={observationsChange}
+                />
+              </Space>,
+
+              <Space direction="vertical" size={12}>
+                <RangePicker
+                  showTime={{ format: 'HH:mm' }}
+                  format="YYYY-MM-DD HH:mm"
+                  onChange={meteorChanged}
                 />
               </Space>,
             </Menu>
