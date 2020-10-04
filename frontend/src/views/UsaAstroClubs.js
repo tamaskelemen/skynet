@@ -3,12 +3,12 @@ import { API_URL } from '../common/constants';
 import Map from '../components/Map';
 import Menus from '../components/Menus';
 
-export default class ObservationMap extends Component {
+export default class UsaAstroClubs extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            observations: [],
+            clubs: [],
         };
     }
     
@@ -34,21 +34,18 @@ export default class ObservationMap extends Component {
     
         return queryParam;
       };
-    
-      observationsChanged = (event) => {
-        const startDate = event[0].format('yyyy-MM-DD');
-        const endDate = event[1].format('yyyy-MM-DD');
 
-        this.getData(API_URL + '/observation/getAll', { startDate, endDate})
-          .then(response => this.setState({observations: response}));
+      componentDidMount() {
+        this.getData(API_URL + '/clubs/all')
+        .then(response => this.setState({clubs: response}));
       }
-
+    
     render() {
-        const { observations } = this.state;
+        const { clubs } = this.state;
         const { activePage, handlePageChange } = this.props;
         return (
-          <Menus activePage={activePage} handlePageChange={handlePageChange} observationsChange={this.observationsChanged}>
-            <Map observations={observations} />
+          <Menus activePage={activePage} handlePageChange={handlePageChange}>
+            <Map clubs={clubs} />
           </Menus>
         );
     }
