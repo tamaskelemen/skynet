@@ -14,6 +14,8 @@ class Map extends Component {
     super(props);
     this.state = {
       highlightedItems: [],
+      memberData: '',
+      meteorData: '',
       tooltip: {
         visible: false,
         content: {},
@@ -22,7 +24,7 @@ class Map extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    const { connections, companies, project, observations, animation } = this.props;
+    const { connections, companies, project, observations, animation, meteors , members} = this.props;
     if (prevProps.connections !== connections) {
       this.drawConnections(connections);
     }
@@ -38,6 +40,126 @@ class Map extends Component {
     if (prevProps.animation.enabled !== animation.enabled) {
       this.toggleGlobeSpinning(animation);
     }
+    if (prevProps.meteors !== meteors) {
+      this.drawMeteors(meteors);
+    }
+    if ( prevProps.members !== members) {
+      this.drawMembers(members);
+    }
+
+  }
+
+  drawMembers = members => {
+    const { wwd } = this;
+
+    this.setState({memberData: ['name', 'address']});
+
+    var placemark,
+      placemarkAttributes = new WorldWind.PlacemarkAttributes(null),
+      highlightAttributes,
+      placemarkLayer = new WorldWind.RenderableLayer('Placemarks');
+
+    // Set up the common placemark attributes.
+    placemarkAttributes.imageScale = 2;
+    placemarkAttributes.imageOffset = new WorldWind.Offset(
+      WorldWind.OFFSET_FRACTION, 0.3,
+      WorldWind.OFFSET_FRACTION, 0.0);
+    placemarkAttributes.imageColor = WorldWind.Color.WHITE;
+    placemarkAttributes.labelAttributes.offset = new WorldWind.Offset(
+      WorldWind.OFFSET_FRACTION, 0.5,
+      WorldWind.OFFSET_FRACTION, 1.0);
+    placemarkAttributes.labelAttributes.color = WorldWind.Color.YELLOW;
+    placemarkAttributes.drawLeaderLine = true;
+    placemarkAttributes.leaderLineAttributes.outlineColor = WorldWind.Color.RED;
+
+
+    // For each placemark image, create a placemark with a label.
+    members.forEach(member => {
+      const { latitude, longitude } = member.location;
+
+      // Create the placemark and its label.
+      placemark = new WorldWind.Placemark(new WorldWind.Position(latitude, longitude, 1e5), true, 'asdf');
+      placemark.label = member;
+      placemark.altitudeMode = WorldWind.RELATIVE_TO_GROUND;
+
+      // Create the placemark attributes for this placemark. Note that the attributes differ only by their
+      // image URL.
+      placemarkAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
+      placemarkAttributes.imageSource = './meteor.png';
+      placemark.attributes = placemarkAttributes;
+
+      // Create the highlight attributes for this placemark. Note that the normal attributes are specified as
+      // the default highlight attributes so that all properties are identical except the image scale. You could
+      // instead vary the color, image, or other property to control the highlight representation.
+      highlightAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
+      highlightAttributes.imageScale = 2.2;
+      placemark.highlightAttributes = highlightAttributes;
+
+      // Add the placemark to the layer.
+      placemarkLayer.addRenderable(placemark);
+    });
+
+
+
+    wwd.addEventListener('mouseMove', this.handlePick);
+    // Add the placemarks layer to the WorldWindow's layer list.
+    wwd.addLayer(placemarkLayer);
+  }
+
+  drawMeteors = meteors => {
+    const { wwd } = this;
+
+    this.setState({meteorData: ['shower', 'magnitude']})
+
+    var placemark,
+      placemarkAttributes = new WorldWind.PlacemarkAttributes(null),
+      highlightAttributes,
+      placemarkLayer = new WorldWind.RenderableLayer('Placemarks');
+
+    // Set up the common placemark attributes.
+    placemarkAttributes.imageScale = 2;
+    placemarkAttributes.imageOffset = new WorldWind.Offset(
+      WorldWind.OFFSET_FRACTION, 0.3,
+      WorldWind.OFFSET_FRACTION, 0.0);
+    placemarkAttributes.imageColor = WorldWind.Color.WHITE;
+    placemarkAttributes.labelAttributes.offset = new WorldWind.Offset(
+      WorldWind.OFFSET_FRACTION, 0.5,
+      WorldWind.OFFSET_FRACTION, 1.0);
+    placemarkAttributes.labelAttributes.color = WorldWind.Color.YELLOW;
+    placemarkAttributes.drawLeaderLine = true;
+    placemarkAttributes.leaderLineAttributes.outlineColor = WorldWind.Color.RED;
+
+
+    // For each placemark image, create a placemark with a label.
+    meteors.forEach(meteors => {
+      const { latitude, longitude } = meteors.location;
+
+      // Create the placemark and its label.
+      placemark = new WorldWind.Placemark(new WorldWind.Position(latitude, longitude, 1e5), true, 'asdf');
+      placemark.label = meteors;
+      placemark.altitudeMode = WorldWind.RELATIVE_TO_GROUND;
+
+      // Create the placemark attributes for this placemark. Note that the attributes differ only by their
+      // image URL.
+      placemarkAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
+      placemarkAttributes.imageSource = './meteor.png';
+      placemark.attributes = placemarkAttributes;
+
+      // Create the highlight attributes for this placemark. Note that the normal attributes are specified as
+      // the default highlight attributes so that all properties are identical except the image scale. You could
+      // instead vary the color, image, or other property to control the highlight representation.
+      highlightAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
+      highlightAttributes.imageScale = 2.2;
+      placemark.highlightAttributes = highlightAttributes;
+
+      // Add the placemark to the layer.
+      placemarkLayer.addRenderable(placemark);
+    });
+
+
+    wwd.addEventListener('mouseMove', this.handlePick);
+    // Add the placemarks layer to the WorldWindow's layer list.
+    wwd.addLayer(placemarkLayer);
   }
 
   toggleGlobeSpinning = animation => {
@@ -103,6 +225,8 @@ class Map extends Component {
       placemarkLayer.addRenderable(placemark);
     });
 
+
+    wwd.addEventListener('mouseMove', this.handlePick);
     // Add the placemarks layer to the WorldWindow's layer list.
     wwd.addLayer(placemarkLayer);
   }
@@ -404,6 +528,14 @@ class Map extends Component {
   };
   deriveTooltipContent = highlightedItems => {
     const company = highlightedItems.find(item => item.layer && item.layer.displayName === 'Placemarks');
+
+    if (this.state.memberData !== '' && company && company.label) {
+      return "Name:" + company.label[this.state.memberData[0]] + " \nAddress:" + company.label[this.state.memberData[1]];
+    }
+
+    if (this.state.meteorData !== '' && company && company.label) {
+      return "Shower:" + company.label[this.state.meteorData[0]];
+    }
     return JSON.stringify(company && company.label.name);
   };
 
