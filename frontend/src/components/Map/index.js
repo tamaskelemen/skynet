@@ -8,67 +8,54 @@ class Map extends Component {
   highlightedItems = [];
   mouseX;
   mouseY;
+  spinningInterval;
 
   constructor(props) {
     super(props);
     this.state = {
       highlightedItems: [],
-      width: 1000,
-      height: 1000,
+      tooltip: {
+        visible: false,
+        content: {},
+      },
     };
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    const { connections, companies } = this.props;
+    const { connections, companies, project, observations, animation } = this.props;
     if (prevProps.connections !== connections) {
       this.drawConnections(connections);
     }
     if (prevProps.companies !== companies) {
       this.drawCompanies(companies);
     }
+    if (prevProps.project !== project) {
+      this.drawProject(project);
+    }
+    if (prevProps.observations !== observations) {
+      this.drawObservations(observations);
+    }
+    if (prevProps.animation.enabled !== animation.enabled) {
+      this.toggleGlobeSpinning(animation);
+    }
   }
 
-  drawConnections = lines => {
-    const { wwd } = this;
-
-    // Add the path to a layer and the layer to the WorldWindow's layer list.
-    var pathsLayer = new WorldWind.RenderableLayer();
-    pathsLayer.displayName = 'Paths';
-
-    lines.forEach(line => {
-      const { edge1, edge2, color } = line;
-
-      var pathPositions = [];
-      pathPositions.push(new WorldWind.Position(edge1.lat, edge1.lon, 1e5));
-      pathPositions.push(new WorldWind.Position(edge2.lat, edge2.lon, 1e5));
-      // Create the path.
-      var path = new WorldWind.Path(pathPositions, null);
-      path.altitudeMode = WorldWind.GREAT_CIRCLE; // The path's altitude stays relative to the terrain's altitude.
-      // path.followTerrain = true;
-      path.extrude = true; // Make it a curtain.
-      // path.useSurfaceShapeFor2D = true; // Use a surface shape in 2D mode.
-
-      // Create and assign the path's attributes.
-      var pathAttributes = new WorldWind.ShapeAttributes(null);
-      pathAttributes.outlineColor = new WorldWind.Color(color.r, color.g, color.b, color.a);
-      pathAttributes.interiorColor = new WorldWind.Color(color.r, color.g, color.b, color.a);
-      pathAttributes.drawVerticals = path.extrude; //Draw verticals only when extruding.
-      path.attributes = pathAttributes;
-
-      // Create and assign the path's highlight attributes.
-      var highlightAttributes = new WorldWind.ShapeAttributes(pathAttributes);
-      highlightAttributes.outlineColor = WorldWind.Color.RED;
-      highlightAttributes.interiorColor = new WorldWind.Color(1, 1, 1, 0.5);
-      path.highlightAttributes = highlightAttributes;
-
-      // Add the path to a layer and the layer to the WorldWindow's layer list.
-      pathsLayer.addRenderable(path);
-    });
-
-    wwd.addLayer(pathsLayer);
+  toggleGlobeSpinning = animation => {
+    if (animation.enabled) {
+      const { wwd } = this;
+      // wwd.navigator.lookAtLocation.latitude = 0;
+      // wwd.navigator.lookAtLocation.longitude = 0;
+      wwd.navigator.range = 1e7; // 2 million meters above the ellipsoid
+      this.spinningInterval = setInterval(() => {
+        wwd.navigator.lookAtLocation.longitude += 2e-1;
+        wwd.redraw();
+      }, 20);
+    } else {
+      clearInterval(this.spinningInterval);
+    }
   };
 
-  drawCompanies = companies => {
+  drawObservations = observations => {
     const { wwd } = this;
 
     var placemark,
@@ -89,19 +76,20 @@ class Map extends Component {
     placemarkAttributes.drawLeaderLine = true;
     placemarkAttributes.leaderLineAttributes.outlineColor = WorldWind.Color.RED;
 
+
     // For each placemark image, create a placemark with a label.
-    companies.forEach(company => {
-      const { lat, lon } = company.location;
+    observations.forEach(observation => {
+      const { latitude, longitude } = observation.location;
 
       // Create the placemark and its label.
-      placemark = new WorldWind.Placemark(new WorldWind.Position(lat, lon, 1e5), true, null);
-      placemark.label = company;
+      placemark = new WorldWind.Placemark(new WorldWind.Position(latitude, longitude, 1e5), true, 'asdf');
+      placemark.label = observation;
       placemark.altitudeMode = WorldWind.RELATIVE_TO_GROUND;
 
       // Create the placemark attributes for this placemark. Note that the attributes differ only by their
       // image URL.
       placemarkAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
-      placemarkAttributes.imageSource = './plain-red.png';
+      placemarkAttributes.imageSource = './telescope.png';
       placemark.attributes = placemarkAttributes;
 
       // Create the highlight attributes for this placemark. Note that the normal attributes are specified as
@@ -117,7 +105,130 @@ class Map extends Component {
 
     // Add the placemarks layer to the WorldWindow's layer list.
     wwd.addLayer(placemarkLayer);
+  }
+
+  drawProject = project => {
+    const { wwd } = this;
+    wwd.navigator.lookAtLocation.latitude = project.location.latitude;
+    wwd.navigator.lookAtLocation.longitude = project.location.longitude;
+    wwd.navigator.range = 2e6; // 2 million meters above the ellipsoid
+
+    wwd.redraw();
+  }
+
+  drawConnections = lines => {
+    const { wwd } = this;
+
+    // Add the path to a layer and the layer to the WorldWindow's layer list.
+    var pathsLayer = new WorldWind.RenderableLayer();
+    pathsLayer.displayName = 'Paths';
+
+    lines.forEach(line => {
+      const { edge1, edge2, color } = line;
+
+      var pathPositions = [];
+      pathPositions.push(new WorldWind.Position(edge1.lat, edge1.lon, 1.5e5));
+      pathPositions.push(new WorldWind.Position(edge2.lat, edge2.lon, 1.5e5));
+      // Create the path.
+      var path = new WorldWind.Path(pathPositions, null);
+      path.altitudeMode = WorldWind.GREAT_CIRCLE; // The path's altitude stays relative to the terrain's altitude.
+      // path.followTerrain = true;
+      path.extrude = true; // Make it a curtain.
+      // path.useSurfaceShapeFor2D = true; // Use a surface shape in 2D mode.
+
+      // Create and assign the path's attributes.
+      var pathAttributes = new WorldWind.ShapeAttributes(null);
+      pathAttributes.outlineColor = new WorldWind.Color(color.r, color.g, color.b, color.a);
+      pathAttributes.interiorColor = new WorldWind.Color(color.r, color.g, color.b, 0.2);
+      pathAttributes.drawVerticals = path.extrude; //Draw verticals only when extruding.
+      path.attributes = pathAttributes;
+
+      // Create and assign the path's highlight attributes.
+      var highlightAttributes = new WorldWind.ShapeAttributes(pathAttributes);
+      highlightAttributes.outlineColor = WorldWind.Color.WHITE;
+      highlightAttributes.interiorColor = new WorldWind.Color(1, 1, 1, 0.5);
+      path.highlightAttributes = highlightAttributes;
+
+      // Add the path to a layer and the layer to the WorldWindow's layer list.
+      pathsLayer.addRenderable(path);
+    });
+
+    wwd.addLayer(pathsLayer);
+
+    // this.drawPlacemark();
   };
+
+  drawCompanies = companies => {
+    const { wwd } = this;
+
+    var placemark,
+      placemarkAttributes = new WorldWind.PlacemarkAttributes(null),
+      highlightAttributes,
+      placemarkLayer = new WorldWind.RenderableLayer('Placemarks');
+
+    // Set up the common placemark attributes.
+    placemarkAttributes.imageScale = 1.5;
+    placemarkAttributes.imageOffset = new WorldWind.Offset(
+      WorldWind.OFFSET_FRACTION, 0.3,
+      WorldWind.OFFSET_FRACTION, 0.0);
+    placemarkAttributes.imageColor = WorldWind.Color.WHITE;
+    placemarkAttributes.labelAttributes.offset = new WorldWind.Offset(
+      WorldWind.OFFSET_FRACTION, 0.5,
+      WorldWind.OFFSET_FRACTION, 1.0);
+    placemarkAttributes.labelAttributes.color = WorldWind.Color.YELLOW;
+    placemarkAttributes.drawLeaderLine = true;
+    placemarkAttributes.leaderLineAttributes.outlineColor = WorldWind.Color.RED;
+
+    // For each placemark image, create a placemark with a label.
+    companies.forEach(company => {
+      const { location: { lat, lon }, imageSource } = company;
+
+      // Create the placemark and its label.
+      placemark = new WorldWind.Placemark(new WorldWind.Position(lat, lon, 1e5), true, null);
+      placemark.label = company;
+      placemark.altitudeMode = WorldWind.RELATIVE_TO_GROUND;
+
+      // Create the placemark attributes for this placemark. Note that the attributes differ only by their
+      // image URL.
+      placemarkAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
+      placemarkAttributes.imageSource = imageSource || './plain-red.png';
+      placemarkAttributes.imageOffset = new WorldWind.Offset(WorldWind.OFFSET_FRACTION, 0.5, WorldWind.OFFSET_FRACTION, 0.5);
+      placemark.attributes = placemarkAttributes;
+
+      // Create the highlight attributes for this placemark. Note that the normal attributes are specified as
+      // the default highlight attributes so that all properties are identical except the image scale. You could
+      // instead vary the color, image, or other property to control the highlight representation.
+      highlightAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
+      // highlightAttributes.imageScale = 2.2;
+      placemark.highlightAttributes = highlightAttributes;
+
+      // Add the placemark to the layer.
+      placemarkLayer.addRenderable(placemark);
+    });
+
+    // Add the placemarks layer to the WorldWindow's layer list.
+    wwd.addLayer(placemarkLayer);
+  };
+
+  // drawPlacemark = () => {
+  //   var shapesLayer = new WorldWind.RenderableLayer('Surface Shapes');
+  //
+  //   var attributes = new WorldWind.ShapeAttributes(null);
+  //   attributes.outlineColor = WorldWind.Color.BLUE;
+  //   attributes.interiorColor = new WorldWind.Color(0, 1, 1, 0.5);
+  //
+  //   let i = new WorldWind.Location(35, -120);
+  //   setTimeout(() => {
+  //     i = new WorldWind.Location(-35, -120);
+  //     this.wwd.redraw();
+  //   }, 2000);
+  //
+  //   // Create a surface circle with a radius of 200 km.
+  //   var circle = new WorldWind.SurfaceCircle(i, 200e3, attributes);
+  //   shapesLayer.addRenderable(circle);
+  //
+  //   this.wwd.addLayer(shapesLayer);
+  // };
 
   // The common pick-handling function.
   handlePick = o => {
@@ -167,7 +278,10 @@ class Map extends Component {
       wwd.redraw(); // redraw to make the highlighting changes take effect on the screen
     }
 
-    this.setState({ highlightedItems });
+    this.setState({
+      highlightedItems,
+      tooltip: { visible: this.showTooltip(highlightedItems), content: this.deriveTooltipContent(highlightedItems) },
+    });
   };
 
   handleMouseMove = (event) => {
@@ -269,42 +383,6 @@ class Map extends Component {
     document.onmousemove = this.handleMouseMove;
   }
 
-  searchProject(wwd) {
-    this.getData('http://localhost:8080/api' + '/company/get', { projectName: 'test project'})
-    .then(result => {
-      wwd.navigator.lookAtLocation.latitude = result.location.latitude;
-      wwd.navigator.lookAtLocation.longitude = result.location.longitude;
-      wwd.navigator.range = 2e6; // 2 million meters above the ellipsoid
-
-      wwd.redraw();
-      console.log(result)
-    });
-  }
-
-  getData = async (url = '', data = {}) => {
-    const queryParam = this.parseQueryParams(data);
-    console.log(queryParam);
-    const response = await fetch(url + queryParam, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    return await response.json();
-  }
-
-  parseQueryParams = (data = {}) => {
-    let queryParam = '?';
-    for ( const property in data) {
-      queryParam += property;
-      queryParam += '=';
-      queryParam += data[property];
-      queryParam += '&';
-    }
-
-    return queryParam;
-  }
-
   postData = async (url = '', data = {}) => {
     const response = await fetch(
       url, {
@@ -321,21 +399,22 @@ class Map extends Component {
     document.onmousemove = undefined;
   }
 
-  showTooltip = highlightedItems =>
-    !!highlightedItems.find(item => item.layer && item.layer.displayName === 'Placemarks');
+  showTooltip = highlightedItems => {
+    return !!highlightedItems.find(item => item.layer && (item.layer.displayName === 'Placemarks' || item.layer.displayName === 'Paths'));
+  };
   deriveTooltipContent = highlightedItems => {
     const company = highlightedItems.find(item => item.layer && item.layer.displayName === 'Placemarks');
     return JSON.stringify(company && company.label.name);
   };
 
   render() {
-    const { width, height, highlightedItems } = this.state;
+    const { tooltip: { visible, content } } = this.state;
     const canvasHeight = window.innerHeight - 64;
     return (
       <div className="map-container">
-        <Popover content={<span>{this.deriveTooltipContent(highlightedItems)}</span>} title="Title" visible={this.showTooltip(highlightedItems)}>
+        <Popover content={<span>{content}</span>} title="Title" visible={visible}>
           <div style={{ position: 'absolute', top: this.mouseY, left: this.mouseX }} />
-        </Popover>,
+        </Popover>
         <canvas id="canvasOne" width="900" height={canvasHeight} style={{ backgroundColor: 'black' }}>
           Your browser does not support HTML5 Canvas.
         </canvas>
@@ -343,5 +422,10 @@ class Map extends Component {
     );
   }
 }
+
+Map.defaultProps = {
+  animation: {},
+  setAnimation: () => {},
+};
 
 export default Map;

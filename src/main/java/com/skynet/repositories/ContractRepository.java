@@ -5,27 +5,33 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.BasicQuery;
+import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 
 @Repository
-public class CompanyRepository {
+public class ContractRepository {
 
 	@Autowired
 	MongoClient mongoClient;
 
-	public List<String> getCompaniesInArea(String startingLatitude, String startingLongitude, String endingLatitude, String endingLongitude) {
+	public List<String> getSimpleContracts() {
 		MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
-		String query = String.format("{location:{$geoWithin :{$box: [[%s,%s], [%s,%s]]}}}",startingLatitude, startingLongitude, endingLatitude, endingLongitude );
-		List<String> doc = mongoOps.find(new BasicQuery(query), String.class, "company");
+		List<String> doc = mongoOps.find(new Query(), String.class, "simple_contracts");
 		return doc;
 	}
 
-	public List<String> getCompanies() {
+	public List<String> getContractsWithoutProjects(String startDate, String endDate) {
 		MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
-		List<String> doc = mongoOps.find(new Query(), String.class, "company");
+		if (StringUtils.isEmpty(startDate) || StringUtils.isEmpty(endDate)) {
+			return mongoOps.find(new Query(), String.class, "contract");
+		}
+		List<String> doc = mongoOps.find(
+		        Query.query(Criteria.where("startDate").gte(startDate).lt(endDate)),
+                String.class, "contract");
 		return doc;
 	}
 }

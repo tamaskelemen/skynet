@@ -71,7 +71,7 @@ public class ObservationService {
             dto.setLocation(coordinate);
             dto.setObservationNumber(node.get("observation_number").asText());
             dto.setObservationElevation(node.get("observation_elevation").asText());
-             dto.setObservationDate(mapper.convertValue(node.get("observation_date").get("$date"), Date.class));
+            dto.setObservationDate(mapper.convertValue(node.get("observation_date").get("$date"), Date.class));
 
             dto.setDust(node.get("dust").asText());
             dto.setFog(node.get("fog").asText());
