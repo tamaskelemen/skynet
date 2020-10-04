@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import Map from '../components/Map';
 import Menus from '../components/Menus';
 import { API_URL } from '../common/constants';
+import chroma from 'chroma-js';
+
+const f = chroma.scale(['black','red','yellow','white'])
+  .correctLightness()
+  .domain([0,100000]);
 
 class ContractMap extends Component {
   state = {
@@ -13,7 +18,8 @@ class ContractMap extends Component {
   };
 
   deriveColor = contract => {
-    return { r: 0, g: 0, b: 1, a: 1.0 };
+    const [r, g, b] = f((contract && contract.price) || 0).rgb();
+    return { r, g, b, a: 1.0 };
   };
 
   deriveEdge = location => {
@@ -22,6 +28,13 @@ class ContractMap extends Component {
       lon: parseFloat(location.longitude),
     };
   };
+
+  deriveImageSource = company => {
+    if (Math.random() > 0.5) {
+      return './nasa.png';
+    }
+    return './plain-red.png'
+  }
 
   parseApiData = response => {
     const connections = [];
@@ -35,6 +48,7 @@ class ContractMap extends Component {
       companies.push({
         ...node,
         location: this.deriveEdge(node.location),
+        imageSource: this.deriveImageSource(node)
       });
 
       if (!node.sub.length) {

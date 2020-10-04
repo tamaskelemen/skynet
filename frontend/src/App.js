@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ContractMap from './views/ContractMap';
+import ProjectMap from './views/ProjectMap';
 
 class App extends Component {
   state = {
@@ -11,12 +12,12 @@ class App extends Component {
 
   showPage(activePage, handlePageChange) {
     switch (activePage) {
-      case 0:
+      case '0':
         return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />;
-      case 1:
-        return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />;
-      case 2:
-        return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />
+      case '1':
+        return <ProjectMap activePage={activePage} handlePageChange={handlePageChange} />;
+      case '2':
+        return <ProjectMap activePage={activePage} handlePageChange={handlePageChange} />;
       default:
         return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />;
     }
