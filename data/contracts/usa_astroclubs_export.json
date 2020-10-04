@@ -1,0 +1,8247 @@
+[{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542c2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.4267762",
+      "-99.7440188"
+    ]
+  },
+  "name": "Abilene Astronomical Society",
+  "address": "Abilene 1817 Jackson St",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542c3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.6761732",
+      "-82.3382938"
+    ]
+  },
+  "name": "Alachua Astronomy Club inc.",
+  "address": "Gainesville 2603 NW 13th St 161",
+  "note": "110 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542c4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.9301946",
+      "-105.9639664"
+    ]
+  },
+  "name": "Alamogordo Astronomy Club",
+  "address": "Alamogordo International Space Hall of Fame Hwy 2001",
+  "note": "505-437-5857"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542c5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.9112547",
+      "-73.9398627"
+    ]
+  },
+  "name": "Albany Area Amateur Astronomers Inc.",
+  "address": "Ballston Lake 3 Hawley Drive",
+  "note": "140 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542c6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.331617",
+      "-71.919849"
+    ]
+  },
+  "name": "Aldrich Astronomical Society",
+  "address": "Paxton 50 Sunset Lane Box S",
+  "note": "Founded in 1932"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542c7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.3583417",
+      "-74.5604571"
+    ]
+  },
+  "name": "Allegheny Highland Astronomical Society",
+  "address": "Ridgeway PO Box 277",
+  "note": "(814) 772-0472"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542c8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.1822294",
+      "-101.9310297"
+    ]
+  },
+  "name": "Amarillo Astronomy Club",
+  "address": "Amarillo 7813 Simpson Dr",
+  "note": "45 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542c9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.6781784",
+      "-73.9441579"
+    ]
+  },
+  "name": "Amateur Astronomers Association of NY",
+  "address": "Brooklyn PO Box 150253",
+  "note": "650 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542ca"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.5325079",
+      "-79.9680392"
+    ]
+  },
+  "name": "Amateur Astronomers Assn. of Pittsburgh",
+  "address": "Glenshaw PO Box 314",
+  "note": "550 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542cb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.3572976",
+      "-74.6672226"
+    ]
+  },
+  "name": "Amateur Astronomers Assn. of Princeton Inc.",
+  "address": "Princeton PO Box 2017",
+  "note": "155 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542cc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.6660061",
+      "-74.3228022"
+    ]
+  },
+  "name": "Amateur Astronomers Inc.",
+  "address": "Cranford Union County College 1033 Springfield Ave",
+  "note": "248 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542cd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.6367812",
+      "-80.365865"
+    ]
+  },
+  "name": "Amateur Astronomers Of Beaver County",
+  "address": "PA Beaver County",
+  "note": "http://aaobc.com"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542ce"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.9690743",
+      "-92.5820247"
+    ]
+  },
+  "name": "Amateur Astronomers of Central Iowa",
+  "address": "Tama 1009 Harding St",
+  "note": "50173"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542cf"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.2608274",
+      "-84.3895622"
+    ]
+  },
+  "name": "Amateur Astronomers of Jackson",
+  "address": "Jackson 910 Edgewood Street",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.7166872",
+      "-73.5993965"
+    ]
+  },
+  "name": "Amateur Observers Society of New York",
+  "address": "Hempstead Hofstra University",
+  "note": "150 members. Meets at Hofstra University"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.6091545",
+      "-71.494243"
+    ]
+  },
+  "name": "Amateur Telescope Makers of Boston Inc.",
+  "address": "Westford 20 Millstone Hill Rd",
+  "note": "350 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.0402942",
+      "-96.7340955"
+    ]
+  },
+  "name": "American Association of Amateur Astronomers",
+  "address": "Plano 3131 Custer Road Ste 175",
+  "note": "75075"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.0596784",
+      "-93.6359312"
+    ]
+  },
+  "name": "Ames Area Amateur Astronomers",
+  "address": "Ames 3912 Brookdale Cir",
+  "note": "77 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.3285545",
+      "-72.5001929"
+    ]
+  },
+  "name": "Amherst Astronomy Association",
+  "address": "Amherst 1403 South East St",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.8222732",
+      "-81.3425627"
+    ]
+  },
+  "name": "Ancient City Astronomy Club",
+  "address": "St Augustine 3609 Crazy Horse Trail",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.1209623",
+      "-116.4143407"
+    ]
+  },
+  "name": "Andromeda Astronomical Society",
+  "address": "Yucca Valley PO Box 8",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.0490696",
+      "-76.516773"
+    ]
+  },
+  "name": "Anne Arundel Assn. of Amateur Astronomers",
+  "address": "Arnold 101 College Pkwy",
+  "note": "410-541-2271"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.6867846",
+      "-118.1541632"
+    ]
+  },
+  "name": "Antelope Valley Astronomy Club",
+  "address": "Lancaster PO Box 4595",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542d9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.8422178",
+      "-106.1311288"
+    ]
+  },
+  "name": "Arkansas Valley Astronomical Society",
+  "address": "Buena Vista PO Box 4559",
+  "note": "http://www.fourteenernet.com/avas"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542da"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.8161252",
+      "-92.0871573"
+    ]
+  },
+  "name": "Arrowhead Astronomical Society",
+  "address": "Duluth Alworth Planetarium Univ of MinnesotaDuluth",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542db"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.14887",
+      "-76.89583"
+    ]
+  },
+  "name": "ASH Edward L. Naylor Astronomical Center",
+  "address": "Lewisberry 670 Observatory Dr",
+  "note": "http://www.astrohbg.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542dc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.620238",
+      "-96.342505"
+    ]
+  },
+  "name": "Assn. of Amateur Astronomers",
+  "address": "College Station Physics Dept at Texas AM Univ",
+  "note": "http://www.isc.tamu.edu/~astro/aaa."
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542dd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "27.8474396",
+      "-82.7505803"
+    ]
+  },
+  "name": "Astro Scopers",
+  "address": "Seminole 8350 81st St N",
+  "note": "22 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542de"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.2650436",
+      "-74.8192758"
+    ]
+  },
+  "name": "AstroCruisers",
+  "address": "West Trenton POB 7822",
+  "note": "http://www.eyeonthesky.com/astrocru"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542df"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "48.8799647",
+      "-115.0535001"
+    ]
+  },
+  "name": "Astronomers of Humboldt",
+  "address": "Eureka PO Box 351",
+  "note": "http://www.astrohum.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.7391876",
+      "-112.0098791"
+    ]
+  },
+  "name": "Astronomers of Verde Valley",
+  "address": "Cottonwood PO Box 714",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.7255918",
+      "-89.2410559"
+    ]
+  },
+  "name": "Astronomical Association of Southern Illinoi",
+  "address": "Carbondale 205 S Canterbury Drive",
+  "note": "53 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.4242482",
+      "-81.0047648"
+    ]
+  },
+  "name": "Astronomical Club of Southern West Virginia",
+  "address": "Athens Box 28 Concord College",
+  "note": "http://www.acswv.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.5891452",
+      "-112.0391057"
+    ]
+  },
+  "name": "Astronomical Institute of the Rockies",
+  "address": "Helena 451 Washington St",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.0646282",
+      "-80.6230583"
+    ]
+  },
+  "name": "Astronomical Society",
+  "address": "Melbourne Florida Institute of Technology",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.1109366",
+      "-88.220887"
+    ]
+  },
+  "name": "Astronomical Society at Univ. of Illinois",
+  "address": "Urbana Astronomy Bldg 1002 W Green St",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.179902",
+      "-85.6641259"
+    ]
+  },
+  "name": "Astronomical Society of Bay County",
+  "address": "Panama City 308 Airport Road",
+  "note": "26 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.1350928",
+      "-76.8596945"
+    ]
+  },
+  "name": "Astronomical Society of Harrisburg Inc.",
+  "address": "Lewisberry PO Box 160",
+  "note": "150 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.5485396",
+      "-121.988583"
+    ]
+  },
+  "name": "Astronomical Society of Hillsdale County",
+  "address": "Fremont PO Box 39",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542e9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.9966216",
+      "-94.6018075"
+    ]
+  },
+  "name": "Astronomical Society of Kansas City",
+  "address": "Kansas City 7241 Jarboe",
+  "note": "300+ members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542ea"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.3199396",
+      "-106.7636538"
+    ]
+  },
+  "name": "Astronomical Society of Las Cruces",
+  "address": "Las Cruces PO Box 921",
+  "note": "80 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542eb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.9425559",
+      "-84.2810139"
+    ]
+  },
+  "name": "Astronomical Society of Lenawee & Hillsdale",
+  "address": "Manitou Beach 14815 Rome Rd",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542ec"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.9056914",
+      "-73.3684403"
+    ]
+  },
+  "name": "Astronomical Society of Long Island",
+  "address": "NY Vanderbilt Planetarium",
+  "note": "100 members. Every Wed except for holidays."
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542ed"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.5935873",
+      "-105.0779638"
+    ]
+  },
+  "name": "Northern Colorado Astronomical Society",
+  "address": "Fort Collins 408 Mason Ct",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542ee"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.6235558",
+      "-119.6812009"
+    ]
+  },
+  "name": "Astronomical Society of Nevada",
+  "address": "Sparks 3300 Sansol Ct",
+  "note": "http://www.astronomynv.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542ef"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.4793156",
+      "-119.7588565"
+    ]
+  },
+  "name": "Astronomical Society of Nevada",
+  "address": "Reno 4275 Settler Drive",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.1699412",
+      "-115.1398296"
+    ]
+  },
+  "name": "Astronomical Society of Nevada",
+  "address": "NV Las Vegas",
+  "note": "http://www.astronomynv.org/vegas/"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.308274",
+      "-72.9278835"
+    ]
+  },
+  "name": "Astronomical Society of New Haven Inc.",
+  "address": "New Haven PO Box 16234",
+  "note": "203-874-4816"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.6196086",
+      "-74.0952313"
+    ]
+  },
+  "name": "Astronomical Society of New York City",
+  "address": "Staten Island 153 Arlo Rd",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.3845306",
+      "-70.54399"
+    ]
+  },
+  "name": "Astronomical Society of Northern New England",
+  "address": "Kennebunk PO Box 1338",
+  "note": "135 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.092652",
+      "-94.1398812"
+    ]
+  },
+  "name": "Astronomical Society of Northwest Arkansas",
+  "address": "Fayetteville 2300 Old Wire Rd",
+  "note": "27 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.7205851",
+      "-80.4659822"
+    ]
+  },
+  "name": "Astronomical Society of Rowan County",
+  "address": "Salisbury 3021 Old Mocksville Rd",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.8401461",
+      "-71.2519563"
+    ]
+  },
+  "name": "Astronomical Society of Southern New England",
+  "address": "Rehoboth 4 Locust Ave Carpenter Museum",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.6608975",
+      "-121.8087334"
+    ]
+  },
+  "name": "Astronomical Society of the Central Coast",
+  "address": "Marina 200 8th St",
+  "note": "32 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.7410437",
+      "-116.4104509"
+    ]
+  },
+  "name": "Astronomical Society of the Desert",
+  "address": "Rancho Mirage PO Box 71",
+  "note": "http://www.astrorx.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542f9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.1069258",
+      "-112.1129484"
+    ]
+  },
+  "name": "Astronomical Society of the Grand Canyon",
+  "address": "Grand Canyon PO Box 1515",
+  "note": "7 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542fa"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "26.7153424",
+      "-80.0533746"
+    ]
+  },
+  "name": "Astronomical Society of the Palm Beaches",
+  "address": "West Palm Beach PO Box 19652",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542fb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.008763",
+      "-74.165443"
+    ]
+  },
+  "name": "Astronomical Society of the Toms River Area",
+  "address": "Toms River Novins Planetarium at Ocean County College",
+  "note": "96 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542fc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "64.8377778",
+      "-147.7163888"
+    ]
+  },
+  "name": "Astronomical Units",
+  "address": "Fairbanks Box 82210",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542fd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.9566109",
+      "-95.2483829"
+    ]
+  },
+  "name": "Astronomy Associates of Lawrence",
+  "address": "Lawrence Dept of Physics at 1251 Wescoe Hall Dr",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542fe"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.9486544",
+      "-81.5549507"
+    ]
+  },
+  "name": "Astronomy Club of Akron Inc.",
+  "address": "Akron 586 Fairwood Rd",
+  "note": "fourth Fri of month at Kiwanis Club of Portage Lakes Civic Center"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57542ff"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.609537",
+      "-82.499009"
+    ]
+  },
+  "name": "Astronomy Club of Asheville",
+  "address": "Asheville 853 New Haw Creek Road",
+  "note": "115 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754300"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.4734978",
+      "-82.0105148"
+    ]
+  },
+  "name": "Astronomy Club of Augusta",
+  "address": "Augusta PO Box 15712",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754301"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.7472642",
+      "-73.1887165"
+    ]
+  },
+  "name": "Litchfield Hills Amateur Astronomy Club",
+  "address": "CT Litchfield",
+  "note": "http://lhastro.org/"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754302"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.6454066",
+      "-112.339598"
+    ]
+  },
+  "name": "Astronomy Club of Sun City West",
+  "address": "Sun City West 17802 N 131st Ave",
+  "note": "167 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754303"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.5367058",
+      "-121.7513568"
+    ]
+  },
+  "name": "Astronomy Club of the Univ. of California at",
+  "address": "Davis Physics Dept at Univ of California",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754304"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.1539816",
+      "-95.992775"
+    ]
+  },
+  "name": "Astronomy Club of Tulsa",
+  "address": "Tulsa PO Box 470611",
+  "note": "150 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754305"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.2281554",
+      "-80.4252031"
+    ]
+  },
+  "name": "Astronomy Club of Virginia Tech",
+  "address": "Blacksburg Physics Dept",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754306"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.043545",
+      "-76.320163"
+    ]
+  },
+  "name": "Astronomy Enthusiasts of Lancaster County",
+  "address": "Lancaster Museum Planetarium at 400 College Ave",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754307"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.6525867",
+      "-82.3984872"
+    ]
+  },
+  "name": "Astronomy For Youth Inc",
+  "address": "Lucas Horsemans Area at Malabar Farm State Park",
+  "note": "Public night is 3rd Sat each month"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754308"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.0653571",
+      "-75.1312102"
+    ]
+  },
+  "name": "Astronomy to Go",
+  "address": "Melrose Park 1115 Melrose Ave",
+  "note": "215-831-0485"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754309"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.9090512",
+      "-83.3108956"
+    ]
+  },
+  "name": "Athens Astronomical Assn.",
+  "address": "Athens 160 Plantation Dr",
+  "note": "5 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575430a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.038741",
+      "-84.528895"
+    ]
+  },
+  "name": "Atlanta Astronomy Club Inc.",
+  "address": "Marietta 3595 Canton Rd Suite A9305",
+  "note": "270 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575430b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.5455767",
+      "-85.4147776"
+    ]
+  },
+  "name": "Auburn Astronomical Society",
+  "address": "Auburn 254 Lee Rd 433",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575430c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.267153",
+      "-97.7430608"
+    ]
+  },
+  "name": "Austin Astronomical Society",
+  "address": "Austin PO Box 12831",
+  "note": "http://www.austinastro.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575430d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.839943",
+      "-76.091768"
+    ]
+  },
+  "name": "Back Bay Amateur Astronomers",
+  "address": "Virginia Beach PO Box 9877",
+  "note": "87 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575430e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.2814149",
+      "-76.611917"
+    ]
+  },
+  "name": "Baltimore Astronomical Society",
+  "address": "Baltimore Maryland Academy of Science at 601 Light St",
+  "note": "140 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575430f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.0031332",
+      "-85.2485357"
+    ]
+  },
+  "name": "Barnard Astronomical Society",
+  "address": "Chattanooga 838 Belvoir Hills Dr",
+  "note": "51 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754310"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.0524162",
+      "-86.8055965"
+    ]
+  },
+  "name": "Barnard-Seyfert Astronomical Society",
+  "address": "Brentwood 1000 Oman Dr",
+  "note": "102 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754311"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.7473114",
+      "-95.9808179"
+    ]
+  },
+  "name": "Bartlesville Astronomical Society",
+  "address": "Bartlesville Rt 2 Box 940",
+  "note": "918-333-1966"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754312"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.3949833",
+      "-90.9747672"
+    ]
+  },
+  "name": "Baton Rouge Astronomical Society",
+  "address": "Baton Rouge 6348 Double Tree Ct",
+  "note": "http://www.brastro.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754313"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "47.6248791",
+      "-122.5210007"
+    ]
+  },
+  "name": "Battle Point Astronomical Assn.",
+  "address": "Bainbridge Island PO Box 10914",
+  "note": "200 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754314"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.5084719",
+      "-82.6103515"
+    ]
+  },
+  "name": "Bays Mountain Astronomy Club",
+  "address": "Kingsport 853 Bays Mountain Park Rd",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754315"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.4315813",
+      "-80.6698286"
+    ]
+  },
+  "name": "Beaufort South Carolina Amateur Astronomer",
+  "address": "SC Beaufort",
+  "note": "http://www.islc.net/~mwlesso/astrono.htm"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754316"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "25.7648007",
+      "-80.4017001"
+    ]
+  },
+  "name": "Belen Jesuit Prep School Astronomy Club",
+  "address": "Miami 500 SW 127th Ave",
+  "note": "305-223-8600"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754317"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.329537",
+      "-75.9652117"
+    ]
+  },
+  "name": "Berks County Amateur Astronomical Society In",
+  "address": "Wyomissing PO Box 6150",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754318"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "48.1919889",
+      "-114.316813"
+    ]
+  },
+  "name": "Big Sky Astronomy Club",
+  "address": "Kalispell PO Box 631",
+  "note": "25 Members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754319"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.5151311",
+      "-86.6946949"
+    ]
+  },
+  "name": "Birmingham Astronomical Society",
+  "address": "Birmingham 5032 Wendover Dr",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575431a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.1111747",
+      "-103.3020524"
+    ]
+  },
+  "name": "Black Hills Astronomical Society",
+  "address": "Rapid City 4715 Hidden Valley Rd",
+  "note": "https://sdbhas.org/"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575431b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.4658973",
+      "-82.1353012"
+    ]
+  },
+  "name": "Black River Astronomical Society",
+  "address": "Lorain 1631 Maple Dr",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575431c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.4137536",
+      "-79.1422464"
+    ]
+  },
+  "name": "Blue Ridge Astronomy Club",
+  "address": "VA Lynchburg",
+  "note": "http://www.blueridgeastronomy.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575431d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.369397",
+      "-80.0489299"
+    ]
+  },
+  "name": "Blue Ridge Skywatch Astrophotography Society",
+  "address": "Salem 3356 Absalom Smith Road",
+  "note": "4 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575431e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.039129",
+      "-84.5468512"
+    ]
+  },
+  "name": "Bluegrass Amateur Astronomy Club",
+  "address": "Lexington 1016 Della Dr",
+  "note": "http://www.ms.uky.edu/~bgaac/index."
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575431f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.6663555",
+      "-90.3256705"
+    ]
+  },
+  "name": "Boeing Employees Amateur Astronomers Club -",
+  "address": "St Louis 7320 Chamberlain Ave",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754320"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "47.6062095",
+      "-122.3320708"
+    ]
+  },
+  "name": "Boeing Employees Astronomical Society",
+  "address": "Seattle PO Box 3703",
+  "note": "120 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754321"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.6150186",
+      "-116.2023137"
+    ]
+  },
+  "name": "Boise Astronomical Society",
+  "address": "Boise PO Box 7002",
+  "note": "75 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754322"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.2352088",
+      "-73.1094592"
+    ]
+  },
+  "name": "Boothe Astronomical Society",
+  "address": "Stratford Boothe Memorial Park at Main St",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754323"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.3500535",
+      "-71.1039057"
+    ]
+  },
+  "name": "Boston University Astronomical Society",
+  "address": "Boston Dept of Astronomy at 725 Commonwealth Ave",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754324"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.9937766",
+      "-86.5231406"
+    ]
+  },
+  "name": "Bowling Green Sky Gazers",
+  "address": "Bowling Green 5024 Ridgeview Dr",
+  "note": "502-842-6008"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754325"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.0454784",
+      "-95.4089405"
+    ]
+  },
+  "name": "Brazosport Astronomical Society",
+  "address": "Lake Jackson Nature Center and Planetarium at 400 College Dr",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754326"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.3861159",
+      "-80.7419984"
+    ]
+  },
+  "name": "Brevard Astronomical Society Inc.",
+  "address": "Cocoa PO Box 1084",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754327"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.2470134",
+      "-111.6502356"
+    ]
+  },
+  "name": "Brigham Young University Astronomical Societ",
+  "address": "Provo Dept of Physics and Astronomy at 263 FB",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754328"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.6095423",
+      "-82.2678776"
+    ]
+  },
+  "name": "Bristol Astronomy Club",
+  "address": "Bristol 4559 Reedy Creek Rd",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754329"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.2779144",
+      "-75.2013599"
+    ]
+  },
+  "name": "Bucks-Mont Astronomical Assn.",
+  "address": "Chalfont 36 FarView Rd",
+  "note": "75 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575432a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      " affiliated with Buffalo Museum of Science",
+      "42.683475"
+    ]
+  },
+  "name": "Buffalo Astronomical Association",
+  "address": "North Java 1610 Welch Road",
+  "note": "100+ members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575432b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.9876108",
+      "-121.9259014"
+    ]
+  },
+  "name": "Cabrillo Astr. Stargazing Society",
+  "address": "Aptos Cabrillo College at 6500 Soquel Dr",
+  "note": "24 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575432c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.1393106",
+      "-118.1217325"
+    ]
+  },
+  "name": "Caltech SEDS",
+  "address": "Pasadena 11258 Caltech",
+  "note": "150 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575432d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.2817591",
+      "-105.4881756"
+    ]
+  },
+  "name": "Campbell County High School Astronomy Club",
+  "address": "Gillette 1000 Camel Lane",
+  "note": "23 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575432e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.4553548",
+      "-93.153516"
+    ]
+  },
+  "name": "Cannon Valley Astronomical Society",
+  "address": "Northfield 417 Winona St",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575432f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.2420904",
+      "-77.9233293"
+    ]
+  },
+  "name": "Cape Fear Astronomical Society",
+  "address": "Wilmington 305 N 21st St",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754330"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.725606",
+      "-84.4759047"
+    ]
+  },
+  "name": "Capital Area Astronomy Club",
+  "address": "East Lansing Abrams Planetarium at Michigan State Univ",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754331"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.0325107",
+      "-81.9961449"
+    ]
+  },
+  "name": "Carolina Sidewalk Astronomers",
+  "address": "Boiling Springs 932 Hanging Rock Road",
+  "note": "http://www.geocities.com/spacerocksinc/spacerocksinc.html"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754332"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.0100332",
+      "-81.0628414"
+    ]
+  },
+  "name": "Carolina Skygazers Astronomy Club",
+  "address": "Rock Hill Museum of York County at 4621 Mount Gallant Rd",
+  "note": "45 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754333"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.5761772",
+      "-80.8301018"
+    ]
+  },
+  "name": "Catawba Valley Astronomy Club",
+  "address": "Mooresville 722 Pinewood Circle",
+  "note": "55 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754334"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.9778795",
+      "-91.6656232"
+    ]
+  },
+  "name": "Cedar Amateur Astronomers",
+  "address": "IA Cedar Rapids",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754335"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.8484153",
+      "-91.6919964"
+    ]
+  },
+  "name": "Cedar Amateur Astronomers Inc.",
+  "address": "Swisher 73 Summit Ave NE",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754336"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.4928211",
+      "-92.3438137"
+    ]
+  },
+  "name": "Cedar Valley Amateur Astronomers Assn.",
+  "address": "Waterloo 503 South St",
+  "note": "319-266-4015"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754337"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.2506356",
+      "-118.61481"
+    ]
+  },
+  "name": "Celestial Observers",
+  "address": "Chatsworth PO Box 3524",
+  "note": "818-882-6172"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754338"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.7464809",
+      "-92.2895948"
+    ]
+  },
+  "name": "Central Arkansas Astronomical Society",
+  "address": "AR Little Rock",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754339"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.2827524",
+      "-120.6596156"
+    ]
+  },
+  "name": "Central Coast Astronomical Society",
+  "address": "San Luis Obispo PO Box 1415",
+  "note": "90 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575433a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.669997",
+      "-81.2081203"
+    ]
+  },
+  "name": "Central Florida Astronomical Society",
+  "address": "Oviedo PO BOX 620907",
+  "note": "http://www.cfas.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575433b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.3805128",
+      "-93.5610062"
+    ]
+  },
+  "name": "Central Iowa Astronomers Inc.",
+  "address": "Indianola 117 W Hillcrest",
+  "note": "4 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575433c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.2209071",
+      "-69.5848918"
+    ]
+  },
+  "name": "Central Maine Astronomical Society",
+  "address": "Whitefield PO Box 10",
+  "note": "http://clary.gwi.net/cmas/"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575433d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.9436557",
+      "-92.3227735"
+    ]
+  },
+  "name": "Central Missouri Amateur Astronomers",
+  "address": "Columbia Physics Bldg at Univ of Missouri",
+  "note": "3rd Sat of each month at 7:30pm"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575433e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.0555482",
+      "-121.3143216"
+    ]
+  },
+  "name": "Central Oregon Astronomical Society",
+  "address": "Bend Environmental Center at 16 NW Kansas",
+  "note": "45 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575433f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.7933949",
+      "-77.8600012"
+    ]
+  },
+  "name": "Central Pennsylvania Observers",
+  "address": "State College PO Box 947",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754340"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "31.529931",
+      "-97.1595554"
+    ]
+  },
+  "name": "Central Texas Astronomical Society Inc.",
+  "address": "Waco 3620 Franklin Ave",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754341"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "31.0785918",
+      "-97.4586524"
+    ]
+  },
+  "name": "Central Texas Star Gazers",
+  "address": "Belton 201 Montrose",
+  "note": "12 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754342"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.8678809",
+      "-109.8633501"
+    ]
+  },
+  "name": "Central Valley Astronomers Inc.",
+  "address": "Pinedale PO Box 3063",
+  "note": "559-264-2645"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754343"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.8600784",
+      "-106.3331805"
+    ]
+  },
+  "name": "Central Wyoming Astronomical Society",
+  "address": "Casper 904 N Poplar St",
+  "note": "24 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754344"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.5267122",
+      "-92.0731791"
+    ]
+  },
+  "name": "Centralmo Astronomy Society",
+  "address": "Ulm PO Box 138",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754345"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.4296834",
+      "-81.385719"
+    ]
+  },
+  "name": "Chagrin Valley Astronomical Society",
+  "address": "Chagrin Falls PO Box 11",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754346"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.132922",
+      "-88.2906567"
+    ]
+  },
+  "name": "Champaign-Urbana Astronomical Society",
+  "address": "Champaign Parkland College at 2400 West Bradley Ave",
+  "note": "75 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754347"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.9131996",
+      "-79.0558445"
+    ]
+  },
+  "name": "Chapel Hill Astronomical and Observational S",
+  "address": "Chapel Hill PO Box 842",
+  "note": "17 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754348"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.025105",
+      "-80.7387861"
+    ]
+  },
+  "name": "Charlotte Amateur Astronomers Club",
+  "address": "Matthews 245 Timber Lane",
+  "note": "95 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754349"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.1612871",
+      "-78.3802897"
+    ]
+  },
+  "name": "Charlottesville Astronomical Society",
+  "address": "Charlottesville 3457 Preddy Creek Road",
+  "note": "804-975-2888"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575434a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.4881286",
+      "-84.8977355"
+    ]
+  },
+  "name": "Chattahoochee Valley Astronomical Society",
+  "address": "Columbus Patterson Planetarium at 2900 Woodruff Farm Rd",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575434b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.2196529",
+      "-79.8357581"
+    ]
+  },
+  "name": "Chautauqua and Erie Astronomical Society",
+  "address": "Northeast Mercyhurst College at 16 W Division St",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575434c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.237531",
+      "-75.542158"
+    ]
+  },
+  "name": "Chesmont Astronomical Society",
+  "address": "Limerick 141 Azalea Circle",
+  "note": "3rd Sun of each month at 7:00pm"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575434d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.911161",
+      "-75.5392018"
+    ]
+  },
+  "name": "Chester County Astronomy Society",
+  "address": "Thornton 7 Westover Dr",
+  "note": "(610) 268-2616"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575434e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.1504102",
+      "-104.7668841"
+    ]
+  },
+  "name": "Cheyenne Astronomical Society",
+  "address": "Cheyenne 3539 Luther Place",
+  "note": "85 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575434f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.8781136",
+      "-87.6297982"
+    ]
+  },
+  "name": "Chicago Astronomical Society",
+  "address": "Chicago PO Box 30287",
+  "note": "105 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754350"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.6224561",
+      "-117.6708966"
+    ]
+  },
+  "name": "China Lake Astronomical Society",
+  "address": "Ridgecrest PO Box 1783",
+  "note": "80 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754351"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.811349",
+      "-91.4984941"
+    ]
+  },
+  "name": "Chippewa Valley Astronomical Society",
+  "address": "Eau Claire PO Box 763",
+  "note": "53 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754352"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "61.2152109",
+      "-149.8827366"
+    ]
+  },
+  "name": "Chugach Stargazer Society",
+  "address": "Anchorage 707 A Street Suite 201",
+  "note": "(907)269-7983"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754353"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.7294675",
+      "-102.5132419"
+    ]
+  },
+  "name": "Cimarron County Star Gazers",
+  "address": "Boise City PO Box 278",
+  "note": "3 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754354"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.1918625",
+      "-84.7107104"
+    ]
+  },
+  "name": "Cincinnati Astronomical Society",
+  "address": "Cleves 5274 Zion Rd",
+  "note": "460 Members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754355"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.0440823",
+      "-96.7210735"
+    ]
+  },
+  "name": "City Lights Astronomical Society for Student",
+  "address": "Plano 1409 Sequoia Dr",
+  "note": "120 members. Public outreach for students K-12"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754356"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.7049827",
+      "-82.9494626"
+    ]
+  },
+  "name": "Clemson Area Amateur Astronomers",
+  "address": "Seneca 1711 Merrimac Circle",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754357"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.511524",
+      "-81.6128836"
+    ]
+  },
+  "name": "Cleveland Astronomical Society",
+  "address": "Cleveland Museum of Natural History at 1 Wade Oval Dr",
+  "note": "80 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754358"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.2475249",
+      "-81.6706979"
+    ]
+  },
+  "name": "Cleveland County Astronomical Society",
+  "address": "Boiling Springs Williams Obs at GardnerWebb University",
+  "note": "704-434-4433"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754359"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.4347132",
+      "-103.1902423"
+    ]
+  },
+  "name": "Clovis Astronomy Club",
+  "address": "Clovis 3517 Corlington",
+  "note": "9 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575435a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.0900426",
+      "-111.6883398"
+    ]
+  },
+  "name": "Coconino Astronomical Society",
+  "address": "Flagstaff 691 Kachina Trail",
+  "note": "16 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575435b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.3958247",
+      "-94.9988271"
+    ]
+  },
+  "name": "College of the Mainland Astronomy Club",
+  "address": "Texas City Division of Natural Science at 1200 Amburn Rd",
+  "note": "409-938-1211 ext. 325"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575435c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.8338816",
+      "-104.8213634"
+    ]
+  },
+  "name": "Colorado Springs Astronomical Society",
+  "address": "Colorado Springs PO Box 38121",
+  "note": "87 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575435d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.9611755",
+      "-82.9987942"
+    ]
+  },
+  "name": "Columbus Astronomical Society",
+  "address": "Columbus PO Box 163004",
+  "note": "220 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575435e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "27.7286687",
+      "-97.3970989"
+    ]
+  },
+  "name": "Corpus Christi Astronomical Society",
+  "address": "Corpus Christi 3814 Marion St",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575435f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.5866161",
+      "-81.4588395"
+    ]
+  },
+  "name": "Cosmo Astronomical Society",
+  "address": "Pine Hills 3415 Silverwood Dr",
+  "note": "http://personal.mco.bellsouth.net/~"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754360"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.9225897",
+      "-97.0969956"
+    ]
+  },
+  "name": "Crossroads Astronomy Club",
+  "address": "Nursery PO Box 180",
+  "note": "22 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754361"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.906242",
+      "-82.5802875"
+    ]
+  },
+  "name": "Crystal River High School Astronomy Club",
+  "address": "Crystal River 1205 N E 8th Avenue",
+  "note": "Novice club that meets monthly during school hours to study and promote interest in astronomy."
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754362"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.3883809",
+      "-86.4466599"
+    ]
+  },
+  "name": "Cumberland Astronomical Society",
+  "address": "Gallatin PO Box 1733",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754363"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.9703985",
+      "-72.5829599"
+    ]
+  },
+  "name": "Custer Institute Astronomy Club",
+  "address": "Jamesport 448 Herricks Lane",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754364"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.4156025",
+      "-81.9234726"
+    ]
+  },
+  "name": "Cuyahoga Astronomical Assn.",
+  "address": "N Olmstead PO Box 868",
+  "note": "120 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754365"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.7815073",
+      "-100.8041295"
+    ]
+  },
+  "name": "Dakota Astronomical Society",
+  "address": "Bismarck 757 Munich Dr",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754366"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.8880514",
+      "-88.9131877"
+    ]
+  },
+  "name": "Decatur Area Astronomy Club",
+  "address": "Decatur 39 Whippoorwill Dr",
+  "note": "http://www.decaturastronomy.com"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754367"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.744655",
+      "-75.5483909"
+    ]
+  },
+  "name": "Delaware Astronomical Society",
+  "address": "Wilmington PO Box 652",
+  "note": "302-655-3230"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754368"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      " PA",
+      "39.9481154"
+    ]
+  },
+  "name": "Delaware Valley Amateur Astronomers",
+  "address": "Drexel Hill 477 Turner Avenue",
+  "note": "meets in Radnor"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754369"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.2911705",
+      "-75.6069644"
+    ]
+  },
+  "name": "Delmarva Star Gazers",
+  "address": "Smyrna 514 Marilyn Rd",
+  "note": "http://www.delmarvastargazers.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575436a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "45.7372799",
+      "-87.0687864"
+    ]
+  },
+  "name": "Delta Astronomical Society",
+  "address": "Escanaba 800 S 15th St",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575436b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.6761139",
+      "-104.9530083"
+    ]
+  },
+  "name": "Denver Astronomical Society",
+  "address": "Denver Chamberlin Obs at 2930 E Warren Ave",
+  "note": "http://www.denverastrosociety.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575436c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.5868353",
+      "-93.6249593"
+    ]
+  },
+  "name": "Des Moines Astronomical Society Inc.",
+  "address": "Des Moines PO Box 111",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575436d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.057499",
+      "-111.6660725"
+    ]
+  },
+  "name": "Desert Skygazer Astronomy Club",
+  "address": "Pima PO Box 1134",
+  "note": "928-485-7017"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575436e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.7788907",
+      "-83.3334387"
+    ]
+  },
+  "name": "Detroit Astronomical Society",
+  "address": "Clarkston 9590 Ridgetop Trail",
+  "note": "48348"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575436f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.724807",
+      "-83.144353"
+    ]
+  },
+  "name": "Dinosaur Hill Astro. Society",
+  "address": "Rochester 502 Whims Lane",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754370"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.8343571",
+      "-87.3453313"
+    ]
+  },
+  "name": "Door Peninsula Astronomical Society",
+  "address": "Sturgeon Bay 2041 Michigan Ave",
+  "note": "48 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754371"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.4622656",
+      "-70.9935717"
+    ]
+  },
+  "name": "Double Star Observer",
+  "address": "Saugus 306 Reynolds Drive",
+  "note": "781-231-1558"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754372"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.6801626",
+      "-79.1950373"
+    ]
+  },
+  "name": "Downeast Amateur Astronomers",
+  "address": "Pembroke PO Box K",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754373"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.1128885",
+      "-89.0154548"
+    ]
+  },
+  "name": "East Central Wisconsin Astronomers",
+  "address": "Pine River N3714 30th Drive",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754374"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.4151843",
+      "-111.8314724"
+    ]
+  },
+  "name": "East Valley Astronomy Club",
+  "address": "Mesa PO Box 2202",
+  "note": "235 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754375"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.8187474",
+      "-122.1807217"
+    ]
+  },
+  "name": "Eastbay Astronomical Society",
+  "address": "Oakland Chabot Observatory at 10000 Skyline Blvd",
+  "note": "200 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754376"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.2479367",
+      "-83.6262796"
+    ]
+  },
+  "name": "Eastern Michigan Univ. Astronomy Club",
+  "address": "Ypsilanti 303 Strong Hall",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754377"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.5581072",
+      "-91.0120878"
+    ]
+  },
+  "name": "Eastern Missouri Dark Sky Observers",
+  "address": "MO Washington",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754378"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "47.6101497",
+      "-122.2015159"
+    ]
+  },
+  "name": "Eastside Astronomical Society",
+  "address": "Bellevue PO Box 7482",
+  "note": "135 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754379"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "31.7945708",
+      "-106.3986298"
+    ]
+  },
+  "name": "El Paso Astronomy Club",
+  "address": "El Paso 6531 Boeing Drive",
+  "note": "http://www.elpasoastronomy.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575437a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.2075228",
+      "-105.9611318"
+    ]
+  },
+  "name": "El Valle Astronomy Club",
+  "address": "Embudo PO Box 126",
+  "note": "87531"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575437b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.1307473",
+      "-76.9168941"
+    ]
+  },
+  "name": "Elmira-Corning Astronomical Society",
+  "address": "Elmira 5 Cardinal Lane",
+  "note": "74 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575437c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.0751486",
+      "-80.0692129"
+    ]
+  },
+  "name": "Erie County Mobile Observers Group",
+  "address": "Erie 5840 Georgetown Drive",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575437d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.4809318",
+      "-87.2013052"
+    ]
+  },
+  "name": "Escambia Amateur Astronomers Assn.",
+  "address": "Pensacola Dept of Physical Sciences Pensacola Jr College at 1000 College Bvd",
+  "note": "150 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575437e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.0520691",
+      "-123.0867536"
+    ]
+  },
+  "name": "Eugene Astronomical Society",
+  "address": "Eugene PO Box 7264",
+  "note": "http://www.eugeneastro.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575437f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.9715592",
+      "-87.5710898"
+    ]
+  },
+  "name": "Evansville Astronomical Society Inc.",
+  "address": "Evansville PO Box 3474",
+  "note": "80 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754380"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "47.9789848",
+      "-122.2020795"
+    ]
+  },
+  "name": "Everett Astronomical Society",
+  "address": "Everett PO Box 12746",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754381"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "26.26317",
+      "-81.8070853"
+    ]
+  },
+  "name": "Everglades Astronomical Society",
+  "address": "Naples 754 101st Ave N",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754382"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.8586529",
+      "-118.1499989"
+    ]
+  },
+  "name": "Excelsior Telescope Club",
+  "address": "Lakewood St Pancratius Catholic Church at 3519 St Pancratius Place",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754383"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.1260803",
+      "-73.5456534"
+    ]
+  },
+  "name": "Fairfield County Astronomical Society",
+  "address": "Stamford Stamford Museum Obs at 39 Scofieldtown Rd",
+  "note": "45 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754384"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.8671458",
+      "-96.7610694"
+    ]
+  },
+  "name": "Fargo-Moorhead Astronomical Club",
+  "address": "Moorhead MSU Planetarium at Moorhead State University",
+  "note": "23 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754385"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.5018163",
+      "-117.1170531"
+    ]
+  },
+  "name": "FirstLight Astronomy Club",
+  "address": "Temecula 31555 Rancho Vista",
+  "note": "http://www.pe.net/~frstlght/"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754386"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.0646282",
+      "-80.6230583"
+    ]
+  },
+  "name": "FIT Astronomy Society",
+  "address": "Melborne Physics Dept Florida Institute of Technology at 150 W University Blvd",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754387"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.4135804",
+      "-84.3021365"
+    ]
+  },
+  "name": "Flint River Astronomy Club",
+  "address": "Hampton 190 West James Circle",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754388"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.3222599",
+      "-83.1763145"
+    ]
+  },
+  "name": "Ford Amateur Astronomy Club",
+  "address": "Dearborn PO Box 7527",
+  "note": "160 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754389"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.0998596",
+      "-80.244216"
+    ]
+  },
+  "name": "Forsyth Astronomical Society",
+  "address": "WinstonSalem PO Box 30128",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575438a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.5847782",
+      "-95.6090214"
+    ]
+  },
+  "name": "Fort Bend Astronomy Club",
+  "address": "Sugar Land 2806 Field Line Dr",
+  "note": "124 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575438b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.079273",
+      "-85.1393513"
+    ]
+  },
+  "name": "Fort Wayne Astronomical Society Inc.",
+  "address": "Fort Wayne PO Box 11093",
+  "note": "102 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575438c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.7554883",
+      "-97.3307658"
+    ]
+  },
+  "name": "Fort Worth Astronomical Society",
+  "address": "Fort Worth PO 471162",
+  "note": "150 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575438d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.5941238",
+      "-119.3409457"
+    ]
+  },
+  "name": "Fox Valley Astronomical Society",
+  "address": "Wasco PO Box 38",
+  "note": "facebook.com/FVASinfo/"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575438e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.0925399",
+      "-88.324804"
+    ]
+  },
+  "name": "Fox Valley Sky Watchers",
+  "address": "Sleepy Hollow 164 Hilltop Lane",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575438f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.8455108",
+      "-121.5379974"
+    ]
+  },
+  "name": "Fremont Peak Obs. Assn.",
+  "address": "San Juan Bautista PO Box 1376",
+  "note": "http://www.fpoa.net"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754390"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.1740312",
+      "-122.9232467"
+    ]
+  },
+  "name": "Friends of Galileo Astronomy Club",
+  "address": "Longview 175 Scenic View Dr",
+  "note": "http://www.friendsofgalileo.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754391"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.1391615",
+      "-84.4226272"
+    ]
+  },
+  "name": "The Cincinnati Observatory Center",
+  "address": "Cincinnati 3489 Observatory Place",
+  "note": "300 Members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754392"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.409675",
+      "-91.064042"
+    ]
+  },
+  "name": "Galileo Group",
+  "address": "Greenville 242 S Poplar St",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754393"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.253284",
+      "-81.158367"
+    ]
+  },
+  "name": "Gaston County Skywatchers",
+  "address": "Gastonia Schiele Museum at Franklin Blvd",
+  "note": "NC"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754394"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.7001012",
+      "-97.4131262"
+    ]
+  },
+  "name": "General Dynamics Astronomy Club",
+  "address": "Fort Worth 3400 BryantIrvin Rd",
+  "note": "65 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754395"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.0229491",
+      "-83.6757933"
+    ]
+  },
+  "name": "Genesee Astronomical Society",
+  "address": "Flint Robert Longway Planetarium at 1310 E Kearsley St",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754396"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.678255",
+      "-70.655351"
+    ]
+  },
+  "name": "Gloucester Area Astronomy Club",
+  "address": "Gloucester 1123 Washington Street",
+  "note": "31 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754397"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.99495",
+      "-76.852344"
+    ]
+  },
+  "name": "Goddard Astronomy Club",
+  "address": "Greenbelt Code 4408Lockheed at NASAGoddard Space Flight Center",
+  "note": "41 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754398"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.9044875",
+      "-85.405502"
+    ]
+  },
+  "name": "Grand Rapids Amateur Astronomical Assn.",
+  "address": "Lowell 3380 Kissing Rock Rd",
+  "note": "200 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c5754399"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.7063616",
+      "-85.6105961"
+    ]
+  },
+  "name": "Grand Traverse Astronomical Society",
+  "address": "Traverse City Joseph H Rogers Obs NW Michigan College at Birmley Rd",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575439a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.9920285",
+      "-76.0565946"
+    ]
+  },
+  "name": "Greater Hazleton Area Astronomical Society",
+  "address": "Conyngham PO Box 1032",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575439b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.1193024",
+      "-82.0089296"
+    ]
+  },
+  "name": "Greater Ocala Astronomy Club",
+  "address": "Ocala 1 Midway Track Place",
+  "note": "32 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575439c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.9902612",
+      "-76.8395398"
+    ]
+  },
+  "name": "Greenbelt Astronomy Club",
+  "address": "Lanham Owens Science Center at 9601 Greenbelt Rd",
+  "note": "http://lheawww.gsfc.nasa.gov/docs/o"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575439d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.129837",
+      "-79.8339979"
+    ]
+  },
+  "name": "Greensboro Astronomy Club",
+  "address": "Greensboro Natural Science Center at 4301 Lawndale Dr",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575439e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.7106192",
+      "-122.1698027"
+    ]
+  },
+  "name": "Group 70 Large Amateur Telescope Project",
+  "address": "San Leandro 1689 Abram Ct",
+  "note": "http://www.hpl.hp.com/astro/group70"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c575439f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.3306694",
+      "-121.9124426"
+    ]
+  },
+  "name": "Halls Valley Astronomical Group",
+  "address": "San Jose 1127 Sierra Ave",
+  "note": "37 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.4108621",
+      "-76.3405054"
+    ]
+  },
+  "name": "Harford County Astronomical Society",
+  "address": "Joppa 608 Falconbridge Drive",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "21.3069444",
+      "-157.8583333"
+    ]
+  },
+  "name": "Hawaiian Astronomical Society",
+  "address": "Honolulu PO Box 17671",
+  "note": "http://www.hawastsoc.org/"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.0473451",
+      "-95.6751576"
+    ]
+  },
+  "name": "Heartland Astronomical Research Team",
+  "address": "Topeka PO Box 3938",
+  "note": "5 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.9065989",
+      "-122.3071419"
+    ]
+  },
+  "name": "Hercules Stargazers",
+  "address": "Richmond 6102 Sacramento Ave",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.5300197",
+      "-117.2123919"
+    ]
+  },
+  "name": "High Desert Astronomical Society",
+  "address": "Apple Valley 20702 Thunderbird Rd",
+  "note": "45 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.2027973",
+      "-113.967749"
+    ]
+  },
+  "name": "High Desert Astronomy Club",
+  "address": "Kingman 2770 Broken Arrow St",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.0222307",
+      "-104.5791158"
+    ]
+  },
+  "name": "High Plains Astronomy Club",
+  "address": "Elbert 13265 Bozeman Trail",
+  "note": "8 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      " 1909; Objective Lens: 6\" Brashear achromatic; 80\"focal ratio",
+      "53.4807593"
+    ]
+  },
+  "name": "Hildene Astronomy Club",
+  "address": "Manchester PO Box 377",
+  "note": "Telescope: Warner & Swasey"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.9632962",
+      "-91.2562539"
+    ]
+  },
+  "name": "Holmen Astronomy Club",
+  "address": "WI Holmen",
+  "note": "6 Members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543a9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.7604267",
+      "-95.3698028"
+    ]
+  },
+  "name": "Houston Astronomical Society",
+  "address": "Houston PO Box 20332",
+  "note": "300 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543aa"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "31.495463",
+      "-110.275512"
+    ]
+  },
+  "name": "Huachuca Astronomy Club of Southeastern Ariz",
+  "address": "Sierra Vista 2310 E Suma Drive",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543ab"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.4712322",
+      "-111.9992782"
+    ]
+  },
+  "name": "Idaho Falls Astronomical Society",
+  "address": "Idaho Falls 1710 Claremont Lane",
+  "note": "18 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543ac"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.7467471",
+      "-116.7152556"
+    ]
+  },
+  "name": "Idyll-Gazers Astronomy Club",
+  "address": "Idyllwild PO Box 1245",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543ad"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "27.6338704",
+      "-80.4511222"
+    ]
+  },
+  "name": "Indian River Astronomical Society",
+  "address": "Vero Beach 6055 College Lane",
+  "note": "32966"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543ae"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.5949931",
+      "-86.3584469"
+    ]
+  },
+  "name": "Indiana Astronomical Society Inc.",
+  "address": "Mooresville 3820 E Wilson Drive",
+  "note": "180 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543af"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.733264",
+      "-104.268833"
+    ]
+  },
+  "name": "International Assoc for Astronomical Studies",
+  "address": "Strasburg 1155 Yellow Jacket Rd",
+  "note": "facebook.com/IAASorg/"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543b0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.65807",
+      "-91.5313452"
+    ]
+  },
+  "name": "Iowa City Astronomy Club",
+  "address": "Iowa City PO Box 325",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543b1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.4439614",
+      "-76.5018807"
+    ]
+  },
+  "name": "Ithaca Amateur Astronomers",
+  "address": "NY Ithaca",
+  "note": "http://www.southerncayuga.org/Planetarium/Astronomyhome.htm"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543b2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.0555582",
+      "-84.8600431"
+    ]
+  },
+  "name": "Jackson Hole Astronomy Club",
+  "address": "Moran Box 123",
+  "note": "45 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543b3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.8102689",
+      "-82.804549"
+    ]
+  },
+  "name": "Johnson County Middle School Astronomy Club",
+  "address": "Paintsville 251 N Mayo Trail",
+  "note": "(606)789-4133"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543b4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.5989639",
+      "-95.1112285"
+    ]
+  },
+  "name": "Johnson Space Center Astronomical Society",
+  "address": "Houston 16335 Brookford Drive",
+  "note": "http://www.ghg.net/cbr/jscas/"
+},{
+  "_id": {
+    "$oid": "5f7a27f8a57bae65c57543b5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.4972785",
+      "-94.9894386"
+    ]
+  },
+  "name": "JSC Astronomical Society",
+  "address": "Baycliff 4802 Redfish Reef",
+  "note": "80 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543b6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.3085623",
+      "-89.7543183"
+    ]
+  },
+  "name": "Junior Astronomy Club of St. Tammany",
+  "address": "Slidell 113 N Randall Drive",
+  "note": "504-646-0285"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543b7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.2845733",
+      "-85.5904537"
+    ]
+  },
+  "name": "Kalamazoo Astronomical Society",
+  "address": "Kalamazoo 600 West Vine Suite 400",
+  "note": "175 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543b8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.7905312",
+      "-79.9056076"
+    ]
+  },
+  "name": "Kanawha Valley Astronomical Society (KVAS)",
+  "address": "Charleston Breezy Point Observatory",
+  "note": "http://www.kvas.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543b9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.4297705",
+      "-81.7689862"
+    ]
+  },
+  "name": "Kanawha Valley Astronomical Society Inc.",
+  "address": "Cross Lanes 5292 Questa Dr",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543ba"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.1549071",
+      "-87.8723694"
+    ]
+  },
+  "name": "Kankakee Area Stargazers",
+  "address": "Bourbonnais Olivet University",
+  "note": "60914"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543bb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.6871761",
+      "-97.330053"
+    ]
+  },
+  "name": "Kansas Astronomical Observers",
+  "address": "Wichita PO Box 49013",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543bc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.9819339",
+      "-94.2640431"
+    ]
+  },
+  "name": "Kansas Astronomy Village",
+  "address": "Blue Springs 304 E Agler Dr",
+  "note": "816-229-2394"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543bd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "20.0193783",
+      "-155.668467"
+    ]
+  },
+  "name": "Kaua'i Educational Assn. for Science and Ast",
+  "address": "Waimea PO Box 161",
+  "note": "808-245-8250"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543be"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.149481",
+      "-72.3614201"
+    ]
+  },
+  "name": "Keene Amateur Astronomers Inc.",
+  "address": "Alstead RR1 Box 256A",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543bf"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.5192068",
+      "-80.8503849"
+    ]
+  },
+  "name": "Kennedy Space Center Amateur Astronomers",
+  "address": "Titusville 7523 Windover Way",
+  "note": "http://www.4saleusa.net/kscaa"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.403291",
+      "-118.9770842"
+    ]
+  },
+  "name": "Kern Astronomical Society Inc.",
+  "address": "Bakersfield 3308 Dartmouth St",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.387434",
+      "-80.031758"
+    ]
+  },
+  "name": "Keystone Oaks High School Astronomy Club",
+  "address": "Pittsburgh 1000 Kelton Ave",
+  "note": "412-571-6042 412-571-6048"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.6422099",
+      "-86.2238297"
+    ]
+  },
+  "name": "Kids Astro Camp",
+  "address": "South Bend 3121 Weist Lane",
+  "note": "Astronomy camps for kids 10-12"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "27.5158689",
+      "-97.856109"
+    ]
+  },
+  "name": "Kingsville Astronomical Society",
+  "address": "Kingsville PO Box 5918",
+  "note": "http://www.geocities.com/kingsville"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.7842737",
+      "-79.8008612"
+    ]
+  },
+  "name": "Kiski Astronomers",
+  "address": "Cabot 112 Old Pike Lane",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.989966",
+      "-83.9137211"
+    ]
+  },
+  "name": "Knoxville Observers Astronomy Club",
+  "address": "Knoxville 1708 Gillespie Av",
+  "note": "http://www.knoxvilleobservers.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.4594451",
+      "-86.1316551"
+    ]
+  },
+  "name": "Kokomo Astronomy Club",
+  "address": "Kokomo Dept of Physics at Indiana University",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.0020481",
+      "-76.0333432"
+    ]
+  },
+  "name": "Kopernik Astronomical Society",
+  "address": "Vestal 698 Underwood Rd",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.2261822",
+      "-75.3308552"
+    ]
+  },
+  "name": "L5 Society of Philadelphia",
+  "address": "Lansdale 1825 Flintlock Circle",
+  "note": "215-855-7130"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543c9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.5120712",
+      "-75.6694239"
+    ]
+  },
+  "name": "Lackawanna Astronomical Society",
+  "address": "Clarks Summit 1112 Fairview Rd",
+  "note": "110 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543ca"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.0738946",
+      "-89.4053863"
+    ]
+  },
+  "name": "LaCrosse Area Astronomical Society",
+  "address": "LaCrosse Physics Dept at University of Wisconsin",
+  "note": "http://www.uwlax.edu/planetarium/laas.html"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543cb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.35144",
+      "-88.1884575"
+    ]
+  },
+  "name": "Lake County Astronomical Society",
+  "address": "Ingleside Volo Bog State Natural Area at 28478 W Brandenburg Road",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543cc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.713652",
+      "-83.478872"
+    ]
+  },
+  "name": "Lake Erie West Astronomical Society",
+  "address": "Toledo 2805 118th St",
+  "note": "419-726-0385 eve 734-242-"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543cd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.939926",
+      "-119.9771868"
+    ]
+  },
+  "name": "Lake Tahoe Astronomers",
+  "address": "S Lake Tahoe PO Box 14271",
+  "note": "6 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543ce"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.1532612",
+      "-115.2437966"
+    ]
+  },
+  "name": "Las Vegas Astronomical Society",
+  "address": "Las Vegas 123 Las Vegas",
+  "note": "1st Thu of each month at College of Southern Nevada"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543cf"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.7578125",
+      "-103.1842749"
+    ]
+  },
+  "name": "Lea County Astronomical Society",
+  "address": "Hobbs New Mexico Junior College at 5317 Lovington Highway",
+  "note": "505-392-5305 x 323"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.5660978",
+      "-75.434924"
+    ]
+  },
+  "name": "Lehigh Valley Amateur Astronomical Society",
+  "address": "Allentown Joe Grady Planetarium at 3559 E Rock Rd",
+  "note": "610-398-7295"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "26.9261667",
+      "-82.330946"
+    ]
+  },
+  "name": "Lemon Bay High School Astronomy Club",
+  "address": "Englewood 2201 Placida Rd",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.399222",
+      "-97.876473"
+    ]
+  },
+  "name": "Leonardo's Star Quest Astronomy Club",
+  "address": "Enid 200 East Maple St",
+  "note": "http://www.leonardos.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.742551",
+      "-84.1052256"
+    ]
+  },
+  "name": "Lima Astronomical Society",
+  "address": "Lima PO Box 201",
+  "note": "See event schedule for Schoonover Observatory at website above."
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.9758429",
+      "-90.9763353"
+    ]
+  },
+  "name": "Lincoln County Stargazers",
+  "address": "Troy 341 Monroe St",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.2999952",
+      "-105.0871609"
+    ]
+  },
+  "name": "Little Thompson Observatory",
+  "address": "Berthoud 850 Spartan Avenue",
+  "note": "http://www.starkids.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "27.4789366",
+      "-82.5851631"
+    ]
+  },
+  "name": "Local Group of Deep Sky Observers",
+  "address": "Bradenton 2311 23rd Ave W",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.4588839",
+      "-118.5349444"
+    ]
+  },
+  "name": "Local Group of Santa Clarita Valley",
+  "address": "Santa Clarita PO Box 221296",
+  "note": "http://www.lgsvc.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.1583861",
+      "-78.6517313"
+    ]
+  },
+  "name": "Lockport Astronomy Assn.",
+  "address": "Lockport 7053 Northview Dr",
+  "note": "716-433-4706"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543d9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.8781657",
+      "-73.3761885"
+    ]
+  },
+  "name": "Long Island Observers Assn.",
+  "address": "Huntington 3 Merriwood Ct",
+  "note": "11743-3009"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543da"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.1672068",
+      "-105.1019275"
+    ]
+  },
+  "name": "Longmont Astronomical Society",
+  "address": "Longmont PO Box 8029",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543db"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.1183426",
+      "-118.3004397"
+    ]
+  },
+  "name": "Los Angeles Astronomical Society",
+  "address": "Los Angeles 2800 E Observatory Rd",
+  "note": "430 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543dc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.1067191",
+      "-118.3274978"
+    ]
+  },
+  "name": "Los Angeles Sidewalk Astronomers",
+  "address": "Hollywood 1946 Vedanta Place",
+  "note": "additional website www.sidewalkastronomers.com"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543dd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.1753393",
+      "-118.4189809"
+    ]
+  },
+  "name": "Los Angeles Valley College Astronomy Club",
+  "address": "Van Nuys 5800 Fulton Ave",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543de"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.2526647",
+      "-85.7584557"
+    ]
+  },
+  "name": "Louisville Astronomical Society",
+  "address": "Louisville PO Box 701043",
+  "note": "114 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543df"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.891872",
+      "-79.9904049"
+    ]
+  },
+  "name": "Lowcountry Stargazers",
+  "address": "Summerville 5246 Braddock Ave",
+  "note": "http://www.lowcountrystargazers.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.8406946",
+      "-83.6324022"
+    ]
+  },
+  "name": "MaconState College Astronomy Club",
+  "address": "Macon 100 College Station Rd",
+  "note": "912-471-2827"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.0501216",
+      "-89.3935895"
+    ]
+  },
+  "name": "Madison Astronomical Society Inc.",
+  "address": "Madison 1605 South Park Street",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.6931303",
+      "-114.3840988"
+    ]
+  },
+  "name": "Magic Valley Astronomical Society",
+  "address": "Jerome 706 E 200 South",
+  "note": "19 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.2467837",
+      "-80.9757045"
+    ]
+  },
+  "name": "Mahoning Valley Astronomical Society",
+  "address": "Newton Falls 1076 State Rte 534",
+  "note": "67 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.0388337",
+      "-87.9285667"
+    ]
+  },
+  "name": "Marquette Astronomical Society",
+  "address": "Marquette PO Box 761",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.0862608",
+      "-82.4671842"
+    ]
+  },
+  "name": "MARS Astronomy Club",
+  "address": "Tampa 821 Settlers Rd",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.3431688",
+      "-70.7447501"
+    ]
+  },
+  "name": "Martha's Vineyard Astronomy Club",
+  "address": "Chilmark PO Box 141",
+  "note": "16 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.5498286",
+      "-73.0729008"
+    ]
+  },
+  "name": "Mattatuck Astronomical Society",
+  "address": "Waterbury Naugatuck Valley Community Technical College",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "20.7983626",
+      "-156.3319253"
+    ]
+  },
+  "name": "Maui Astronomy Club",
+  "address": "Maui PO Box 12501",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543e9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.8354883",
+      "-90.3203809"
+    ]
+  },
+  "name": "McDonnell-Douglas Amateur Astronomers",
+  "address": "Florissant 3491 Heather Trail",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543ea"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.1601964",
+      "-81.8494793"
+    ]
+  },
+  "name": "Medina County Astronomical Society",
+  "address": "Medina 4532 Ledgewood Drive",
+  "note": "http://users.zoominternet.net/~matt"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543eb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.0345785",
+      "-89.8010331"
+    ]
+  },
+  "name": "Memphis Astronomical Society",
+  "address": "Memphis 4169 Rainey Woods Rd",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543ec"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.2952689",
+      "-120.4950332"
+    ]
+  },
+  "name": "Merced Society for Telescope & Astronomy Rec",
+  "address": "Merced 928 W 9th St",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543ed"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "19.068611",
+      "-155.7649999"
+    ]
+  },
+  "name": "Meteor Group Hawaii",
+  "address": "Ocean View PO Box 6692",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543ee"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.7886347",
+      "-84.2019907"
+    ]
+  },
+  "name": "Miami Valley Astronomical Society",
+  "address": "Dayton Dayton Museum of Natural History at 2600 DeWeese Parkway",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543ef"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.6717421",
+      "-86.2483165"
+    ]
+  },
+  "name": "Michiana Astronomical Society",
+  "address": "South Bend PO Box 262",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.8648216",
+      "-83.695182"
+    ]
+  },
+  "name": "Middle Georgia Astronomical Society",
+  "address": "Macon Museum of Arts and Sciences",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.9619518",
+      "-86.5326306"
+    ]
+  },
+  "name": "Middle Tennessee Astronomical Society",
+  "address": "Smyrna 306 Ella Street",
+  "note": "http://mtas.tnsky.com"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.7003713",
+      "-73.9209701"
+    ]
+  },
+  "name": "Mid-Hudson Astronomical Association",
+  "address": "Poughkeepsie co Rick Versace PO Box 3640",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.0007104",
+      "-81.0348144"
+    ]
+  },
+  "name": "Midlands Astronomy Club",
+  "address": "Columbia PO Box 2527",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.0493333",
+      "-84.534948"
+    ]
+  },
+  "name": "Midwestern Astronomers",
+  "address": "Fort Wright 1720 Monticello Dr",
+  "note": "18 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.063653",
+      "-83.6441948"
+    ]
+  },
+  "name": "Millstream Astronomy Club",
+  "address": "Findlay 2019 Sterling Ct",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.9683719",
+      "-88.1490191"
+    ]
+  },
+  "name": "Milwaukee Astronomical Society",
+  "address": "New Berlin 18850 W Observatory Rd",
+  "note": "80 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.977753",
+      "-93.2650108"
+    ]
+  },
+  "name": "Minnesota Astronomical Society",
+  "address": "Minneapolis PO Box 583011",
+  "note": "350 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.0174639",
+      "-114.1817423"
+    ]
+  },
+  "name": "Mission Valley Astronomy Club",
+  "address": "Ravalli PO Box 630064",
+  "note": "http://www.geocities.com/mvac_mt/index.html"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543f9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.680124",
+      "-88.0629619"
+    ]
+  },
+  "name": "Mobile Astronomical Society",
+  "address": "Mobile 1207 Selma St",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543fa"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.0484029",
+      "-75.3785034"
+    ]
+  },
+  "name": "Mohawk Valley Astronomical Society",
+  "address": "NY Clinton",
+  "note": "http://www.mvas-ny.org/"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543fb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.79587",
+      "-74.4486242"
+    ]
+  },
+  "name": "Morris Museum Astronomical Society",
+  "address": "Morristown 6 Normand Heights Rd",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543fc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.9100783",
+      "-122.0651819"
+    ]
+  },
+  "name": "Mount Diablo Astronomical Society",
+  "address": "Walnut Creek PO Box 4889",
+  "note": "165 members. Monthly meeting."
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543fd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.9854354",
+      "-122.5165668"
+    ]
+  },
+  "name": "Mount Tam Observers",
+  "address": "San Rafael 89 Dominican Dr",
+  "note": "415-454-4715"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543fe"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.1477849",
+      "-118.1445155"
+    ]
+  },
+  "name": "Mount Wilson Observatory Assn.",
+  "address": "Pasadena PO Box 70076",
+  "note": "http://www.mtwilson.edu/mwoa.html"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57543ff"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.2483396",
+      "-117.1892078"
+    ]
+  },
+  "name": "Mountain Skies Astronomical Society",
+  "address": "Lake Arrowhead PO Box 1169",
+  "note": "310 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754400"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.9100783",
+      "-122.0651819"
+    ]
+  },
+  "name": "Mt. Diablo Observatory Assoc. Inc.",
+  "address": "Walnut Creek PO Box 3165",
+  "note": "http://www.mdia.org/astronomy.htm"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754401"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "45.4706672",
+      "-122.3604594"
+    ]
+  },
+  "name": "Mt. Hood Observatory Assn.",
+  "address": "Gresham 29404 SE Dodge Park Blvd",
+  "note": "http://www.starstuff.com/mhoa.htm"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754402"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.120673",
+      "-85.0957943"
+    ]
+  },
+  "name": "Muncie Astronomy Club",
+  "address": "Farmland 8256 W CR 300 S",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754403"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.82492",
+      "-87.6851341"
+    ]
+  },
+  "name": "Muscle Shoals Astronomical Society Inc.",
+  "address": "Florence 121 W Lee Ave",
+  "note": "14 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754404"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.2666069",
+      "-86.0675283"
+    ]
+  },
+  "name": "Muskegon Astronomical Society",
+  "address": "Muskegon 702 North Maple Island Rd",
+  "note": "26 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754405"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.7508391",
+      "-88.1535352"
+    ]
+  },
+  "name": "Naperville Astronomical Assn.",
+  "address": "IL Naperville",
+  "note": "120 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754406"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.0031428",
+      "-77.1261123"
+    ]
+  },
+  "name": "National Capital Astronomers",
+  "address": "Bethesda 8924 Ridge Place",
+  "note": "250 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754407"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.2688468",
+      "-85.5841823"
+    ]
+  },
+  "name": "National Deep Sky Observer's Society",
+  "address": "Louisville 1607 Washington Blvd",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754408"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.4928349",
+      "-106.9106762"
+    ]
+  },
+  "name": "National Public Observatory Inc.",
+  "address": "Radium Springs PO Box 19",
+  "note": "http://www.astronomy-national-publi"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754409"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.6007369",
+      "-112.0386887"
+    ]
+  },
+  "name": "Neuman Astronomical Society",
+  "address": "Helena Carroll College at 1601 North Benton Avenue",
+  "note": "Oldest observatory in Montana  Observatory with 12.5 inch reflector."
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575440a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.502984",
+      "-88.0519339"
+    ]
+  },
+  "name": "Neville Museum Astronomical Society",
+  "address": "Green Bay 1081 Raleigh St",
+  "note": "http://npmas.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575440b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.6670454",
+      "-74.8957231"
+    ]
+  },
+  "name": "New Jersey Astronomical Assn.",
+  "address": "High Bridge PO Box 214",
+  "note": "370 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575440c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.0726728",
+      "-106.9144509"
+    ]
+  },
+  "name": "New Mexico Tech Astronomy Club",
+  "address": "Socorro Frank T Etscorn Campus Obs",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575440d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.2526647",
+      "-85.7584557"
+    ]
+  },
+  "name": "Night Sky Observers",
+  "address": "KY Louisville",
+  "note": "Public outreach"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575440e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.757449",
+      "-122.9709251"
+    ]
+  },
+  "name": "NightSky 45 Astronomy",
+  "address": "Jefferson 13566 Parrish Gap Rd SE",
+  "note": "541-327-2839"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575440f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.7629979",
+      "-76.345571"
+    ]
+  },
+  "name": "Norfolk Astronomical Society",
+  "address": "Chesapeake 2808 Flag Rd",
+  "note": "12 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754410"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.1756369",
+      "-96.6181188"
+    ]
+  },
+  "name": "North Central Kansas Astronomical Society",
+  "address": "Manhattan 3711 Birch CT",
+  "note": "http://www.nckas.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754411"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.0247062",
+      "-88.5426136"
+    ]
+  },
+  "name": "North East Wisconsin Stargazers",
+  "address": "Oshkosh PO Box 161",
+  "note": "80 members from Green Bay-Appleton-Oshkosh area."
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754412"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.6516344",
+      "-82.3248262"
+    ]
+  },
+  "name": "North Georgia Astronomers",
+  "address": "Gainesville PO Box 5103",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754413"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.0538875",
+      "-95.2594254"
+    ]
+  },
+  "name": "North Houston Astronomy Club",
+  "address": "Kingwood Kingwood College",
+  "note": "160 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754414"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.8584328",
+      "-74.1637553"
+    ]
+  },
+  "name": "North Jersey Astronomical Group",
+  "address": "Clifton PO Box 1472",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754415"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.734447",
+      "-71.04765"
+    ]
+  },
+  "name": "North Shore Amateur Astronomy Club",
+  "address": "Groveland 201 Washington Street",
+  "note": "120 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754416"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "45.0275126",
+      "-84.6747523"
+    ]
+  },
+  "name": "North Star Astronomical Society (NSAS)",
+  "address": "MI Gaylord",
+  "note": "Monthly meetings at Peace Lutheran Church on 2nd Wed at 7pm."
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754417"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.3523297",
+      "-94.1980404"
+    ]
+  },
+  "name": "North Star Astronomy Club",
+  "address": "Brainerd 606 South 8th St",
+  "note": "218-829-4029"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754418"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.8692083",
+      "-97.5182835"
+    ]
+  },
+  "name": "North Texas Skywatch",
+  "address": "Azle 113 Valley View",
+  "note": "817-238-9883"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754419"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.2998094",
+      "-81.6308808"
+    ]
+  },
+  "name": "Northeast Florida Astronomical Society Inc.",
+  "address": "Jacksonville 2321 Camden Ave",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575441a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.0415362",
+      "-95.7278271"
+    ]
+  },
+  "name": "Northeast Kansas Amateur Astronomers League",
+  "address": "Topeka PO Box 951",
+  "note": "40 members. Farpoint Observatory - 0.7m reflector"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575441b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.0253375",
+      "-97.4121759"
+    ]
+  },
+  "name": "Northeast Nebraska Astronomy Club",
+  "address": "Norfolk 710 S 4th",
+  "note": "11 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575441c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.6214806",
+      "-73.1202257"
+    ]
+  },
+  "name": "Northern Berkshire Amateur Astronomy Club",
+  "address": "Adams 25 Park St",
+  "note": "413-743-9176"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575441d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.3819496",
+      "-87.6186379"
+    ]
+  },
+  "name": "Northern Cross Science Foundation",
+  "address": "WI Ozaukee County",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575441e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.8280701",
+      "-89.5812593"
+    ]
+  },
+  "name": "Northern Illinois Stargazers",
+  "address": "Dixon 1672 Hill Drive",
+  "note": "815-288-5183"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575441f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.933362",
+      "-88.765229"
+    ]
+  },
+  "name": "Northern Illinois University Astronomical So",
+  "address": "DeKalb Davis Hall Obs at Faraday West",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754420"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "47.9252568",
+      "-97.0328547"
+    ]
+  },
+  "name": "Northern Skies Astronomical Society",
+  "address": "Grand Forks Box 9008",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754421"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.8403909",
+      "-77.4288769"
+    ]
+  },
+  "name": "Northern Virginia Astronomy Club",
+  "address": "VA Centreville",
+  "note": "1050 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754422"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "45.800122",
+      "-123.210419"
+    ]
+  },
+  "name": "Northwest Astronomy Group",
+  "address": "Vernonia 55371 McDonald Rd",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754423"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.7501787",
+      "-95.5503779"
+    ]
+  },
+  "name": "Northwest Iowa Astronomers",
+  "address": "Cherokee Sanford Museum Planetarium at 117 E Willow St",
+  "note": "75 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754424"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.244847",
+      "-83.624043"
+    ]
+  },
+  "name": "Northwest Ohio Visual Astronomers",
+  "address": "Cygnet 6341 Loe Rd",
+  "note": "419-655-2391"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754425"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.3778164",
+      "-97.8996095"
+    ]
+  },
+  "name": "Northwest Oklahoma Astronomy Club",
+  "address": "Enid 1719 Pawnee",
+  "note": "55 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754426"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.0464652",
+      "-87.9251686"
+    ]
+  },
+  "name": "Northwest Suburban Astronomers",
+  "address": "Des Plaines 199 Brentwood Dr",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754427"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.04509",
+      "-80.907115"
+    ]
+  },
+  "name": "NOVAE",
+  "address": "St Clairsville 49080 Randal Dr",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754428"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.0803199",
+      "-80.90176"
+    ]
+  },
+  "name": "Oakland Astronomy Club",
+  "address": "St Clairsville 49080 Richland Acres",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754429"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.1983867",
+      "-117.376199"
+    ]
+  },
+  "name": "Oceanside Photo and Telescope Astronomical S",
+  "address": "Oceanside 918 Mission Ave",
+  "note": "180 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575442a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.9620224",
+      "-97.0325225"
+    ]
+  },
+  "name": "Odyssey Astronomy Club",
+  "address": "Wanette Rt 2 Box 154",
+  "note": "48 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575442b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.1607898",
+      "-112.0366219"
+    ]
+  },
+  "name": "Ogden Astronomical Society",
+  "address": "Roy 2336 W 5650 South",
+  "note": "55 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575442c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.076523",
+      "-81.090047"
+    ]
+  },
+  "name": "Oglethorpe Astronomical Assn.",
+  "address": "Savannah 212 E Oglethorpe Ave",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575442d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.3936242",
+      "-82.3985743"
+    ]
+  },
+  "name": "Ohio Valley Astronomical Society",
+  "address": "Huntington 1 Highlander Way",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575442e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.4339484",
+      "-79.7064413"
+    ]
+  },
+  "name": "Oil Region Astronomical Society",
+  "address": "Oil City PO Box 1535",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575442f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.4675602",
+      "-97.5164276"
+    ]
+  },
+  "name": "Oklahoma City Astronomy Club",
+  "address": "Oklahoma City PO Box 22804",
+  "note": "Oklahoma City Astronomy Club holds its monthly meeting at Science Museum Oklahoma"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754430"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.1000294",
+      "-78.5409075"
+    ]
+  },
+  "name": "Olean Area Amateur Astronomy Group",
+  "address": "Allegany 2264 Cheese Factory Rd",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754431"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.4331631",
+      "-74.1995883"
+    ]
+  },
+  "name": "Olympic Astronomical Society",
+  "address": "Keyport PO Box 458",
+  "note": "80 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754432"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.7306605",
+      "-97.1140924"
+    ]
+  },
+  "name": "Olympus Mons",
+  "address": "Arlington University of Texas Physics Dept",
+  "note": "http://www.olympusmons.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754433"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.2739345",
+      "-95.9808411"
+    ]
+  },
+  "name": "Omaha Astronomical Society",
+  "address": "Omaha 4509 Seward St",
+  "note": "71 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754434"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.3625937",
+      "-74.2712613"
+    ]
+  },
+  "name": "Orange County Astronomical Association (OCCA",
+  "address": "NY Chester",
+  "note": "http://ocastronomy.org."
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754435"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.9710943",
+      "-84.0104836"
+    ]
+  },
+  "name": "ORION (Oak Ridge Isochronous Observation Net",
+  "address": "Knoxville 4412 Damas Rd",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754436"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.1981808",
+      "-93.2785969"
+    ]
+  },
+  "name": "Ozarks Amateur Astronomers Club",
+  "address": "Springfield 901 S National",
+  "note": "38 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754437"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.8800364",
+      "-106.3031138"
+    ]
+  },
+  "name": "Pajarito Astronomers",
+  "address": "Los Alamos PO Box 1092",
+  "note": "45 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754438"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.3633675",
+      "-116.8355789"
+    ]
+  },
+  "name": "Palomar Observatory",
+  "address": "Palomar Mountain PO Box 200",
+  "note": "http://www.astro.caltech.edu/paloma"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754439"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.3860517",
+      "-122.0838511"
+    ]
+  },
+  "name": "Peninsula Astronomical Society",
+  "address": "Mountain View PO Box 4542",
+  "note": "250 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575443a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.8147955",
+      "-77.8653126"
+    ]
+  },
+  "name": "Penn State Astronomy Club",
+  "address": "University Park 202 HUB",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575443b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "44.4553014",
+      "-68.8562"
+    ]
+  },
+  "name": "Penobscot Valley Star Gazers",
+  "address": "Stockton Springs 609 Cape Jellison Road",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575443c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.7417339",
+      "-89.610817"
+    ]
+  },
+  "name": "Peoria Astronomical Society Inc.",
+  "address": "Peoria 1125 W Lake St",
+  "note": "124 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575443d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.5813937",
+      "-112.1252007"
+    ]
+  },
+  "name": "Phoenix Astronomical Society",
+  "address": "Phoenix 3039 W Peoria Ave",
+  "note": "90 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575443e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.7355041",
+      "-80.9363472"
+    ]
+  },
+  "name": "Piedmont Amateur Astronomers",
+  "address": "Statesville 182 Rumple Hill Dr",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575443f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.7329607",
+      "-79.9280368"
+    ]
+  },
+  "name": "Piedmont Astronomy Club Inc.",
+  "address": "Collinsville 176 Lackey Road",
+  "note": "14 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754440"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.4441497",
+      "-73.2633363"
+    ]
+  },
+  "name": "Pittsfield Astronomy Club",
+  "address": "Pittsfield 35 Brenton Ter",
+  "note": "http://www.astronomy.netfirms.com"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754441"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.1650477",
+      "-88.3222052"
+    ]
+  },
+  "name": "Planetary Studies Foundation",
+  "address": "Algonquin 812 Chatham Circle",
+  "note": "http://planets.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754442"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.8670465",
+      "-112.472896"
+    ]
+  },
+  "name": "Pocatello Astronomical Society",
+  "address": "Pocatello 27 Valleyview Drive",
+  "note": "208-233-0711"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754443"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.2690437",
+      "-118.9012516"
+    ]
+  },
+  "name": "Polaris Astronomical Society",
+  "address": "Moorpark 4375 Clearwood",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754444"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.2637508",
+      "-118.9946323"
+    ]
+  },
+  "name": "Polaris Observatory Association Inc.",
+  "address": "Somis PO Box 734",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754445"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.1004163",
+      "-117.6467108"
+    ]
+  },
+  "name": "Pomona Valley Amateur Astronomers",
+  "address": "Upland PO Box 162",
+  "note": "112 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754446"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.9746786",
+      "-90.2464529"
+    ]
+  },
+  "name": "Pontchartrain Astronomy Society Inc.",
+  "address": "Kenner 409 Williams Blvd",
+  "note": "160 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754447"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.48414",
+      "-90.5392429"
+    ]
+  },
+  "name": "Popular Astronomy Club Inc.",
+  "address": "Rock Island 2535 45 St",
+  "note": "72 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754448"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.8052883",
+      "-73.9638383"
+    ]
+  },
+  "name": "Ptolemy Schwartz Astronomical Society",
+  "address": "New York 530 W 113th St",
+  "note": "10025"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754449"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.5236437",
+      "-90.5776367"
+    ]
+  },
+  "name": "Quad Cities Astronomical Society",
+  "address": "Davenport PO Box 3706",
+  "note": "Hosts annual Eastern Iowa Star Party"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575444a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.740011",
+      "-90.30805"
+    ]
+  },
+  "name": "Quad Cities Astronomy Club",
+  "address": "Cordova 21614 River Road",
+  "note": "61242"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575444b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.7287729",
+      "-88.0281882"
+    ]
+  },
+  "name": "Racine Astronomical Society",
+  "address": "Union Grove 112 63rd Dr",
+  "note": "90 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575444c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.2897304",
+      "-89.4003779"
+    ]
+  },
+  "name": "Rainwater Astronomers Assn.",
+  "address": "French Camp 1 Fine Place",
+  "note": "http://rainwater.astronomers.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575444d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.7795897",
+      "-78.6381787"
+    ]
+  },
+  "name": "Raleigh Astronomy Club Inc.",
+  "address": "Raleigh PO Box 10643",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575444e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.1979096",
+      "-77.5877652"
+    ]
+  },
+  "name": "Rappahannock Astronomy Club",
+  "address": "Spotsylvania PO Box 868",
+  "note": "http://www.raclub.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575444f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      " Oklahoma",
+      " Texas"
+    ]
+  },
+  "name": "Red River Astronomy Club",
+  "address": "Texarkana 710 Walker Ln",
+  "note": "Members from Arkansas"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754450"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.4812291",
+      "-77.6143774"
+    ]
+  },
+  "name": "Richmond Astronomical Society",
+  "address": "Richmond 11536 Smoketree Dr",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754451"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.9367915",
+      "-118.022497"
+    ]
+  },
+  "name": "Rio Hondo Astronomical Society",
+  "address": "Whittier 14517 E Broadway",
+  "note": "12 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754452"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.3165026",
+      "-106.7258826"
+    ]
+  },
+  "name": "Rio Rancho Astronomical Society",
+  "address": "Rio Rancho 609 Valley Meadows Dr NE",
+  "note": "21 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754453"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.016399",
+      "-75.296189"
+    ]
+  },
+  "name": "Rittenhouse Astronomical Society",
+  "address": "Haverford 216 Elbow Lane",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754454"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.7139365",
+      "-89.7681496"
+    ]
+  },
+  "name": "River Bend Astronomy Club",
+  "address": "IL St Jacob",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754455"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.6403162",
+      "-90.2614784"
+    ]
+  },
+  "name": "River Bend Astronomy Club",
+  "address": "St Louis 4579 Laclede Avenue PMB 439",
+  "note": "http://riverbendastro.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754456"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.8592316",
+      "-79.4280223"
+    ]
+  },
+  "name": "River Valley Stargazers",
+  "address": "Dover 63 Observatory Lane",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754457"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.9806005",
+      "-117.3754942"
+    ]
+  },
+  "name": "Riverside Astronomical Society",
+  "address": "Riverside PO Box 51222",
+  "note": "200 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754458"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.4801901",
+      "-79.9668527"
+    ]
+  },
+  "name": "Roanoke Valley Astronomical Society",
+  "address": "Fincastle 932 Lee Lane",
+  "note": "80 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754459"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.1565779",
+      "-77.6088465"
+    ]
+  },
+  "name": "Rochester Academy of Sciences Astronomy Sect",
+  "address": "Rochester PO Box 20292",
+  "note": "250 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575445a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.9680676",
+      "-92.4825566"
+    ]
+  },
+  "name": "Rochester Astronomy Club",
+  "address": "Rochester 3705 Halling Place SW",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575445b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.6903865",
+      "-88.9671359"
+    ]
+  },
+  "name": "Rock Valley Astronomical Society",
+  "address": "Janesville 3903 Wilshire Lane",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575445c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.3555307",
+      "-89.1705626"
+    ]
+  },
+  "name": "Rockford Amateur Astronomers Inc.",
+  "address": "Rockford 6804 Alvina Rd",
+  "note": "52 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575445d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.1126358",
+      "-74.1135812"
+    ]
+  },
+  "name": "Rockland Astronomy Club",
+  "address": "Suffern 214 Route 59 Suite 10304",
+  "note": "170 members."
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575445e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.2178176",
+      "-104.6757727"
+    ]
+  },
+  "name": "Rocky Mountain Astronomy Club",
+  "address": "Pueblo 63 Portero",
+  "note": "65 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575445f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.8526176",
+      "-82.3940104"
+    ]
+  },
+  "name": "Roper Mountain Astronomers",
+  "address": "Greenville PO Box 25665",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754460"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "45.5083863",
+      "-122.6660136"
+    ]
+  },
+  "name": "Rose City Astronomers",
+  "address": "Portland Museum of Science Ind at 1945 SE Water Ave",
+  "note": "330 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754461"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.4836321",
+      "-87.3268569"
+    ]
+  },
+  "name": "Rose-Hulman Astronomical Society",
+  "address": "Terre Haute 5500 Wabash Ave",
+  "note": "Thu nights at 8 pm"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754462"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.7901748",
+      "-87.5991412"
+    ]
+  },
+  "name": "Ryerson Astronomical Society",
+  "address": "Chicago 1100 E 58th St Box 8",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754463"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.5815719",
+      "-121.4943996"
+    ]
+  },
+  "name": "Sacramento Valley Astronomical Society",
+  "address": "Sacramento PO Box 15274",
+  "note": "http://www.svas.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754464"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.5499744",
+      "-112.1371066"
+    ]
+  },
+  "name": "Saguaro Astronomy Club",
+  "address": "Phoenix 7714 N 36th Ave",
+  "note": "95 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754465"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.7904987",
+      "-97.5989057"
+    ]
+  },
+  "name": "Salina Astronomy Club",
+  "address": "Salina 803 Mike Drive",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754466"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.7607793",
+      "-111.8910474"
+    ]
+  },
+  "name": "Salt Lake Astronomical Society",
+  "address": "Salt Lake City PO Box 26114",
+  "note": "160 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754467"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "31.4619092",
+      "-100.4454358"
+    ]
+  },
+  "name": "San Angelo Astronomy Association",
+  "address": "San Angelo PO Box 60391",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754468"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.4241219",
+      "-98.4936282"
+    ]
+  },
+  "name": "San Antonio Astronomical Assn.",
+  "address": "San Antonio PO Box 701261",
+  "note": "240 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754469"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.206484",
+      "-98.607141"
+    ]
+  },
+  "name": "San Antonio Astronomical Observers Group",
+  "address": "San Antonio 5145 Smith Road",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575446a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.0685455",
+      "-117.2228786"
+    ]
+  },
+  "name": "San Bernardino Valley Amateur Astronomers",
+  "address": "Redlands County Museum at 2024 Orange Tree Ln",
+  "note": "75 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575446b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.715738",
+      "-117.1610838"
+    ]
+  },
+  "name": "San Diego Astronomy Assn.",
+  "address": "San Diego PO Box 23215",
+  "note": "531 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575446c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.7749295",
+      "-122.4194155"
+    ]
+  },
+  "name": "San Francisco Amateur Astronomers",
+  "address": "San Francisco PO Box 15097",
+  "note": "350+ members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575446d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.778264",
+      "-122.440342"
+    ]
+  },
+  "name": "San Francisco Sidewalk Astronomers",
+  "address": "San Francisco 1801 Golden Gate Ave",
+  "note": "http://members.aol.com/raycash/side"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575446e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.3382082",
+      "-121.8863286"
+    ]
+  },
+  "name": "San Jose Astronomical Association",
+  "address": "San Jose PO Box 28243",
+  "note": "http://www.sjaa.net"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575446f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      " CA. Meets 1st Friday of month",
+      " San Mateo College Planetarium"
+    ]
+  },
+  "name": "San Mateo County Astronomical Society",
+  "address": "San Mateo PO Box 974 Station A",
+  "note": "Founded 1960. Covers San Mateo County"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754470"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "45.5202032",
+      "-122.6785277"
+    ]
+  },
+  "name": "Sandusky Valley Amateur Astronomy Club",
+  "address": "Tiffin 650 SW Washington St",
+  "note": "http://www.friendlynet.com/astronom"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754471"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.7774889",
+      "-89.7349332"
+    ]
+  },
+  "name": "Sangamon Astronomical Society",
+  "address": "Springfield 4501 Greenbriar Drive",
+  "note": "22 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754472"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.9877001",
+      "-121.9729551"
+    ]
+  },
+  "name": "Santa Cruz Astronomy Club",
+  "address": "Santa Cruz L2 San Carlos Lane",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754473"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.1704057",
+      "-118.5990723"
+    ]
+  },
+  "name": "Santa Monica Amateur Astronomy Club",
+  "address": "Woodland Hills 5525 Canoga Ave Apt 208",
+  "note": "48 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754474"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.4409134",
+      "-119.7144601"
+    ]
+  },
+  "name": "SB Astronomical Unit",
+  "address": "Santa Barbara Museum of Natural History at 2559 Puesta Del Sol Road",
+  "note": "first Fri of every month from 7:30-9PM"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754475"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "47.6062095",
+      "-122.3320708"
+    ]
+  },
+  "name": "Seattle Astronomical Society",
+  "address": "Seattle PO Box 31746",
+  "note": "233 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754476"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.9276268",
+      "-83.1894741"
+    ]
+  },
+  "name": "Seven Ponds Astronomy Club",
+  "address": "Dryden 3854 Crawford Rd",
+  "note": "http://www.geocities.com/jelines"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754477"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.7374869",
+      "-88.3703885"
+    ]
+  },
+  "name": "Sheboygan Astronomical Society",
+  "address": "Fond du Lac N5427 Grandview Rd",
+  "note": "28 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754478"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.9047708",
+      "-74.4094737"
+    ]
+  },
+  "name": "Sheep Hill Astronomical Assn.",
+  "address": "Boonton PO Box 111",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754479"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.0360014",
+      "-78.2674314"
+    ]
+  },
+  "name": "Shenandoah Astronomical Society",
+  "address": "Middletown co Lord Fairfax Community College",
+  "note": "41 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575447a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.444243",
+      "-78.893169"
+    ]
+  },
+  "name": "Shenandoah Valley Stargazers",
+  "address": "Harrisonburg 745 Circle Drive",
+  "note": "http://www.valleystargazers.com"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575447b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.7020616",
+      "-86.1564641"
+    ]
+  },
+  "name": "Shoreline Amateur Astronomical Assn.",
+  "address": "Holland 3882 62nd St",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575447c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.4648657",
+      "-93.7258378"
+    ]
+  },
+  "name": "Shreveport-Bossier Astronomical Society Inc.",
+  "address": "Shreveport 353 Ockley Dr",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575447d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.6357537",
+      "-121.4169791"
+    ]
+  },
+  "name": "Sidewalk Astronomers of Sacramento",
+  "address": "Sacramento 3728 Schutt Way",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575447e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.8589928",
+      "-96.9917594"
+    ]
+  },
+  "name": "Sidewalk Astronomers of SASI International",
+  "address": "Irving 3808 N Beltline 119",
+  "note": "120 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575447f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.0149216",
+      "-70.7854226"
+    ]
+  },
+  "name": "Silver Lake Regional High School Astronomy C",
+  "address": "Kingston 260 Pembroke St",
+  "note": "2364"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754480"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.5460223",
+      "-96.731265"
+    ]
+  },
+  "name": "Tri State Astronomical Society",
+  "address": "SD Sioux Falls",
+  "note": "http://www.tristateastro.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754481"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.8697395",
+      "-111.7609896"
+    ]
+  },
+  "name": "Sirius Lookers of Sedona",
+  "address": "Sedona PO Box 87",
+  "note": "28 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754482"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.8425159",
+      "-88.2085963"
+    ]
+  },
+  "name": "Skokie Valley Astronomers",
+  "address": "Warrenville 1 S 751 Avon Dr",
+  "note": "24 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754483"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.8206539",
+      "-74.3652537"
+    ]
+  },
+  "name": "Skyland Star Gazers",
+  "address": "East Hanover 6 Deforest Ave",
+  "note": "201-386-1848"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754484"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.844547",
+      "-71.589946"
+    ]
+  },
+  "name": "Skyscrapers Inc.",
+  "address": "North Scituate 47 Peeptoad Rd",
+  "note": "120 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754485"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.0862472",
+      "-76.3808799"
+    ]
+  },
+  "name": "Langley Exchange Skywatchers Astronomy Club",
+  "address": "Hampton NASA Langley Research Center Mail Stop 308",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754486"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.8971911",
+      "-75.0880328"
+    ]
+  },
+  "name": "Small Scope Observers Assn.",
+  "address": "Audubon Park 4 Kingfisher Place",
+  "note": "24 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754487"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.9606384",
+      "-83.9207392"
+    ]
+  },
+  "name": "Smoky Mountain Astronomical Society",
+  "address": "Knoxville PO Box 53265",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754488"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.0293059",
+      "-78.4766781"
+    ]
+  },
+  "name": "Society for Scientific Exploration",
+  "address": "Charlottesville PO Box 3818",
+  "note": "http://www.scientificexploration.or"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754489"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.6633623",
+      "-92.9537471"
+    ]
+  },
+  "name": "SolaFide Observatory",
+  "address": "Austin 407 15 St SE",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575448a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.440429",
+      "-122.7140548"
+    ]
+  },
+  "name": "Sonoma County Astronomical Society",
+  "address": "Santa Rosa PO Box 183",
+  "note": "250 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575448b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "31.8721979",
+      "-110.9880827"
+    ]
+  },
+  "name": "Sonora Astronomical Society",
+  "address": "Green Valley 101 Verde Vista",
+  "note": "68 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575448c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.9100626",
+      "-118.3849991"
+    ]
+  },
+  "name": "South Bay Astronomical Society",
+  "address": "El Segundo 401 Coral Circle",
+  "note": "75 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575448d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "26.1270866",
+      "-80.3595362"
+    ]
+  },
+  "name": "South Florida Amateur Astronomers Assn.",
+  "address": "Fort Lauderdale Robert Markham Park at 16001 West St",
+  "note": "70 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575448e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "-33.9608369",
+      "25.6022423"
+    ]
+  },
+  "name": "South Jersey Astronomy Club",
+  "address": "Port Elizabeth PO Box 120",
+  "note": "150 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575448f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.5778631",
+      "-101.8551665"
+    ]
+  },
+  "name": "South Plains Astronomy Club",
+  "address": "Lubbock RR2 Box 240",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754490"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.1964601",
+      "-70.785771"
+    ]
+  },
+  "name": "South Shore Astronomical Society",
+  "address": "Scituate 34 Sylvester Rd",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754491"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "25.9017472",
+      "-97.4974838"
+    ]
+  },
+  "name": "South Texas Astronomical Society",
+  "address": "TX Brownsville",
+  "note": "facebook.com/STARSocietyRGV/"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754492"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.8250386",
+      "-91.1565357"
+    ]
+  },
+  "name": "Southeastern Iowa Astronomy Club",
+  "address": "West Burlington PO Box 14",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754493"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.2717229",
+      "-118.7998129"
+    ]
+  },
+  "name": "Southern California Observers",
+  "address": "Simi Valley 2010 Hillgate Way L",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754494"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.3182691",
+      "-104.6325256"
+    ]
+  },
+  "name": "Southern Colorado Astronomical Society",
+  "address": "Pueblo 3 Sundance Ct",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754495"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "25.7167902",
+      "-80.3724112"
+    ]
+  },
+  "name": "Southern Cross Astronomical Society",
+  "address": "Miami 5401 SW 110th Ave",
+  "note": "200 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754496"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.3265152",
+      "-122.8755949"
+    ]
+  },
+  "name": "Southern Oregon Skywatchers",
+  "address": "Medford PO Box 4092",
+  "note": "75 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754497"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.171916",
+      "-79.385572"
+    ]
+  },
+  "name": "Southern Tier Astronomy Recreation Society",
+  "address": "Bemus Point 4208 Bayview Rd",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754498"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.8242038",
+      "-78.7476429"
+    ]
+  },
+  "name": "Southtowns Astronomy Club",
+  "address": "West Seneca 145 Woodward",
+  "note": "716-649-6759"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754499"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "45.6586239",
+      "-111.0451215"
+    ]
+  },
+  "name": "Southwest Montana Astronomical Society",
+  "address": "Bozeman Taylor Planetarium",
+  "note": "55 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575449a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "47.0246106",
+      "-122.844899"
+    ]
+  },
+  "name": "Southwest Washington Astronomical Society",
+  "address": "Olympia 2513 Wiggins Rd",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575449b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "47.6587802",
+      "-117.4260465"
+    ]
+  },
+  "name": "Spokane Astronomical Society (SAS)",
+  "address": "Spokane PO Box 8114",
+  "note": "http://www.spokaneastronomy.org  "
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575449c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.0562343",
+      "-93.3192356"
+    ]
+  },
+  "name": "Springfield Astronomical Society.",
+  "address": "Nixa 875 N Katrina St",
+  "note": "31 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575449d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.8959697",
+      "-90.1780521"
+    ]
+  },
+  "name": "St. Louis Astronomical Society",
+  "address": "Alton 911 Landgon St",
+  "note": "250 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575449e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "27.7926763",
+      "-82.7444913"
+    ]
+  },
+  "name": "St. Petersburg Astronomy Club Inc.",
+  "address": "St Petersburg 7701 22nd Avenue N",
+  "note": "270 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575449f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.6497685",
+      "-121.0079137"
+    ]
+  },
+  "name": "Stanislaus Amateur Astronomers",
+  "address": "Modesto 435 College Ave at Modesto Jr College",
+  "note": "15 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "27.538595",
+      "-99.4844297"
+    ]
+  },
+  "name": "Star Astronomy Club",
+  "address": "Laredo 4658 McPherson Apt C",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.3470543",
+      "-74.0643065"
+    ]
+  },
+  "name": "STAR Astronomy Society Inc.",
+  "address": "Red Bank PO Box 863",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.9398491",
+      "-81.9621541"
+    ]
+  },
+  "name": "Stargazers of the Villages",
+  "address": "Lady Lake 1040 Soledad Way",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.4180192",
+      "-78.4085725"
+    ]
+  },
+  "name": "Starlight Astronomy Club",
+  "address": "Duncansville 732 Cedarcrest Dr",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.8247566",
+      "-98.5449955"
+    ]
+  },
+  "name": "Starlight Observers League (SOL)",
+  "address": "Wichita Falls 302 Galleon Drive",
+  "note": "http://www.solhome.us"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.72569",
+      "-122.4510797"
+    ]
+  },
+  "name": "STARS - Students Taking Astronomy-Related Su",
+  "address": "San Francisco Dept of Astronomy at City College at 50 Phelan Ave",
+  "note": "10 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      " public and school programs",
+      " 2000 visitors/yr"
+    ]
+  },
+  "name": "Starsplitters of Wyalusing",
+  "address": "Prairie du Chien PO Box 544",
+  "note": "Observatory in Wyalusing State Park.  Member programs"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.4205489",
+      "-81.7865347"
+    ]
+  },
+  "name": "Statesboro Area Astronomy Club",
+  "address": "Statesboro Dept of Physics at Georgia Southern University",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.1156071",
+      "-97.0583681"
+    ]
+  },
+  "name": "Stillwater Astronomy Club",
+  "address": "Stillwater PO Box 2614",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544a9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.0164735",
+      "-84.3175712"
+    ]
+  },
+  "name": "Stillwater Stargazers",
+  "address": "Troy Brukner Nature Center at 5995 Horseshoe Bend Rd",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544aa"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.9577016",
+      "-121.2907796"
+    ]
+  },
+  "name": "Stockton Astronomical Society",
+  "address": "Stockton PO Box 243",
+  "note": "135 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ab"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.5073989",
+      "-117.1235792"
+    ]
+  },
+  "name": "Stony Ridge Obs. Inc.",
+  "address": "Temecula PO Box 892769",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ac"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.8776279",
+      "-78.6421873"
+    ]
+  },
+  "name": "Suffolk Astronomy Club",
+  "address": "Shirley PO Box 703 Christ Baptist Church",
+  "note": "516-399-1981"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ad"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.7670415",
+      "-116.2979593"
+    ]
+  },
+  "name": "Sun City Palm Desert Astronomy Club",
+  "address": "Palm Desert 78255 Griffin Dr",
+  "note": "92211-1816"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ae"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.5944677",
+      "-83.8888647"
+    ]
+  },
+  "name": "Sunset Astronomical Society",
+  "address": "Bay City 3423 Hidden",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544af"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.9547722",
+      "-76.8850759"
+    ]
+  },
+  "name": "Susquehanna Valley Amateur Astronomers",
+  "address": "Lewisburg Bucknell Univ",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.581356",
+      "-109.232573"
+    ]
+  },
+  "name": "Sweetwater Astronomical Society",
+  "address": "Rock Springs 1113 Hilltop Dr",
+  "note": "55 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.0418373",
+      "-76.2135322"
+    ]
+  },
+  "name": "Syracuse Astronomical Society Inc.",
+  "address": "Syracuse 306 Parsons Drive",
+  "note": "110 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "47.1367248",
+      "-122.3476967"
+    ]
+  },
+  "name": "Tacoma Astronomical Society",
+  "address": "Puyallup 6103 132nd St E",
+  "note": "175 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      " private dark sky site",
+      "30.4382559"
+    ]
+  },
+  "name": "Tallahassee Astronomical Society",
+  "address": "Tallahassee PO Box 824",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.9405463",
+      "-77.7975018"
+    ]
+  },
+  "name": "Tar River Astronomy Club",
+  "address": "Rocky Mount 225 S Church St",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.8487031",
+      "-76.3926894"
+    ]
+  },
+  "name": "TCC Astronomical Society",
+  "address": "Chesapeake 3113 Golden Hind Road",
+  "note": "45 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.5539143",
+      "-117.2139232"
+    ]
+  },
+  "name": "Temecula Valley Astronomers",
+  "address": "Murrieta PO Box 1292",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.1679628",
+      "-86.7300541"
+    ]
+  },
+  "name": "Tennessee Valley Astronomy Club",
+  "address": "Fayetteville 276 Swan Creek Rd",
+  "note": "53 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.7766642",
+      "-96.7969879"
+    ]
+  },
+  "name": "Texas Astronomical Society",
+  "address": "Dallas PO Box 25162",
+  "note": "518 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544b9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.4185427",
+      "-72.0565151"
+    ]
+  },
+  "name": "Thames Amateur Astronomical Society",
+  "address": "Gales Ferry 17 Partridge Hollow Rd",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ba"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.0843859",
+      "-106.650422"
+    ]
+  },
+  "name": "The Albuquerque Astronomical Society",
+  "address": "Albuquerque PO Box 50581",
+  "note": "420 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544bb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.1600011",
+      "-121.9699569"
+    ]
+  },
+  "name": "The Astronomy Connection",
+  "address": "Los Gatos PO Box 134",
+  "note": "http://www.seds.org/TAC"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544bc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.9975724",
+      "-74.8881057"
+    ]
+  },
+  "name": "The Dark Sky Observers",
+  "address": "Newton 87 Lincoln Laurel Road",
+  "note": "12 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544bd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.253284",
+      "-81.158367"
+    ]
+  },
+  "name": "The Gaston County Skywatchers",
+  "address": "Gastonia Schiele Museum at 1500 E Garrison Blvd",
+  "note": "http://groups.yahoo.com/groups/gast"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544be"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.4015882",
+      "-86.4885917"
+    ]
+  },
+  "name": "The Home Planetarium Assn.",
+  "address": "Gallatin 1203 Hwy 25",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544bf"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.0281479",
+      "-77.0563677"
+    ]
+  },
+  "name": "The Patient Astronomer",
+  "address": "Silver Spring 2711 Harmon Rd1",
+  "note": "301-933-1596"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.0639323",
+      "-83.2610406"
+    ]
+  },
+  "name": "The Sirius Stargazers Club",
+  "address": "MI South Rockwood",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "26.5628537",
+      "-81.9495331"
+    ]
+  },
+  "name": "The Southwest Florida Astronomical Society",
+  "address": "Cape Coral PO Box 100127",
+  "note": "http://www.theeyepiece.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.8244614",
+      "-76.2031897"
+    ]
+  },
+  "name": "Tidewater Amateur Telescope Makers",
+  "address": "Virginia Beach 677 Charlecote Dr",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.8487031",
+      "-76.3926894"
+    ]
+  },
+  "name": "Tidewater Community College Astronomical Soc",
+  "address": "Chesapeake 3113 Golden Hind Rd",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.7009262",
+      "-83.6964767"
+    ]
+  },
+  "name": "Toledo Astronomical Assn. Inc.",
+  "address": "Sylvania 4653 Longfellow Rd",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.069211",
+      "-117.2305861"
+    ]
+  },
+  "name": "Tonopah Astronomical Society",
+  "address": "Tonopah PO Box 526",
+  "note": "http://astronomynv.org/tonopah/"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "27.2870656",
+      "-80.2712242"
+    ]
+  },
+  "name": "Treasure Coast Astronomical Society",
+  "address": "Port St Lucie 1755 SE Berkshire Blvd",
+  "note": "772-398-6237"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "27.4467056",
+      "-80.3256056"
+    ]
+  },
+  "name": "Treasure Coast Astronomical Society",
+  "address": "FL Fort Pierce",
+  "note": "FL"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      " Open to Public",
+      " Everyone Welcome"
+    ]
+  },
+  "name": "Tri-State Astronomers",
+  "address": "Hagerstown 823 Commonwealth Ave",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544c9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.8897362",
+      "-79.941797"
+    ]
+  },
+  "name": "Triad Action Astronomy Club",
+  "address": "High Point 305 Gregg St",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ca"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.28042",
+      "-119.2751996"
+    ]
+  },
+  "name": "Tri-City Astronomy Club",
+  "address": "Richland PO Box 651",
+  "note": "41 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544cb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.575125",
+      "-77.841821"
+    ]
+  },
+  "name": "Tri-State Astronomers",
+  "address": "Falling Waters 70 Narrow Lane",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544cc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.6818688",
+      "-121.7684732"
+    ]
+  },
+  "name": "Tri-Valley Stargazers",
+  "address": "Livermore PO Box 2476",
+  "note": "189 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544cd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.2226066",
+      "-110.9747108"
+    ]
+  },
+  "name": "Tucson Amateur Astronomy Assn.",
+  "address": "Tucson PO Box 41254",
+  "note": "390 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ce"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.2077288",
+      "-119.3473379"
+    ]
+  },
+  "name": "Tulare Astronomical Assn. Inc.",
+  "address": "Tulare PO Box 515",
+  "note": "120 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544cf"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.1652335",
+      "-111.6107526"
+    ]
+  },
+  "name": "Tule River Amateur Astronomers",
+  "address": "Springville PO Box 999",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.4700993",
+      "-95.5230356"
+    ]
+  },
+  "name": "TUVA Astronomy Club",
+  "address": "OK Checotah",
+  "note": "http://www.tuvaclub.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.5159189",
+      "-88.9912253"
+    ]
+  },
+  "name": "Twin City Amateur Astronomers Inc.",
+  "address": "Normal 508 Normal Ave",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.7089194",
+      "-75.1182734"
+    ]
+  },
+  "name": "Tychonian Observers",
+  "address": "Glassboro Rowan University at 201 Mullica Hill Rd",
+  "note": "609-256-4500 X4379"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.201723",
+      "-123.393151"
+    ]
+  },
+  "name": "Umpaqua Amateur Astronomers",
+  "address": "Roseburg 3150 W Military Ave",
+  "note": "18 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.908586",
+      "-74.926569"
+    ]
+  },
+  "name": "United Astronomy Clubs of New Jersey Inc.",
+  "address": "Blairstown 333 State Park Rd",
+  "note": "12 astronomy clubs"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.2898115",
+      "-83.8628888"
+    ]
+  },
+  "name": "University Lowbrow Astronomers",
+  "address": "Ann Arbor 6655 Jackson Rd 415",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.2330707",
+      "-110.9483062"
+    ]
+  },
+  "name": "University of Arizona Astronomy Club",
+  "address": "Tucson Steward Obs",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.3388404",
+      "-111.6990039"
+    ]
+  },
+  "name": "Utah Valley Astronomy Assn.",
+  "address": "Lindon 54 N Canal Dr",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.3640795",
+      "-122.5241487"
+    ]
+  },
+  "name": "Valley of the Moon Astronomical Society",
+  "address": "Glen Ellen PO Box 999",
+  "note": "707-996-1246"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544d9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.7420267",
+      "-120.5724404"
+    ]
+  },
+  "name": "Vandenberg Amateur Astronomical Society",
+  "address": "Vandenberg AFB PO Box 5321",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544da"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.2694474",
+      "-118.781482"
+    ]
+  },
+  "name": "Ventura County Astronomical Society",
+  "address": "Simi Valley PO Box 982",
+  "note": "http://www.vcas.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544db"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "29.38747",
+      "-82.4467705"
+    ]
+  },
+  "name": "Vermont Astronomical Society",
+  "address": "Williston PO Box 782",
+  "note": "60 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544dc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.6844201",
+      "-92.9458291"
+    ]
+  },
+  "name": "Village Star Gazers Society",
+  "address": "Hot Springs Village 33 Mesero Way",
+  "note": "39 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544dd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.0378952",
+      "-75.3433315"
+    ]
+  },
+  "name": "Villanova Astronomical Society",
+  "address": "Villanova Astronomy Astrophysics at Villanova Univ",
+  "note": "http://www.phy.vill.edu/astro/vas/v"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544de"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.7303688",
+      "-86.5861037"
+    ]
+  },
+  "name": "Von Braun Astronomical Society",
+  "address": "Huntsville PO Box 1142",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544df"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.797821",
+      "-85.8205411"
+    ]
+  },
+  "name": "Wabash County Astronomical Society Inc.",
+  "address": "Wabash PO Box 49",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.4521725",
+      "-86.9171517"
+    ]
+  },
+  "name": "Wabash Valley Astronomical Society",
+  "address": "West Lafayette PO Box 2020",
+  "note": "35 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.8535506",
+      "-79.1366186"
+    ]
+  },
+  "name": "Warren County Amateur Astronomy Club Inc.",
+  "address": "Warren 310 E Fifth Ave",
+  "note": "http://stargaze@penn.com"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.2206468",
+      "-85.8031577"
+    ]
+  },
+  "name": "Warsaw Astronomical Society",
+  "address": "Winona Lake 1308 Sunset Dr",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.7297771",
+      "-117.1817377"
+    ]
+  },
+  "name": "Washington State University Astronomy Club",
+  "address": "WA Pullman",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.8050565",
+      "-81.935143"
+    ]
+  },
+  "name": "Wayne County Astronomical Society",
+  "address": "Wooster PO Box 802",
+  "note": "30 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.9252983",
+      "-88.035882"
+    ]
+  },
+  "name": "Wehr Astronomical Society",
+  "address": "Franklin Wehr Nature Center at 9701 W College Ave",
+  "note": "134 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "45.1163845",
+      "-95.0544722"
+    ]
+  },
+  "name": "West Central Minnesota Astronomy Group",
+  "address": "Willmar 622 9th St SW",
+  "note": "8 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.162",
+      "-87.6932567"
+    ]
+  },
+  "name": "West Kentucky Amateur Astronomers",
+  "address": "Dawson Springs 508 Park Ave",
+  "note": "44 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "31.9923767",
+      "-102.0929307"
+    ]
+  },
+  "name": "West Texas Astronomers",
+  "address": "Midland Blakemore Planetarium at 1705 W Missouri",
+  "note": "48 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544e9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.629526",
+      "-79.9558968"
+    ]
+  },
+  "name": "West Virginia University Astronomy Club",
+  "address": "Morgantown PO Box 6315",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ea"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.2240897",
+      "-92.0198427"
+    ]
+  },
+  "name": "Western Amateur Astronomers",
+  "address": "Lafayette PO Box 412",
+  "note": "http://www.waa.av.org/"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544eb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.0638705",
+      "-108.5506486"
+    ]
+  },
+  "name": "Western Colorado Astronomy Club",
+  "address": "Grand Junction PO Box 55032",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ec"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.8489413",
+      "-114.0852195"
+    ]
+  },
+  "name": "Western Montana Astronomical Assn.",
+  "address": "Missoula 4216 South Ave West",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ed"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.6501101",
+      "-76.9925893"
+    ]
+  },
+  "name": "Westminster Astronomical Society",
+  "address": "Westminster 300 John Owings Road",
+  "note": "14-inch Schmidt-Cassagrain"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ee"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.1709924",
+      "-73.3295398"
+    ]
+  },
+  "name": "Westport Astronomical Society",
+  "address": "Westport 182 Bayberry Lane",
+  "note": "120 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ef"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "48.8464991",
+      "-122.5910056"
+    ]
+  },
+  "name": "Whatcom Association of Celestial Observers",
+  "address": "Ferndale PO Box 1721",
+  "note": "45 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f0"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.8661405",
+      "-97.2330729"
+    ]
+  },
+  "name": "Whitney Astronomy Assn.",
+  "address": "North Richland Hills 7005 Southampton",
+  "note": "http://whitney-astro.com"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f1"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.67021",
+      "-81.641143"
+    ]
+  },
+  "name": "Wilderness Center Astronomy Club",
+  "address": "Wilmot 9877 Alabama Ave SW",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f2"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "30.6356095",
+      "-97.6758161"
+    ]
+  },
+  "name": "Williamson County Astronomy Club",
+  "address": "Georgetown 901 S Church St",
+  "note": "25 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f3"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.6159285",
+      "-70.6619888"
+    ]
+  },
+  "name": "Willingboro Astronomical Society",
+  "address": "Gloucester PO Box 371",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f4"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.1455351",
+      "-80.3184852"
+    ]
+  },
+  "name": "Winston-Salem Astronomical League",
+  "address": "WinstonSalem 4231 Witherow Road",
+  "note": "http://www.wsal.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f5"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "28.0011891",
+      "-81.7219243"
+    ]
+  },
+  "name": "Winter Haven Astronomy Club",
+  "address": "Winter Haven 1872 4th St SE",
+  "note": "http://home.att.net/~whastro/"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f6"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "46.6099006",
+      "-120.5804825"
+    ]
+  },
+  "name": "Yakima Astronomical Society",
+  "address": "Yakima 801 Crest Drive",
+  "note": "20 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f7"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "45.7735591",
+      "-108.5625014"
+    ]
+  },
+  "name": "Yellowstone Valley Amateur Astronomers",
+  "address": "Billings 1816 Miles Ave",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.0273515",
+      "-76.7026377"
+    ]
+  },
+  "name": "York County Astronomical Society",
+  "address": "York 400 Mundis Race Rd",
+  "note": "50 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544f9"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      " Oct-May (except Jan)",
+      "41.0197395"
+    ]
+  },
+  "name": "Astronomical Society of Greenwich",
+  "address": "Greenwich The Bruce Museum Museum Drive",
+  "note": "1st Wed 7:30pm"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544fa"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.4018623",
+      "-104.5299681"
+    ]
+  },
+  "name": "Roswell Astronomy Club",
+  "address": "Roswell 807 N Missouri",
+  "note": "4th Thu at 7pm Jan-Oct"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544fb"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.541958",
+      "-98.0763469"
+    ]
+  },
+  "name": "Lipan Astronomy & Space Society",
+  "address": "Lipan 1180 Addison Rd",
+  "note": "http://lipan.net/~rradd/"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544fc"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.3133853",
+      "-122.3128984"
+    ]
+  },
+  "name": "Mt Shasta Star Gazers",
+  "address": "Mt Shasta 309 N Mt Shasta Blvd",
+  "note": "http://www.mtshastastargazers.com"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544fd"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "",
+      ""
+    ]
+  },
+  "name": "Desert Foothills Astronomy Club",
+  "address": "Anthem North Valley Regional Library",
+  "note": "http://www.dfacaz.org"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544fe"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "",
+      ""
+    ]
+  },
+  "name": "",
+  "address": "33.8526985",
+  "note": "-112.1401961"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c57544ff"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "40.9831018",
+      "-74.9589405"
+    ]
+  },
+  "name": "NW Jersey Amateur Astronomers ",
+  "address": "NJ Blairstown",
+  "note": "100 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754500"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "39.5994095",
+      "-110.8107148"
+    ]
+  },
+  "name": "Carbon County Star Parties",
+  "address": "UT Price",
+  "note": "236 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754501"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "43.6528254",
+      "-94.4576697"
+    ]
+  },
+  "name": "Fairmont Astronomy Club",
+  "address": "Fairmont 404 E 1st street",
+  "note": "facebook.com/https://m.facebook.com/groups/112990205391489?ref=bookmarks"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754502"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "42.5748496",
+      "-83.6670403"
+    ]
+  },
+  "name": "General Motors Astronomy Club",
+  "address": "Milford General Motors Milford Proving Ground",
+  "note": "monthly public meetings"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754503"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "37.2287206",
+      "-79.9881766"
+    ]
+  },
+  "name": "Star City Astronomy Network",
+  "address": "Roanoke 3578 Berryhill Dr",
+  "note": "8 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754504"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.2331086",
+      "-111.3232449"
+    ]
+  },
+  "name": "Rim Astronomy Club",
+  "address": "Payson 607 S Beeline Hwy Sp 6",
+  "note": "16-in GoTo Dob"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754505"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "41.6838583",
+      "-111.8527131"
+    ]
+  },
+  "name": "Cache Valley Astronmical Society",
+  "address": "Nibley 2689 S 800 W",
+  "note": "32 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754506"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "31.6814725",
+      "-97.6743124"
+    ]
+  },
+  "name": "Central Texas Astronomical Society",
+  "address": "Clifton 14801 FM 182",
+  "note": "100+ members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754507"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "34.7070988",
+      "-76.5811063"
+    ]
+  },
+  "name": "Crystal Coast Stargazers",
+  "address": "Harkers Island 103 Decoy Drive",
+  "note": "40 members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754508"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.4960062",
+      "-112.5113524"
+    ]
+  },
+  "name": "Astronomy Club of Verrado",
+  "address": "Buckeye 4239 North Village Street",
+  "note": "300+ members"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c5754509"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "32.7470506",
+      "-105.9246942"
+    ]
+  },
+  "name": "Amateur Astronomers Group",
+  "address": "Alamogordo 509 Dog Canyon Road",
+  "note": "facebook.com/https://www.facebook.com/AmateurAstronomersGroup/"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575450a"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "33.9198496",
+      "-118.1336177"
+    ]
+  },
+  "name": "Columbia Astronomers",
+  "address": "Downey 12400 Columbia Way",
+  "note": "https://nightsky.jpl.nasa.gov/club-view.cfm?Club_ID=1523"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575450b"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.481464",
+      "-94.2732642"
+    ]
+  },
+  "name": "Sugar Creek Astronomical Society",
+  "address": "AR Bella Vista",
+  "note": "meets at Hobbs State Park Visitors Center"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575450c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "38.6270025",
+      "-90.1994042"
+    ]
+  },
+  "name": "St Louis Astronomical Society",
+  "address": "MO St Louis",
+  "note": "meets at Washington University"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575450d"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "36.0095656",
+      "-95.8009842"
+    ]
+  },
+  "name": "Broken Arrow Sidewalk Astronomers",
+  "address": "Broken Arrow 829 W Vicksburg St",
+  "note": "facebook.com/BASideWalkAstronomer"
+},{
+  "_id": {
+    "$oid": "5f7a27f9a57bae65c575450e"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      "35.5369793",
+      "-105.9094798"
+    ]
+  },
+  "name": "Santa Fe Stargazers",
+  "address": "Santa Fe 14 Avenida Torreon",
+  "note": "meets at Vista Grande Library"
+}]
