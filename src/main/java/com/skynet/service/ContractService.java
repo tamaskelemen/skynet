@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -65,6 +66,8 @@ public class ContractService {
 			if(contract != null) {
 				node.set("description", contract.get("description"));
 				node.set("price", contract.get("price"));
+			} else {
+				node.remove("contractId");
 			}
 		}
 		ArrayNode subs = (ArrayNode) node.get("simple_contracts");
@@ -107,7 +110,6 @@ public class ContractService {
 				child.remove("contractId");
 				child.remove("description");
 				child.remove("price");
-				child.remove("companyId");
 				mergeContracts(child);
 			}
 		}
@@ -117,6 +119,12 @@ public class ContractService {
 		if (simpleContractsNode.get("priceSum") == null) {
 			simpleContractsNode.put("priceSum", 0.0);
 		}
+
+		ArrayNode newSubsArray = objectMapper.createArrayNode();
+		newSubsArray.addAll(newSubs.values());
+
+		simpleContractsNode.remove("companyId");
+		simpleContractsNode.set("simple_contracts", newSubsArray);
 	}
 
 	public CompanyConnectionDto getComnpanyConnectionDTOWithFields(ObjectNode node, Map<String, ObjectNode> companies, Map<String, ObjectNode> contracts) {
