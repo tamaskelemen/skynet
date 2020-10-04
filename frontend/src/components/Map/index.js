@@ -22,7 +22,7 @@ class Map extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    const { connections, companies, project, animation } = this.props;
+    const { connections, companies, project, observations, animation } = this.props;
     if (prevProps.connections !== connections) {
       this.drawConnections(connections);
     }
@@ -31,6 +31,9 @@ class Map extends Component {
     }
     if (prevProps.project !== project) {
       this.drawProject(project);
+    }
+    if (prevProps.observations !== observations) {
+      this.drawObservations(observations);
     }
     if (prevProps.animation.enabled !== animation.enabled) {
       this.toggleGlobeSpinning(animation);
@@ -53,7 +56,59 @@ class Map extends Component {
     }
   };
 
-  drawProject(project) {
+  drawObservations = observations => {
+    const { wwd } = this;
+
+    var placemark,
+      placemarkAttributes = new WorldWind.PlacemarkAttributes(null),
+      highlightAttributes,
+      placemarkLayer = new WorldWind.RenderableLayer('Placemarks');
+
+    // Set up the common placemark attributes.
+    placemarkAttributes.imageScale = 2;
+    placemarkAttributes.imageOffset = new WorldWind.Offset(
+      WorldWind.OFFSET_FRACTION, 0.3,
+      WorldWind.OFFSET_FRACTION, 0.0);
+    placemarkAttributes.imageColor = WorldWind.Color.WHITE;
+    placemarkAttributes.labelAttributes.offset = new WorldWind.Offset(
+      WorldWind.OFFSET_FRACTION, 0.5,
+      WorldWind.OFFSET_FRACTION, 1.0);
+    placemarkAttributes.labelAttributes.color = WorldWind.Color.YELLOW;
+    placemarkAttributes.drawLeaderLine = true;
+    placemarkAttributes.leaderLineAttributes.outlineColor = WorldWind.Color.RED;
+
+
+    // For each placemark image, create a placemark with a label.
+    observations.forEach(observation => {
+      const { latitude, longitude } = observation.location;
+
+      // Create the placemark and its label.
+      placemark = new WorldWind.Placemark(new WorldWind.Position(latitude, longitude, 1e5), true, 'asdf');
+      placemark.label = observation;
+      placemark.altitudeMode = WorldWind.RELATIVE_TO_GROUND;
+
+      // Create the placemark attributes for this placemark. Note that the attributes differ only by their
+      // image URL.
+      placemarkAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
+      placemarkAttributes.imageSource = './telescope.png';
+      placemark.attributes = placemarkAttributes;
+
+      // Create the highlight attributes for this placemark. Note that the normal attributes are specified as
+      // the default highlight attributes so that all properties are identical except the image scale. You could
+      // instead vary the color, image, or other property to control the highlight representation.
+      highlightAttributes = new WorldWind.PlacemarkAttributes(placemarkAttributes);
+      highlightAttributes.imageScale = 2.2;
+      placemark.highlightAttributes = highlightAttributes;
+
+      // Add the placemark to the layer.
+      placemarkLayer.addRenderable(placemark);
+    });
+
+    // Add the placemarks layer to the WorldWindow's layer list.
+    wwd.addLayer(placemarkLayer);
+  }
+
+  drawProject = project => {
     const { wwd } = this;
     wwd.navigator.lookAtLocation.latitude = project.location.latitude;
     wwd.navigator.lookAtLocation.longitude = project.location.longitude;
@@ -284,9 +339,9 @@ class Map extends Component {
       layers[l].layer.enabled = layers[l].enabled;
       wwd.addLayer(layers[l].layer);
     }
-
+    
     // this.searchProject(wwd);
-
+    
     let call = true;
     wwd.addEventListener('wheel', (event) => {
         let startPointPosition;

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Button, Form, Input, Layout, Menu } from 'antd';
-import { ContainerOutlined, DesktopOutlined, MenuOutlined, PieChartOutlined, PlayCircleOutlined, SolutionOutlined } from '@ant-design/icons';
-import Animation from './Animation';
+import { Button, Layout, Menu, Form, Input } from 'antd';
+import { ContainerOutlined, DesktopOutlined, MenuOutlined, PieChartOutlined, SolutionOutlined } from '@ant-design/icons';
 
 const { Sider, Header } = Layout;
+const { RangePicker } = DatePicker;
 const { SubMenu } = Menu;
 
 class Index extends Component {
@@ -17,7 +17,7 @@ class Index extends Component {
   };
 
   render() {
-    const { children, activePage, handlePageChange, searchValueChanged, searchValue, animation, setAnimation } = this.props;
+    const { children, activePage, handlePageChange, searchValueChanged, searchValue, observationsChange, animation } = this.props;
     const { collapsed } = this.state;
     const layout = {
       labelCol: { span: 8 },
@@ -32,6 +32,7 @@ class Index extends Component {
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={[activePage]}>
             <Menu.Item key="0" onClick={() => handlePageChange('0')}><SolutionOutlined />Space contracts</Menu.Item>
             <Menu.Item key="1" onClick={() => handlePageChange('1')}><PieChartOutlined />Space projects</Menu.Item>
+            <Menu.Item key="2" onClick={() => handlePageChange('2')}>Observations</Menu.Item>
           </Menu>
         </Header>
 
@@ -54,13 +55,13 @@ class Index extends Component {
               <Menu.Item key="3" icon={<ContainerOutlined />}>
                 Option 3
               </Menu.Item>
-
+              
               <Form
                 {...layout}
                 name="form"
                 onFinish={searchValueChanged}>
                 <Form.Item label="Project name" name="project_name">
-                  <Input value={searchValue} />
+                  <Input value={searchValue}/>
                 </Form.Item>
                 <Form.Item>
                   <Button type="primary" htmlType="submit" onClick={searchValueChanged}>
@@ -68,6 +69,13 @@ class Index extends Component {
                   </Button>
                 </Form.Item>
               </Form>
+              <Space direction="vertical" size={12}>
+                <RangePicker
+                  showTime={{ format: 'HH:mm' }}
+                  format="YYYY-MM-DD HH:mm"
+                  onChange={observationsChange}
+                />
+              </Space>,
             </Menu>
           </Sider>
 
