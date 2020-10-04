@@ -34,7 +34,7 @@ class Index extends Component {
     rangeEnd: max,
     rangeSize: rangeSizeDefault,
     animationSpeed: animationSpeedDefault,
-    contracts: ['HQ'],
+    contracts: ['HQ', 'European Space Agency Paris'],
   };
 
   constructor(props) {
@@ -107,7 +107,7 @@ class Index extends Component {
               allowClear
               style={{ width: '100%' }}
               placeholder="Please select"
-              defaultValue={['HQ']}
+              defaultValue={['HQ', 'European Space Agency Paris']}
               onChange={this.handleChangeContracts}
             >
               {contractsList.map(conts => <Option value={conts} key={conts} >{conts}</Option>)}

@@ -30,7 +30,7 @@ class Map extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    const { connections, companies, project, observations, animation, meteors , members, clubs } = this.props;
+    const { connections, companies, project, observations, animation, meteors, members, clubs } = this.props;
     if (prevProps.connections !== connections) {
       this.drawConnections(connections);
     }
@@ -49,10 +49,10 @@ class Map extends Component {
     if (prevProps.meteors !== meteors) {
       this.drawMeteors(meteors);
     }
-    if ( prevProps.members !== members) {
+    if (prevProps.members !== members) {
       this.drawMembers(members);
     }
-    if ( prevProps.clubs !== clubs) {
+    if (prevProps.clubs !== clubs) {
       this.drawClubs(clubs);
     }
   }
@@ -60,7 +60,7 @@ class Map extends Component {
   drawClubs = clubs => {
     const { wwd } = this;
 
-    this.setState({clubData: ['name', 'note']});
+    this.setState({ clubData: ['name', 'note'] });
 
     var placemark,
       placemarkAttributes = new WorldWind.PlacemarkAttributes(null),
@@ -108,17 +108,16 @@ class Map extends Component {
     });
 
 
-
     wwd.addEventListener('mouseMove', this.handlePick);
     // Add the placemarks layer to the WorldWindow's layer list.
     wwd.addLayer(placemarkLayer);
-  }
+  };
 
 
   drawMembers = members => {
     const { wwd } = this;
 
-    this.setState({memberData: ['name', 'address']});
+    this.setState({ memberData: ['name', 'address'] });
 
     var placemark,
       placemarkAttributes = new WorldWind.PlacemarkAttributes(null),
@@ -166,16 +165,15 @@ class Map extends Component {
     });
 
 
-
     wwd.addEventListener('mouseMove', this.handlePick);
     // Add the placemarks layer to the WorldWindow's layer list.
     wwd.addLayer(placemarkLayer);
-  }
+  };
 
   drawMeteors = meteors => {
     const { wwd } = this;
 
-    this.setState({meteorData: ['shower', 'magnitude']})
+    this.setState({ meteorData: ['shower', 'magnitude'] });
 
     var placemark,
       placemarkAttributes = new WorldWind.PlacemarkAttributes(null),
@@ -226,7 +224,7 @@ class Map extends Component {
     wwd.addEventListener('mouseMove', this.handlePick);
     // Add the placemarks layer to the WorldWindow's layer list.
     wwd.addLayer(placemarkLayer);
-  }
+  };
 
   toggleGlobeSpinning = animation => {
     if (animation.enabled) {
@@ -295,7 +293,7 @@ class Map extends Component {
     wwd.addEventListener('mouseMove', this.handlePick);
     // Add the placemarks layer to the WorldWindow's layer list.
     wwd.addLayer(placemarkLayer);
-  }
+  };
 
   drawProject = project => {
     const { wwd } = this;
@@ -304,7 +302,7 @@ class Map extends Component {
     wwd.navigator.range = 2e6; // 2 million meters above the ellipsoid
 
     wwd.redraw();
-  }
+  };
 
   drawConnections = lines => {
     const { wwd } = this;
@@ -319,8 +317,8 @@ class Map extends Component {
       const { edge1, edge2, color, contract } = line;
 
       var pathPositions = [];
-      pathPositions.push(new WorldWind.Position(edge1.lat, edge1.lon, 1.5e5));
-      pathPositions.push(new WorldWind.Position(edge2.lat, edge2.lon, 1.5e5));
+      pathPositions.push(new WorldWind.Position(edge1.lat, edge1.lon, 5e4));
+      pathPositions.push(new WorldWind.Position(edge2.lat, edge2.lon, 5e4));
       // Create the path.
       var path = new WorldWind.Path(pathPositions, null);
       path.altitudeMode = WorldWind.GREAT_CIRCLE; // The path's altitude stays relative to the terrain's altitude.
@@ -332,7 +330,7 @@ class Map extends Component {
       // Create and assign the path's attributes.
       var pathAttributes = new WorldWind.ShapeAttributes(null);
       pathAttributes.outlineColor = new WorldWind.Color(color.r, color.g, color.b, color.a);
-      pathAttributes.interiorColor = new WorldWind.Color(color.r, color.g, color.b, 0.2);
+      pathAttributes.interiorColor = new WorldWind.Color(color.r, color.g, color.b, 0.1);
       pathAttributes.drawVerticals = path.extrude; //Draw verticals only when extruding.
       path.attributes = pathAttributes;
 
@@ -347,7 +345,7 @@ class Map extends Component {
     });
 
     wwd.addLayer(pathsLayer);
-
+    wwd.redraw();
     // this.drawPlacemark();
   };
 
@@ -379,7 +377,7 @@ class Map extends Component {
       const { location: { lat, lon }, imageSource } = company;
 
       // Create the placemark and its label.
-      placemark = new WorldWind.Placemark(new WorldWind.Position(lat, lon, 1.55e5), true, null);
+      placemark = new WorldWind.Placemark(new WorldWind.Position(lat, lon, !imageSource ? 1e5 : 1.55e5), true, null);
       placemark.label = company;
       placemark.altitudeMode = WorldWind.RELATIVE_TO_GROUND;
 
@@ -403,6 +401,7 @@ class Map extends Component {
 
     // Add the placemarks layer to the WorldWindow's layer list.
     wwd.addLayer(placemarkLayer);
+    wwd.redraw();
   };
 
   // drawPlacemark = () => {
@@ -503,7 +502,7 @@ class Map extends Component {
     this.setState({
       mouseX: event.pageX,
       mouseY: event.pageY,
-    })
+    });
     // this.mouseX = event.pageX;
     // this.mouseY = event.pageY;
     // Use event.pageX / event.pageY here
@@ -537,9 +536,9 @@ class Map extends Component {
       layers[l].layer.enabled = layers[l].enabled;
       wwd.addLayer(layers[l].layer);
     }
-    
+
     // this.searchProject(wwd);
-    
+
     let call = true;
     wwd.addEventListener('wheel', (event) => {
         let startPointPosition;
@@ -606,16 +605,16 @@ class Map extends Component {
     const connection = highlightedItems.find(item => item.layer && item.layer.displayName === 'Paths');
 
     if (this.state.memberData !== '' && company && company.label) {
-      this.setState({ hoverTitle: company.label[this.state.memberData[0]]})
+      this.setState({ hoverTitle: company.label[this.state.memberData[0]] });
       return company.label[this.state.memberData[1]];
     }
 
     if (this.state.meteorData !== '' && company && company.label) {
-      this.setState({ hoverTitle: 'Observation'});
-      return "Shower:" + company.label[this.state.meteorData[0]];
+      this.setState({ hoverTitle: 'Observation' });
+      return 'Shower:' + company.label[this.state.meteorData[0]];
     }
     if (this.state.clubData !== '' && company && company.label) {
-      this.setState({ hoverTitle: company.label[this.state.clubData[0]]});
+      this.setState({ hoverTitle: company.label[this.state.clubData[0]] });
       return company.label[this.state.clubData[1]];
     }
     if (company) {

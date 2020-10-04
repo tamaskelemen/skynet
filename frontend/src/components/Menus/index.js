@@ -43,7 +43,7 @@ class Index extends Component {
           <div className="logo"><img src="./logo.png" alt="" />JägerMilkyWay</div>
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={[activePage]}>
             <Menu.Item key="0" onClick={() => handlePageChange('0')}><SolutionOutlined />Space contracts</Menu.Item>
-            <Menu.Item key="1" onClick={() => handlePageChange('1')}><PieChartOutlined />Space projects</Menu.Item>
+            {/*<Menu.Item key="1" onClick={() => handlePageChange('1')}><PieChartOutlined />Space projects</Menu.Item>*/}
             <Menu.Item key="2" onClick={() => handlePageChange('2')}>Observations</Menu.Item>
             <Menu.Item key="3" onClick={() => handlePageChange('3')}>Meteors</Menu.Item>
             <Menu.Item key="4" onClick={() => handlePageChange('4')}>IAU Members</Menu.Item>
