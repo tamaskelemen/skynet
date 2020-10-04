@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.query.BasicQuery;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 
@@ -25,6 +26,9 @@ public class ContractRepository {
 
 	public List<String> getContractsWithoutProjects(String startDate, String endDate) {
 		MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
+		if (StringUtils.isEmpty(startDate) || StringUtils.isEmpty(endDate)) {
+			return mongoOps.find(new Query(), String.class, "contract");
+		}
 		List<String> doc = mongoOps.find(
 		        Query.query(Criteria.where("startDate").gte(startDate).lt(endDate)),
                 String.class, "contract");

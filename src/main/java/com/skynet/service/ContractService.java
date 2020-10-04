@@ -44,7 +44,6 @@ public class ContractService {
 
 		List<ObjectNode> simpleContractsNode = simpleContracts.stream().map(doc -> getObjectNodeFromString(doc)).collect(Collectors.toList());;
 
-
 		for (ObjectNode currentContract : simpleContractsNode) {
 			fillFields(currentContract, companiesMap, contractsMap);
 			mergeContracts(currentContract);
