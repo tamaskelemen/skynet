@@ -7,6 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -21,7 +22,8 @@ public class ContractController {
 	@GetMapping(value = "/get-simple-contracts",
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	@CrossOrigin(origins = "http://localhost:3000")
-	public List<CompanyConnectionDto> getSimpleContracts() {
-		return contractService.getSimpleContracts();
+	public List<CompanyConnectionDto> getSimpleContracts(@RequestParam String startDate,
+                                                         @RequestParam String endDate) {
+		return contractService.getSimpleContracts(startDate, endDate);
 	}
 }
