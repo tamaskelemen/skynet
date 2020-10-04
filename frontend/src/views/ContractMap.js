@@ -120,9 +120,8 @@ class ContractMap extends Component {
     });
 
     if (project_name) {
-      this.getData('http://localhost:8080/api/company/get', { projectName: this.state.searchValue })
-        // this.getData(API_URL + '/company/get', { projectName: this.state.searchValue})
-        .then(response => this.setState({ projects: response }));
+      this.getData(API_URL + '/company/get', { projectName: this.state.searchValue})
+        .then(response => this.setState({projects: response}));
     }
   };
 
@@ -130,9 +129,9 @@ class ContractMap extends Component {
     const startDate = event[0].format('yyyy-MM-DD');
     const endDate = event[1].format('yyyy-MM-DD');
 
-    this.getData('http://localhost:8080/api/observation/getAll', { startDate, endDate })
-      .then(response => this.setState({ observations: response }));
-  };
+    this.getData(API_URL + '/observation/getAll', { startDate, endDate})
+      .then(response => this.setState({observations: response}));
+  }
 
   render() {
     const { connections, companies, searchValue, projects, observations, animation } = this.state;

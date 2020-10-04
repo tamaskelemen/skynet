@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ContractMap from './views/ContractMap';
+import ObservationMap from './views/ObservationMap';
 import ProjectMap from './views/ProjectMap';
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
       case '1':
         return <ProjectMap activePage={activePage} handlePageChange={handlePageChange} />;
       case '2':
-        return <ProjectMap activePage={activePage} handlePageChange={handlePageChange} />;
+        return <ObservationMap activePage={activePage} handlePageChange={handlePageChange} />;
       default:
         return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />;
     }
