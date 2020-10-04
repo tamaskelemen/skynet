@@ -28,7 +28,8 @@ class Index extends Component {
       animation,
       setAnimation,
       meteorChanged,
-      spinner} = this.props;
+      spinner,
+    } = this.props;
     const { collapsed } = this.state;
     const layout = {
       labelCol: { span: 8 },
@@ -52,27 +53,31 @@ class Index extends Component {
 
         <Layout>
           <Sider width={collapsed ? 0 : 300} theme="light">
+            {
+              activePage === '0' &&
+              <Menu
+                defaultSelectedKeys={['1']}
+                defaultOpenKeys={['sub1']}
+                mode="inline"
+                theme="dark"
+              >
+                {
+                  spinner && <Spin />
+                }
+                <SubMenu key="sub1" icon={<PlayCircleOutlined />} title="Animation">
+                  <Menu.Item key="anim" style={{ height: 'auto', backgroundColor: 'white', paddingLeft: '16px !important' }}>
+                    <Animation animation={animation} setAnimation={setAnimation} />
+                  </Menu.Item>
+                </SubMenu>
+              </Menu>
+            }
+            {activePage !== '0' &&
             <Menu
               defaultSelectedKeys={['1']}
               defaultOpenKeys={['sub1']}
               mode="inline"
               theme="dark"
             >
-              {
-                spinner  && <Spin />
-              }
-              <SubMenu key="sub1" icon={<PlayCircleOutlined />} title="Animation">
-                <Menu.Item key="anim" style={{ height: 'auto', backgroundColor: 'white', paddingLeft: '16px !important' }}>
-                  <Animation animation={animation} setAnimation={setAnimation} />
-                </Menu.Item>
-              </SubMenu>
-              <Menu.Item key="2" icon={<DesktopOutlined />}>
-                Option 2
-              </Menu.Item>
-              <Menu.Item key="3" icon={<ContainerOutlined />}>
-                Option 3
-              </Menu.Item>
-
               <Form
                 {...layout}
                 name="form"
@@ -101,6 +106,7 @@ class Index extends Component {
                 />
               </Space>,
             </Menu>
+            }
           </Sider>
 
           {children}
