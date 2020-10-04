@@ -1,0 +1,352 @@
+[{
+  "_id": {
+    "$oid": "5f7a1528aa63a2afcfc7eee2"
+  },
+  "project": "Dawn",
+  "name": "Jet Propulsion Laboratory",
+  "sub": [
+    {
+      "companyId": {
+        "$oid": "5f7a1528aa63a2afcfc7eea4"
+      },
+      "contract_id": {
+        "$oid": "5f7a1528aa63a2afcfc7eea5"
+      },
+      "sub": [
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eea6"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eea7"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eea8"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eea9"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eeaa"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eeab"
+          },
+          "sub": []
+        }
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f7a1528aa63a2afcfc7eee3"
+  },
+  "project": "European Clipper",
+  "name": "Jet Propulsion Laboratory",
+  "sub": [
+    {
+      "companyId": {
+        "$oid": "5f7a1528aa63a2afcfc7eea4"
+      },
+      "contract_id": {
+        "$oid": "5f7a1528aa63a2afcfc7eeac"
+      },
+      "sub": [
+        {
+          "companyId": {
+            "$oid": "5f7a14ef954aa2e426e9ff4f"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eead"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eea4"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eeae"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eeaf"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eeb0"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a14f0954aa2e426ea0008"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eeb1"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eeb2"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eeb3"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eeb4"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eeb5"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a14f0954aa2e426ea0008"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eeb6"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eeb7"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eeb8"
+          },
+          "sub": []
+        }
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f7a1528aa63a2afcfc7eee4"
+  },
+  "project": "Juno",
+  "name": "Jet Propulsion Laboratory",
+  "sub": [
+    {
+      "companyId": {
+        "$oid": "5f7a1528aa63a2afcfc7eeb9"
+      },
+      "contract_id": {
+        "$oid": "5f7a1528aa63a2afcfc7eeba"
+      },
+      "sub": [
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eea4"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eebb"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eebc"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eebd"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eebe"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eebf"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eec0"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eec1"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a14f0954aa2e426ea0008"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eec2"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eec3"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eec4"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eec5"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eec6"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a14f0954aa2e426ea0008"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eec7"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eec8"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eec9"
+          },
+          "sub": []
+        }
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f7a1528aa63a2afcfc7eee5"
+  },
+  "project": "PLATO",
+  "name": "European Space Agency, Paris",
+  "sub": [
+    {
+      "companyId": {
+        "$oid": "5f7a1528aa63a2afcfc7eecb"
+      },
+      "contract_id": {
+        "$oid": "5f7a1528aa63a2afcfc7eecc"
+      },
+      "sub": [
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eea8"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eecd"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eece"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eecf"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eed0"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eed1"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eed2"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eed3"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eed4"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eed5"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eed6"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eed7"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eed8"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eed9"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eeda"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eedb"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eedc"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eedd"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eede"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eedf"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a1528aa63a2afcfc7eee0"
+          },
+          "contract_id": {
+            "$oid": "5f7a1528aa63a2afcfc7eee1"
+          },
+          "sub": []
+        }
+      ]
+    }
+  ]
+}]
