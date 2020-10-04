@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, DatePicker, Form, Input, Layout, Menu, Space } from 'antd';
+import { Button, DatePicker, Form, Input, Layout, Menu, Space, Spin } from 'antd';
 import { ContainerOutlined, DesktopOutlined, MenuOutlined, PieChartOutlined, PlayCircleOutlined, SolutionOutlined } from '@ant-design/icons';
 import Animation from './Animation';
 
@@ -18,7 +18,7 @@ class Index extends Component {
   };
 
   render() {
-    const { children, activePage, handlePageChange, searchValueChanged, searchValue, observationsChange, animation, setAnimation } = this.props;
+    const { children, activePage, handlePageChange, searchValueChanged, searchValue, observationsChange, animation, setAnimation, spinner } = this.props;
     const { collapsed } = this.state;
     const layout = {
       labelCol: { span: 8 },
@@ -45,6 +45,9 @@ class Index extends Component {
               mode="inline"
               theme="dark"
             >
+              {
+                spinner  && <Spin />
+              }
               <SubMenu key="sub1" icon={<PlayCircleOutlined />} title="Animation">
                 <Menu.Item key="anim" style={{ height: 'auto', backgroundColor: 'white', paddingLeft: '16px !important' }}>
                   <Animation animation={animation} setAnimation={setAnimation} />

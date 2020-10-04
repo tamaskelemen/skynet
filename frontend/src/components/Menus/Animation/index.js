@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Checkbox, Form, Slider } from 'antd';
+import { Form, Select, Slider, Spin } from 'antd';
 import moment from 'moment';
+
+const { Option } = Select;
 
 const min = moment('01-01-1980').unix();
 const max = moment('01-01-2020').unix();
@@ -18,6 +20,11 @@ const animationSpeedMin = 30 * 24 * 60 * 60;
 const animationSpeedDefault = 120 * 24 * 60 * 60;
 const animationSpeedMax = 360 * 24 * 60 * 60;
 
+const contractsList = [
+  'HQ',
+  'NASA Headquarters (HQ)',
+];
+
 window.moment = moment;
 
 class Index extends Component {
@@ -27,9 +34,10 @@ class Index extends Component {
   animation = {
     enabled: false,
     rangeStart: min,
-    rangeEnd: undefined,
+    rangeEnd: max,
     rangeSize: rangeSizeDefault,
     animationSpeed: animationSpeedDefault,
+    contracts: ['HQ'],
   };
 
   constructor(props) {
@@ -84,15 +92,31 @@ class Index extends Component {
 
   handleAnimationSpeedChange = animationSpeed => this.props.setAnimation({ ...this.props.animation, animationSpeed });
 
+  handleChangeContracts = contracts => this.props.setAnimation({...this.props.animation, contracts});
+
   render() {
     const { animation } = this.props;
-    const { rangeStart, rangeEnd, rangeSize, enabled, animationSpeed } = animation || {};
+    const { rangeStart, rangeEnd, rangeSize, enabled, animationSpeed, spinner } = animation || {};
     return (
       <div style={{ marginTop: 16, marginLeft: -22 }}>
         <Form>
-          <Form.Item>
-            <Checkbox checked={enabled} onChange={this.handleStartToggle}>Animate</Checkbox>
+          {/*<Form.Item>*/}
+          {/*  <Checkbox checked={enabled} onChange={this.handleStartToggle}>Animate</Checkbox>*/}
+          {/*</Form.Item>*/}
+
+          <Form.Item label="Centers">
+            <Select
+              mode="multiple"
+              allowClear
+              style={{ width: '100%' }}
+              placeholder="Please select"
+              defaultValue={['HQ']}
+              onChange={this.handleChangeContracts}
+            >
+              {contractsList.map(conts => <Option value={conts} key={conts} >{conts}</Option>)}
+            </Select>
           </Form.Item>
+
           <Form.Item style={{ padding: '0 16px' }}>
             <Slider disabled={enabled} range className="main-slider" min={min} max={max} value={[rangeStart, rangeEnd]} marks={marks}
                     tipFormatter={this.tipFormatter}
@@ -115,7 +139,7 @@ class Index extends Component {
 
 Index.defaultProps = {
   animation: {},
-  setAnimation: () => {}
-}
+  setAnimation: () => {},
+};
 
 export default Index;

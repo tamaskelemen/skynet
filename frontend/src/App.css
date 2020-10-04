@@ -67,3 +67,7 @@
   background-color: black;
   flex: 1;
 }
+
+.ant-popover {
+  opacity: 1 !important;
+}

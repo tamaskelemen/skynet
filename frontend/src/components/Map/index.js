@@ -6,9 +6,9 @@ import { API_URL } from '../../common/constants';
 class Map extends Component {
   wwd = undefined;
   highlightedItems = [];
-  mouseX;
-  mouseY;
   spinningInterval;
+  pathsLayer;
+  placemarkLayer;
 
   constructor(props) {
     super(props);
@@ -18,6 +18,8 @@ class Map extends Component {
         visible: false,
         content: {},
       },
+      mouseX: 0,
+      mouseY: 0,
     };
   }
 
@@ -105,7 +107,7 @@ class Map extends Component {
 
     // Add the placemarks layer to the WorldWindow's layer list.
     wwd.addLayer(placemarkLayer);
-  }
+  };
 
   drawProject = project => {
     const { wwd } = this;
@@ -114,17 +116,19 @@ class Map extends Component {
     wwd.navigator.range = 2e6; // 2 million meters above the ellipsoid
 
     wwd.redraw();
-  }
+  };
 
   drawConnections = lines => {
     const { wwd } = this;
 
+    wwd.removeLayer(this.pathsLayer);
+
     // Add the path to a layer and the layer to the WorldWindow's layer list.
-    var pathsLayer = new WorldWind.RenderableLayer();
+    var pathsLayer = this.pathsLayer = new WorldWind.RenderableLayer();
     pathsLayer.displayName = 'Paths';
 
     lines.forEach(line => {
-      const { edge1, edge2, color } = line;
+      const { edge1, edge2, color, contract } = line;
 
       var pathPositions = [];
       pathPositions.push(new WorldWind.Position(edge1.lat, edge1.lon, 1.5e5));
@@ -132,6 +136,7 @@ class Map extends Component {
       // Create the path.
       var path = new WorldWind.Path(pathPositions, null);
       path.altitudeMode = WorldWind.GREAT_CIRCLE; // The path's altitude stays relative to the terrain's altitude.
+      path.label = contract;
       // path.followTerrain = true;
       path.extrude = true; // Make it a curtain.
       // path.useSurfaceShapeFor2D = true; // Use a surface shape in 2D mode.
@@ -161,13 +166,15 @@ class Map extends Component {
   drawCompanies = companies => {
     const { wwd } = this;
 
+    wwd.removeLayer(this.placemarkLayer);
+
     var placemark,
       placemarkAttributes = new WorldWind.PlacemarkAttributes(null),
       highlightAttributes,
-      placemarkLayer = new WorldWind.RenderableLayer('Placemarks');
+      placemarkLayer = this.placemarkLayer = new WorldWind.RenderableLayer('Placemarks');
 
     // Set up the common placemark attributes.
-    placemarkAttributes.imageScale = 1.5;
+    placemarkAttributes.imageScale = 1.0;
     placemarkAttributes.imageOffset = new WorldWind.Offset(
       WorldWind.OFFSET_FRACTION, 0.3,
       WorldWind.OFFSET_FRACTION, 0.0);
@@ -184,7 +191,7 @@ class Map extends Component {
       const { location: { lat, lon }, imageSource } = company;
 
       // Create the placemark and its label.
-      placemark = new WorldWind.Placemark(new WorldWind.Position(lat, lon, 1e5), true, null);
+      placemark = new WorldWind.Placemark(new WorldWind.Position(lat, lon, 1.55e5), true, null);
       placemark.label = company;
       placemark.altitudeMode = WorldWind.RELATIVE_TO_GROUND;
 
@@ -305,8 +312,12 @@ class Map extends Component {
         (doc && doc.clientTop || body && body.clientTop || 0);
     }
 
-    this.mouseX = event.pageX;
-    this.mouseY = event.pageY;
+    this.setState({
+      mouseX: event.pageX,
+      mouseY: event.pageY,
+    })
+    // this.mouseX = event.pageX;
+    // this.mouseY = event.pageY;
     // Use event.pageX / event.pageY here
   };
 
@@ -338,9 +349,9 @@ class Map extends Component {
       layers[l].layer.enabled = layers[l].enabled;
       wwd.addLayer(layers[l].layer);
     }
-    
+
     // this.searchProject(wwd);
-    
+
     let call = true;
     wwd.addEventListener('wheel', (event) => {
         let startPointPosition;
@@ -404,16 +415,23 @@ class Map extends Component {
   };
   deriveTooltipContent = highlightedItems => {
     const company = highlightedItems.find(item => item.layer && item.layer.displayName === 'Placemarks');
-    return JSON.stringify(company && company.label.name);
+    const connection = highlightedItems.find(item => item.layer && item.layer.displayName === 'Paths');
+
+    if (company) {
+      return company && company.label.name;
+    } else {
+      return JSON.stringify(connection && connection.label);
+    }
+    return company && company.label.name;
   };
 
   render() {
-    const { tooltip: { visible, content } } = this.state;
+    const { tooltip: { visible, content }, mouseY, mouseX } = this.state;
     const canvasHeight = window.innerHeight - 64;
     return (
       <div className="map-container">
-        <Popover content={<span>{content}</span>} title="Title" visible={visible}>
-          <div style={{ position: 'absolute', top: this.mouseY, left: this.mouseX }} />
+        <Popover content={<span>{content}</span>} visible={visible}>
+          <div style={{ position: 'absolute', top: mouseY, left: mouseX }} />
         </Popover>
         <canvas id="canvasOne" width="900" height={canvasHeight} style={{ backgroundColor: 'black' }}>
           Your browser does not support HTML5 Canvas.

@@ -3,12 +3,18 @@ import Map from '../components/Map';
 import Menus from '../components/Menus';
 import { API_URL } from '../common/constants';
 import chroma from 'chroma-js';
+import moment from 'moment';
+import _ from 'lodash';
 
-const f = chroma.scale(['black', 'red', 'yellow', 'white'])
+window.moment = moment;
+const f = chroma.scale('OrRd')
   .correctLightness()
-  .domain([0, 100000]);
+  .domain([0, 10000]);
 
 class ContractMap extends Component {
+
+  apiData = [];
+
   state = {
     connections: [],
     companies: [],
@@ -17,6 +23,7 @@ class ContractMap extends Component {
     animation: {},
     searchValue: '',
   };
+  fetchLast = 0;
 
   setAnimation = animation => this.setState({ animation });
 
@@ -24,6 +31,12 @@ class ContractMap extends Component {
     const [r, g, b] = f((contract && contract.price) || 0).rgb();
     return { r, g, b, a: 1.0 };
   };
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevState.animation !== this.state.animation) {
+      this.getDataAndRender();
+    }
+  }
 
   deriveEdge = location => {
     return {
@@ -33,17 +46,34 @@ class ContractMap extends Component {
   };
 
   deriveImageSource = company => {
-    if (Math.random() > 0.5) {
+    if (company.name && company.name.match(/NASA|^HQ$/)) {
       return './nasa.png';
+    }
+    if (company.name && company.name.match(/European Space Agency/)) {
+      return './esa.png';
     }
     return './plain-red.png';
   };
 
+  getFilteredContracts = (nodes) => {
+    return nodes;
+    // const { animation: { rangeStart, rangeEnd } } = this.state;
+    // return nodes.filter(node => moment.unix(rangeStart).isBefore(moment(node.contract.endDate)) &&
+    //   moment.unix(rangeEnd).isAfter(moment(node.contract.startDate)));
+  };
+
   parseApiData = response => {
+    this.apiData = response;
+    this.computeConnectionsAndCompanies();
+  };
+
+  computeConnectionsAndCompanies = () => {
     const connections = [];
     const companies = [];
 
-    const nodes = response;
+    let nodes = this.apiData;
+
+    nodes = nodes.filter(node => this.state.animation.contracts.indexOf(node.name) >= 0);
 
     while (nodes.length) {
       const node = nodes.pop();
@@ -60,9 +90,10 @@ class ContractMap extends Component {
 
       const edge1 = this.deriveEdge(node.location);
 
-      node.sub.forEach(subNode => {
+      this.getFilteredContracts(node.sub).forEach(subNode => {
         const edge2 = this.deriveEdge(subNode.location);
-        connections.push({ edge1, edge2, color: this.deriveColor(node.contract) });
+        const { contract } = subNode;
+        connections.push({ edge1, edge2, color: this.deriveColor(contract), contract });
         nodes.push(subNode);
       });
     }
@@ -74,9 +105,7 @@ class ContractMap extends Component {
   };
 
   componentDidMount() {
-    fetch(API_URL + '/contract/get-simple-contracts')
-      .then(response => response.json())
-      .then(this.parseApiData);
+    this.getDataAndRender();
   }
 
   postData = async (url = '', data = {}) => {
@@ -101,6 +130,21 @@ class ContractMap extends Component {
     return await response.json();
   };
 
+  getDataAndRender = _.debounce(() => {
+    const { rangeStart, rangeEnd } = this.state.animation;
+
+    this.setState({ spinner: true });
+
+    this.getData(API_URL + '/contract/get-simple-contracts', {
+      startDate: moment.unix(rangeStart).format('DD-MM-yyyy'),
+      endDate: moment.unix(rangeEnd).format('DD-MM-yyyy'),
+    })
+      .then(json => {
+        this.setState({ spinner: false });
+        this.parseApiData(json);
+      });
+  });
+
   parseQueryParams = (data = {}) => {
     let queryParam = '?';
     for (const property in data) {
@@ -120,21 +164,13 @@ class ContractMap extends Component {
     });
 
     if (project_name) {
-      this.getData(API_URL + '/company/get', { projectName: this.state.searchValue})
-        .then(response => this.setState({projects: response}));
+      this.getData(API_URL + '/company/get', { projectName: this.state.searchValue })
+        .then(response => this.setState({ projects: response }));
     }
   };
 
-  observationsChanged = (event) => {
-    const startDate = event[0].format('yyyy-MM-DD');
-    const endDate = event[1].format('yyyy-MM-DD');
-
-    this.getData(API_URL + '/observation/getAll', { startDate, endDate})
-      .then(response => this.setState({observations: response}));
-  }
-
   render() {
-    const { connections, companies, searchValue, projects, observations, animation } = this.state;
+    const { connections, companies, searchValue, projects, observations, animation, spinner } = this.state;
     const { activePage, handlePageChange } = this.props;
     return (
       <Menus animation={animation}
@@ -143,7 +179,8 @@ class ContractMap extends Component {
              handlePageChange={handlePageChange}
              searchValueChanged={this.searchValueChanged}
              observationsChange={this.observationsChanged}
-             searchValue={searchValue}>
+             searchValue={searchValue}
+             spinner={spinner}>
         <Map connections={connections} companies={companies} project={projects} observations={observations} animation={animation} />
       </Menus>
     );
