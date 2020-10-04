@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Layout, Menu, Form, Input } from 'antd';
-import { ContainerOutlined, DesktopOutlined, MenuOutlined, PieChartOutlined, SolutionOutlined } from '@ant-design/icons';
+import { Button, DatePicker, Form, Input, Layout, Menu, Space } from 'antd';
+import { ContainerOutlined, DesktopOutlined, MenuOutlined, PieChartOutlined, PlayCircleOutlined, SolutionOutlined } from '@ant-design/icons';
+import Animation from './Animation';
 
 const { Sider, Header } = Layout;
 const { RangePicker } = DatePicker;
@@ -17,7 +18,7 @@ class Index extends Component {
   };
 
   render() {
-    const { children, activePage, handlePageChange, searchValueChanged, searchValue, observationsChange, animation } = this.props;
+    const { children, activePage, handlePageChange, searchValueChanged, searchValue, observationsChange, animation, setAnimation } = this.props;
     const { collapsed } = this.state;
     const layout = {
       labelCol: { span: 8 },
@@ -46,7 +47,7 @@ class Index extends Component {
             >
               <SubMenu key="sub1" icon={<PlayCircleOutlined />} title="Animation">
                 <Menu.Item key="anim" style={{ height: 'auto', backgroundColor: 'white', paddingLeft: '16px !important' }}>
-                  <Animation animation={animation} setAnimation={setAnimation}  />
+                  <Animation animation={animation} setAnimation={setAnimation} />
                 </Menu.Item>
               </SubMenu>
               <Menu.Item key="2" icon={<DesktopOutlined />}>
@@ -55,13 +56,13 @@ class Index extends Component {
               <Menu.Item key="3" icon={<ContainerOutlined />}>
                 Option 3
               </Menu.Item>
-              
+
               <Form
                 {...layout}
                 name="form"
                 onFinish={searchValueChanged}>
                 <Form.Item label="Project name" name="project_name">
-                  <Input value={searchValue}/>
+                  <Input value={searchValue} />
                 </Form.Item>
                 <Form.Item>
                   <Button type="primary" htmlType="submit" onClick={searchValueChanged}>

@@ -4,9 +4,9 @@ import Menus from '../components/Menus';
 import { API_URL } from '../common/constants';
 import chroma from 'chroma-js';
 
-const f = chroma.scale(['black','red','yellow','white'])
+const f = chroma.scale(['black', 'red', 'yellow', 'white'])
   .correctLightness()
-  .domain([0,100000]);
+  .domain([0, 100000]);
 
 class ContractMap extends Component {
   state = {
@@ -36,8 +36,8 @@ class ContractMap extends Component {
     if (Math.random() > 0.5) {
       return './nasa.png';
     }
-    return './plain-red.png'
-  }
+    return './plain-red.png';
+  };
 
   parseApiData = response => {
     const connections = [];
@@ -51,7 +51,7 @@ class ContractMap extends Component {
       companies.push({
         ...node,
         location: this.deriveEdge(node.location),
-        imageSource: this.deriveImageSource(node)
+        imageSource: this.deriveImageSource(node),
       });
 
       if (!node.sub.length) {
@@ -99,11 +99,11 @@ class ContractMap extends Component {
     });
 
     return await response.json();
-  }
+  };
 
   parseQueryParams = (data = {}) => {
     let queryParam = '?';
-    for ( const property in data) {
+    for (const property in data) {
       queryParam += property;
       queryParam += '=';
       queryParam += data[property];
@@ -111,41 +111,41 @@ class ContractMap extends Component {
     }
 
     return queryParam;
-  }
+  };
 
   searchValueChanged = (event) => {
-    const project_name = event.project_name
+    const project_name = event.project_name;
     this.setState({
-      searchValue: project_name
+      searchValue: project_name,
     });
 
     if (project_name) {
-      this.getData( 'http://localhost:8080/api/company/get', { projectName: this.state.searchValue})
-      // this.getData(API_URL + '/company/get', { projectName: this.state.searchValue})
-        .then(response => this.setState({projects: response}));
+      this.getData('http://localhost:8080/api/company/get', { projectName: this.state.searchValue })
+        // this.getData(API_URL + '/company/get', { projectName: this.state.searchValue})
+        .then(response => this.setState({ projects: response }));
     }
-  }
+  };
 
   observationsChanged = (event) => {
-    const startDate=event[0].format('yyyy-MM-DD');
-    const endDate=event[1].format('yyyy-MM-DD');
+    const startDate = event[0].format('yyyy-MM-DD');
+    const endDate = event[1].format('yyyy-MM-DD');
 
-    this.getData('http://localhost:8080/api/observation/getAll', { startDate, endDate})
-      .then(response => this.setState({observations: response}));
-  }
+    this.getData('http://localhost:8080/api/observation/getAll', { startDate, endDate })
+      .then(response => this.setState({ observations: response }));
+  };
 
   render() {
-    const { connections, companies, searchValue , projects, observations, animation} = this.state;
+    const { connections, companies, searchValue, projects, observations, animation } = this.state;
     const { activePage, handlePageChange } = this.props;
     return (
       <Menus animation={animation}
              setAnimation={this.setAnimation}
-            activePage={activePage}
+             activePage={activePage}
              handlePageChange={handlePageChange}
              searchValueChanged={this.searchValueChanged}
              observationsChange={this.observationsChanged}
              searchValue={searchValue}>
-        <Map connections={connections} companies={companies} project={projects} observations={observations}/>
+        <Map connections={connections} companies={companies} project={projects} observations={observations} animation={animation} />
       </Menus>
     );
   }
