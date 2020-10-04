@@ -74,7 +74,7 @@ class ContractMap extends Component {
   };
 
   componentDidMount() {
-    fetch(API_URL + '/connection/get')
+    fetch(API_URL + '/contract/get-simple-contracts')
       .then(response => response.json())
       .then(this.parseApiData);
   }
