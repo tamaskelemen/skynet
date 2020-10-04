@@ -1,42 +1,42 @@
 [{
   "_id": {
-    "$oid": "5f7a1528aa63a2afcfc7eee2"
+    "$oid": "5f7a2283f97c30efc8a031f2"
   },
   "project": "Dawn",
   "name": "Jet Propulsion Laboratory",
   "sub": [
     {
       "companyId": {
-        "$oid": "5f7a1528aa63a2afcfc7eea4"
+        "$oid": "5f7a2283f97c30efc8a031a8"
       },
       "contract_id": {
-        "$oid": "5f7a1528aa63a2afcfc7eea5"
+        "$oid": "5f7a2283f97c30efc8a031a9"
       },
       "sub": [
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eea6"
+            "$oid": "5f7a2283f97c30efc8a031aa"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eea7"
+            "$oid": "5f7a2283f97c30efc8a031ab"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eea8"
+            "$oid": "5f7a2283f97c30efc8a031ac"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eea9"
+            "$oid": "5f7a2283f97c30efc8a031ad"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eeaa"
+            "$oid": "5f7a2283f97c30efc8a031ae"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eeab"
+            "$oid": "5f7a2283f97c30efc8a031af"
           },
           "sub": []
         }
@@ -45,88 +45,88 @@
   ]
 },{
   "_id": {
-    "$oid": "5f7a1528aa63a2afcfc7eee3"
+    "$oid": "5f7a2283f97c30efc8a031f3"
   },
   "project": "European Clipper",
   "name": "Jet Propulsion Laboratory",
   "sub": [
     {
       "companyId": {
-        "$oid": "5f7a1528aa63a2afcfc7eea4"
+        "$oid": "5f7a2283f97c30efc8a031a8"
       },
       "contract_id": {
-        "$oid": "5f7a1528aa63a2afcfc7eeac"
+        "$oid": "5f7a2283f97c30efc8a031b0"
       },
       "sub": [
         {
           "companyId": {
-            "$oid": "5f7a14ef954aa2e426e9ff4f"
+            "$oid": "5f7a225427a27b21e52b5655"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eead"
+            "$oid": "5f7a2283f97c30efc8a031b1"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eea4"
+            "$oid": "5f7a2283f97c30efc8a031a8"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eeae"
+            "$oid": "5f7a2283f97c30efc8a031b2"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eeaf"
+            "$oid": "5f7a2283f97c30efc8a031b3"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eeb0"
+            "$oid": "5f7a2283f97c30efc8a031b4"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a14f0954aa2e426ea0008"
+            "$oid": "5f7a225527a27b21e52b570e"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eeb1"
+            "$oid": "5f7a2283f97c30efc8a031b5"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eeb2"
+            "$oid": "5f7a2283f97c30efc8a031b6"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eeb3"
+            "$oid": "5f7a2283f97c30efc8a031b7"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eeb4"
+            "$oid": "5f7a2283f97c30efc8a031b8"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eeb5"
+            "$oid": "5f7a2283f97c30efc8a031b9"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a14f0954aa2e426ea0008"
+            "$oid": "5f7a225527a27b21e52b570e"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eeb6"
+            "$oid": "5f7a2283f97c30efc8a031ba"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eeb7"
+            "$oid": "5f7a2283f97c30efc8a031bb"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eeb8"
+            "$oid": "5f7a2283f97c30efc8a031bc"
           },
           "sub": []
         }
@@ -135,97 +135,97 @@
   ]
 },{
   "_id": {
-    "$oid": "5f7a1528aa63a2afcfc7eee4"
+    "$oid": "5f7a2283f97c30efc8a031f4"
   },
   "project": "Juno",
   "name": "Jet Propulsion Laboratory",
   "sub": [
     {
       "companyId": {
-        "$oid": "5f7a1528aa63a2afcfc7eeb9"
+        "$oid": "5f7a2283f97c30efc8a031bd"
       },
       "contract_id": {
-        "$oid": "5f7a1528aa63a2afcfc7eeba"
+        "$oid": "5f7a2283f97c30efc8a031be"
       },
       "sub": [
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eea4"
+            "$oid": "5f7a2283f97c30efc8a031a8"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eebb"
+            "$oid": "5f7a2283f97c30efc8a031bf"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eebc"
+            "$oid": "5f7a2283f97c30efc8a031c0"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eebd"
+            "$oid": "5f7a2283f97c30efc8a031c1"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eebe"
+            "$oid": "5f7a2283f97c30efc8a031c2"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eebf"
+            "$oid": "5f7a2283f97c30efc8a031c3"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eec0"
+            "$oid": "5f7a2283f97c30efc8a031c4"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eec1"
+            "$oid": "5f7a2283f97c30efc8a031c5"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a14f0954aa2e426ea0008"
+            "$oid": "5f7a225527a27b21e52b570e"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eec2"
+            "$oid": "5f7a2283f97c30efc8a031c6"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eec3"
+            "$oid": "5f7a2283f97c30efc8a031c7"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eec4"
+            "$oid": "5f7a2283f97c30efc8a031c8"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eec5"
+            "$oid": "5f7a2283f97c30efc8a031c9"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eec6"
+            "$oid": "5f7a2283f97c30efc8a031ca"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a14f0954aa2e426ea0008"
+            "$oid": "5f7a225527a27b21e52b570e"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eec7"
+            "$oid": "5f7a2283f97c30efc8a031cb"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eec8"
+            "$oid": "5f7a2283f97c30efc8a031cc"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eec9"
+            "$oid": "5f7a2283f97c30efc8a031cd"
           },
           "sub": []
         }
@@ -234,115 +234,214 @@
   ]
 },{
   "_id": {
-    "$oid": "5f7a1528aa63a2afcfc7eee5"
+    "$oid": "5f7a2283f97c30efc8a031f5"
+  },
+  "project": "MESSENGER - MErcury Surface, Space ENvironment, GEochemistry, and Ranging",
+  "name": "John Hopkins University Applied Physics Laboratory",
+  "sub": [
+    {
+      "companyId": {
+        "$oid": "5f7a2283f97c30efc8a031ce"
+      },
+      "contract_id": {
+        "$oid": "5f7a2283f97c30efc8a031cf"
+      },
+      "sub": [
+        {
+          "companyId": {
+            "$oid": "5f7a225627a27b21e52b5a04"
+          },
+          "contract_id": {
+            "$oid": "5f7a2283f97c30efc8a031d0"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a2283f97c30efc8a031d1"
+          },
+          "contract_id": {
+            "$oid": "5f7a2283f97c30efc8a031d2"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a2283f97c30efc8a031d1"
+          },
+          "contract_id": {
+            "$oid": "5f7a2283f97c30efc8a031d3"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a2283f97c30efc8a031c7"
+          },
+          "contract_id": {
+            "$oid": "5f7a2283f97c30efc8a031d4"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a225827a27b21e52b5da2"
+          },
+          "contract_id": {
+            "$oid": "5f7a2283f97c30efc8a031d5"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a225827a27b21e52b5da2"
+          },
+          "contract_id": {
+            "$oid": "5f7a2283f97c30efc8a031d6"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a2283f97c30efc8a031c7"
+          },
+          "contract_id": {
+            "$oid": "5f7a2283f97c30efc8a031d7"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a2283f97c30efc8a031c7"
+          },
+          "contract_id": {
+            "$oid": "5f7a2283f97c30efc8a031d8"
+          },
+          "sub": []
+        },
+        {
+          "companyId": {
+            "$oid": "5f7a225827a27b21e52b5da2"
+          },
+          "contract_id": {
+            "$oid": "5f7a2283f97c30efc8a031d9"
+          },
+          "sub": []
+        }
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f7a2283f97c30efc8a031f6"
   },
   "project": "PLATO",
   "name": "European Space Agency, Paris",
   "sub": [
     {
       "companyId": {
-        "$oid": "5f7a1528aa63a2afcfc7eecb"
+        "$oid": "5f7a2283f97c30efc8a031db"
       },
       "contract_id": {
-        "$oid": "5f7a1528aa63a2afcfc7eecc"
+        "$oid": "5f7a2283f97c30efc8a031dc"
       },
       "sub": [
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eea8"
+            "$oid": "5f7a2283f97c30efc8a031ac"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eecd"
+            "$oid": "5f7a2283f97c30efc8a031dd"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eece"
+            "$oid": "5f7a2283f97c30efc8a031de"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eecf"
+            "$oid": "5f7a2283f97c30efc8a031df"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eed0"
+            "$oid": "5f7a2283f97c30efc8a031e0"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eed1"
+            "$oid": "5f7a2283f97c30efc8a031e1"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eed2"
+            "$oid": "5f7a2283f97c30efc8a031e2"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eed3"
+            "$oid": "5f7a2283f97c30efc8a031e3"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eed4"
+            "$oid": "5f7a2283f97c30efc8a031e4"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eed5"
+            "$oid": "5f7a2283f97c30efc8a031e5"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eed6"
+            "$oid": "5f7a2283f97c30efc8a031e6"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eed7"
+            "$oid": "5f7a2283f97c30efc8a031e7"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eed8"
+            "$oid": "5f7a2283f97c30efc8a031e8"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eed9"
+            "$oid": "5f7a2283f97c30efc8a031e9"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eeda"
+            "$oid": "5f7a2283f97c30efc8a031ea"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eedb"
+            "$oid": "5f7a2283f97c30efc8a031eb"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eedc"
+            "$oid": "5f7a2283f97c30efc8a031ec"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eedd"
+            "$oid": "5f7a2283f97c30efc8a031ed"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eede"
+            "$oid": "5f7a2283f97c30efc8a031ee"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eedf"
+            "$oid": "5f7a2283f97c30efc8a031ef"
           },
           "sub": []
         },
         {
           "companyId": {
-            "$oid": "5f7a1528aa63a2afcfc7eee0"
+            "$oid": "5f7a2283f97c30efc8a031f0"
           },
           "contract_id": {
-            "$oid": "5f7a1528aa63a2afcfc7eee1"
+            "$oid": "5f7a2283f97c30efc8a031f1"
           },
           "sub": []
         }
