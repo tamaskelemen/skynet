@@ -34,6 +34,11 @@ export default class MeteorMap extends Component {
     
         return queryParam;
       };
+
+      componentDidMount() {
+          this.getData(API_URL + '/meteors/all')
+            .then(response => this.setState({meteors: response}));
+      }
     
       meteorChanged = (event) => {
         const startDate = event[0].format('yyyy-MM-DD');

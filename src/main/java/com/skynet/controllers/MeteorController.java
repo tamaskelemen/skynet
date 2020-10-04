@@ -24,8 +24,6 @@ public class MeteorController {
             @RequestParam Optional<String> startDate,
             @RequestParam Optional<String> endDate
     ) {
-
-
         return service.findAll(shower, startDate, endDate);
     }
 }

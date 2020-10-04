@@ -57,7 +57,7 @@ public class MeteorRepository {
     }
 
     public String getSession(String sessionId) {
-        MongoOperations mongoOps = new MongoTemplate(mongoClient, "admin");
+        MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
         return mongoOps.findOne(Query.query(Criteria.where("session_id").is(sessionId)),
                 String.class, "meteor_session");
     }
