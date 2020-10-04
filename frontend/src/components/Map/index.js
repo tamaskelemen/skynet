@@ -8,6 +8,7 @@ class Map extends Component {
   highlightedItems = [];
   mouseX;
   mouseY;
+  spinningInterval;
 
   constructor(props) {
     super(props);
@@ -21,7 +22,7 @@ class Map extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    const { connections, companies, project } = this.props;
+    const { connections, companies, project, animation } = this.props;
     if (prevProps.connections !== connections) {
       this.drawConnections(connections);
     }
@@ -29,9 +30,28 @@ class Map extends Component {
       this.drawCompanies(companies);
     }
     if (prevProps.project !== project) {
-      this.drawProject(project)
+      this.drawProject(project);
+    }
+    if (prevProps.animation.enabled !== animation.enabled) {
+      this.toggleGlobeSpinning(animation);
     }
   }
+
+  toggleGlobeSpinning = animation => {
+    if (animation.enabled) {
+      console.log('here');
+      const { wwd } = this;
+      // wwd.navigator.lookAtLocation.latitude = 0;
+      // wwd.navigator.lookAtLocation.longitude = 0;
+      wwd.navigator.range = 1e7; // 2 million meters above the ellipsoid
+      this.spinningInterval = setInterval(() => {
+        wwd.navigator.lookAtLocation.longitude += 2e-1;
+        wwd.redraw();
+      }, 20);
+    } else {
+      clearInterval(this.spinningInterval);
+    }
+  };
 
   drawProject(project) {
     const { wwd } = this;
@@ -264,9 +284,9 @@ class Map extends Component {
       layers[l].layer.enabled = layers[l].enabled;
       wwd.addLayer(layers[l].layer);
     }
-    
+
     // this.searchProject(wwd);
-    
+
     let call = true;
     wwd.addEventListener('wheel', (event) => {
         let startPointPosition;
@@ -348,5 +368,10 @@ class Map extends Component {
     );
   }
 }
+
+Map.defaultProps = {
+  animation: {},
+  setAnimation: () => {},
+};
 
 export default Map;
