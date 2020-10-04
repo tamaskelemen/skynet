@@ -5,6 +5,7 @@ import MeteorMap from './views/MeteorMap';
 import ObservationMap from './views/ObservationMap';
 import ProjectMap from './views/ProjectMap';
 import MemberMap from './views/Members'
+import UsaAstroClubs from './views/UsaAstroClubs';
 
 class App extends Component {
   state = {
@@ -25,6 +26,8 @@ class App extends Component {
         return <MeteorMap activePage={activePage} handlePageChange={handlePageChange} />;
       case '4':
         return <MemberMap activePage={activePage} handlePageChange={handlePageChange} />;
+      case '5':
+        return <UsaAstroClubs activePage={activePage} handlePageChange={handlePageChange} />;
       default:
         return <ContractMap activePage={activePage} handlePageChange={handlePageChange} />;
     }
