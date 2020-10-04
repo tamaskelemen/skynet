@@ -18,7 +18,7 @@ public class MeteorController {
     private MeteorService service;
 
     @GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://www.space-net.biz")
     public List<MeteorDTO> getAll(
             @RequestParam Optional<String> shower,
             @RequestParam Optional<String> startDate,
