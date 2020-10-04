@@ -5,15 +5,11 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.mongodb.client.MongoClient;
-import com.mongodb.client.model.geojson.Point;
-import com.mongodb.client.model.geojson.Position;
 import com.skynet.dto.CompanyConnectionDto;
 import com.skynet.dto.ContractDTO;
 import com.skynet.dto.GpsCoordinate;
 import com.skynet.dto.ScreenGpsCoordinates;
-import com.skynet.jpa.CompanyJPA;
 import com.skynet.repositories.CompanyRepository;
-import com.skynet.repositories.CompanyRepositoryJPA;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
@@ -22,14 +18,10 @@ import org.springframework.data.mongodb.core.query.BasicQuery;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service
 public class CompanyService {
-
-	@Autowired
-	CompanyRepositoryJPA companyRepositoryJPA;
 
 	@Autowired
 	CompanyRepository companyRepository;
@@ -39,14 +31,6 @@ public class CompanyService {
 
 	@Autowired
 	ObjectMapper objectMapper;
-
-	public void insertTestData() throws JsonProcessingException {
-		CompanyJPA companyJPA = new CompanyJPA();
-		companyJPA.setName("test company");
-		companyJPA.setLocation(new Point(new Position(10.0, 15.0)));
-		companyJPA.setProject(Arrays.asList("test project"));
-		companyRepositoryJPA.save(companyJPA);
-	}
 
 	public CompanyConnectionDto getCompanyByProjectName(String projectName) {
 		MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
