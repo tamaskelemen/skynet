@@ -46,7 +46,7 @@ class Index extends Component {
             <Menu.Item key="2" onClick={() => handlePageChange('2')}>Observations</Menu.Item>
             <Menu.Item key="3" onClick={() => handlePageChange('3')}>Meteors</Menu.Item>
             <Menu.Item key="4" onClick={() => handlePageChange('4')}>IAU Members</Menu.Item>
-            <Menu.Item key="5" onClick={() => handlePageChange('5')}>usa_astro clubs</Menu.Item>
+            <Menu.Item key="5" onClick={() => handlePageChange('5')}>US Astronomical Clubs</Menu.Item>
           </Menu>
         </Header>
 
