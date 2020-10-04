@@ -54,11 +54,7 @@ public class ContractService {
 		return companyConnectionDtos;
 	}
 
-	public void fillFields(ObjectNode node, Map<String, ObjectNode> companies, Map<String, ObjectNode> contracts) {
-		String companyId = node.get("companyId").get("$oid").asText();
-		ObjectNode company = companies.get(companyId);
-		node.set("location", company.get("location"));
-		node.set("name", company.get("name"));
+	public boolean fillFields(ObjectNode node, Map<String, ObjectNode> companies, Map<String, ObjectNode> contracts) {
 		JsonNode contractIdNode = node.get("contractId");
 		if (contractIdNode != null) {
 			String contractId =  contractIdNode.get("$oid").asText();
@@ -67,15 +63,24 @@ public class ContractService {
 				node.set("description", contract.get("description"));
 				node.set("price", contract.get("price"));
 			} else {
-				node.remove("contractId");
+				return false;
 			}
 		}
+		String companyId = node.get("companyId").get("$oid").asText();
+		ObjectNode company = companies.get(companyId);
+		node.set("location", company.get("location"));
+		node.set("name", company.get("name"));
 		ArrayNode subs = (ArrayNode) node.get("simple_contracts");
+		ArrayNode newSubs = objectMapper.createArrayNode();
 		if(subs != null) {
 			for (JsonNode childNode : subs) {
-				fillFields((ObjectNode) childNode, companies, contracts);
+				if (fillFields((ObjectNode) childNode, companies, contracts)) {
+					newSubs.add(childNode);
+				}
 			}
 		}
+		node.set("simple_contracts", newSubs);
+		return true;
 	}
 
 	public void mergeContracts(ObjectNode simpleContractsNode) {
