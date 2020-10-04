@@ -114,11 +114,11 @@ class Index extends Component {
             </Select>
           </Form.Item>
 
-          {/*<Form.Item label="Date">*/}
-          {/*  <Slider disabled={enabled} range className="main-slider" min={min} max={max} value={[rangeStart, rangeEnd]} marks={marks}*/}
-          {/*          tipFormatter={this.tipFormatter}*/}
-          {/*          onChange={this.handleMainSliderChange} />*/}
-          {/*</Form.Item>*/}
+          <Form.Item label="Date">
+            <Slider disabled={enabled} range className="main-slider" min={min} max={max} value={[rangeStart, rangeEnd]} marks={marks}
+                    tipFormatter={this.tipFormatter}
+                    onChange={this.handleMainSliderChange} />
+          </Form.Item>
 
           {/*<Form.Item label="Range">*/}
           {/*  <Slider disabled={!enabled} min={rangeSizeMin} max={rangeSizeMax} value={rangeSize} onChange={this.handleRangeChange} />*/}
