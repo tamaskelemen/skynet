@@ -71,3 +71,9 @@
 .ant-popover {
   opacity: 1 !important;
 }
+
+.haliho {
+  background-color: black;
+  color: white;
+  padding-top: 5px;
+}

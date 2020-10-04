@@ -136,10 +136,10 @@ class ContractMap extends Component {
     this.setState({ spinner: true });
 
     this.getData(API_URL + '/contract/get-simple-contracts',
-        {
+      {
         startDate: moment.unix(rangeStart).format('DD-MM-yyyy'),
         endDate: moment.unix(rangeEnd).format('DD-MM-yyyy'),
-      }
+      },
     )
       .then(json => {
         this.setState({ spinner: false });
@@ -184,7 +184,11 @@ class ContractMap extends Component {
              observationsChange={this.observationsChanged}
              searchValue={searchValue}
              spinner={spinner}>
-        <Map connections={connections} companies={companies} project={projects} observations={observations} animation={animation} />
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <span className="haliho">Discover the connection between space agencies and businesses and what they are about. Choose a Headquarter from the left menu to see how big these networks are.
+projects</span>
+          <Map connections={connections} companies={companies} project={projects} observations={observations} animation={animation} />
+        </div>
       </Menus>
     );
   }

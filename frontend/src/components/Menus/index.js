@@ -66,7 +66,7 @@ class Index extends Component {
                 {
                   spinner && <Spin />
                 }
-                <SubMenu key="sub1" icon={<PlayCircleOutlined />} title="Animation">
+                <SubMenu key="sub1" title="Filter">
                   <Menu.Item key="anim" style={{ height: 'auto', backgroundColor: 'white', paddingLeft: '16px !important' }}>
                     <Animation animation={animation} setAnimation={setAnimation} />
                   </Menu.Item>

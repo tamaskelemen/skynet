@@ -4,9 +4,9 @@ import Menus from '../components/Menus';
 import { API_URL } from '../common/constants';
 import chroma from 'chroma-js';
 
-const f = chroma.scale(['black','red','yellow','white'])
+const f = chroma.scale(['black', 'red', 'yellow', 'white'])
   .correctLightness()
-  .domain([0,100000]);
+  .domain([0, 100000]);
 
 class ProjectMap extends Component {
   state = {
@@ -82,7 +82,11 @@ class ProjectMap extends Component {
     const { activePage, handlePageChange } = this.props;
     return (
       <Menus activePage={activePage} handlePageChange={handlePageChange}>
-        <Map connections={connections} companies={companies} />
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <span className="haliho">Discover the connection between space agencies and businesses and what they are about. Choose a Headquarter from the left menu to see how big these networks are.
+projects</span>
+          <Map connections={connections} companies={companies} />
+        </div>
       </Menus>
     );
   }
