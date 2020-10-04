@@ -36,6 +36,8 @@ class Index extends Component {
       wrapperCol: { span: 16 },
     };
 
+    console.log(activePage);
+
     return (
       <Layout>
         <Header className="header">
@@ -78,7 +80,7 @@ class Index extends Component {
               mode="inline"
               theme="dark"
             >
-              <Form
+              {/* <Form
                 {...layout}
                 name="form"
                 onFinish={searchValueChanged}>
@@ -90,21 +92,26 @@ class Index extends Component {
                     Submit
                   </Button>
                 </Form.Item>
-              </Form>
-              <Space direction="vertical" size={12}>
+              </Form> */}
+              {
+                activePage === '2' &&
+                <Space direction="vertical" size={12}>
                 <RangePicker
                   showTime={{ format: 'HH:mm' }}
                   format="YYYY-MM-DD HH:mm"
                   onChange={observationsChange}
-                />
-              </Space>,
-              <Space direction="vertical" size={12}>
+                  />
+              </Space>
+                }
+              { activePage === '3' &&
+                <Space direction="vertical" size={12}>
                 <RangePicker
                   showTime={{ format: 'HH:mm' }}
                   format="YYYY-MM-DD HH:mm"
                   onChange={meteorChanged}
-                />
-              </Space>,
+                  />
+              </Space>
+                }
             </Menu>
             }
           </Sider>
