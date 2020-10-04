@@ -27,7 +27,7 @@ public class ObservationController {
 
     @RequestMapping(value = "/getAll", produces = MediaType.APPLICATION_JSON_VALUE,
         consumes = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin(origins = "http://www.space-net.biz")
+//    @CrossOrigin(origins = "http://www.space-net.biz")
     public List<ObservationDTO> getAll(@RequestParam String startDate,
                                        @RequestParam String endDate
     ) {

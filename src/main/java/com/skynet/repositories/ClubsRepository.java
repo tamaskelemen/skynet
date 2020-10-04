@@ -15,7 +15,7 @@ public class ClubsRepository {
     private MongoClient client;
 
     public List<String> getAll() {
-        MongoOperations mongoOps = new MongoTemplate(client, "admin");
+        MongoOperations mongoOps = new MongoTemplate(client, "mongodb_data");
         return mongoOps.findAll(String.class, "usa_astroclubs");
     }
 }

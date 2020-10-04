@@ -19,7 +19,7 @@ public class IAUMembersController {
     private IAUMembersService service;
 
     @GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin(origins = "http://www.space-net.biz")
+//    @CrossOrigin(origins = "http://www.space-net.biz")
     public List<IAUMembersDTO> getAll() {
         return service.findAll();
     }
