@@ -20,10 +20,7 @@ const animationSpeedMin = 30 * 24 * 60 * 60;
 const animationSpeedDefault = 120 * 24 * 60 * 60;
 const animationSpeedMax = 360 * 24 * 60 * 60;
 
-const contractsList = [
-  'HQ',
-  'NASA Headquarters (HQ)',
-];
+const contractsList = ["European Space Agency Paris", "NASA Headquarters (HQ)", "NASA Marshall Space Flight Center", "NASA Jet Propulsion Laboratory", "NASA Glenn ReseNASA Ames Research Centerh Center", "NASA Johnson Space Center", "NASA Kennedy Space Center", "NASA Goddard Space Flight Center", "NASA Ames Research Center", "NASA Armstrong Flight Research Center", "NASA Stennis Space Center", "HQ", "NASA Langley ReseNASA Ames Research Centerh Center"];
 
 window.moment = moment;
 
@@ -117,20 +114,20 @@ class Index extends Component {
             </Select>
           </Form.Item>
 
-          <Form.Item style={{ padding: '0 16px' }}>
-            <Slider disabled={enabled} range className="main-slider" min={min} max={max} value={[rangeStart, rangeEnd]} marks={marks}
-                    tipFormatter={this.tipFormatter}
-                    onChange={this.handleMainSliderChange} />
-          </Form.Item>
+          {/*<Form.Item label="Date">*/}
+          {/*  <Slider disabled={enabled} range className="main-slider" min={min} max={max} value={[rangeStart, rangeEnd]} marks={marks}*/}
+          {/*          tipFormatter={this.tipFormatter}*/}
+          {/*          onChange={this.handleMainSliderChange} />*/}
+          {/*</Form.Item>*/}
 
-          <Form.Item label="Range">
-            <Slider disabled={!enabled} min={rangeSizeMin} max={rangeSizeMax} value={rangeSize} onChange={this.handleRangeChange} />
-          </Form.Item>
+          {/*<Form.Item label="Range">*/}
+          {/*  <Slider disabled={!enabled} min={rangeSizeMin} max={rangeSizeMax} value={rangeSize} onChange={this.handleRangeChange} />*/}
+          {/*</Form.Item>*/}
 
-          <Form.Item label="Speed">
-            <Slider disabled={!enabled} min={animationSpeedMin} max={animationSpeedMax} value={animationSpeed}
-                    onChange={this.handleAnimationSpeedChange} />
-          </Form.Item>
+          {/*<Form.Item label="Speed">*/}
+          {/*  <Slider disabled={!enabled} min={animationSpeedMin} max={animationSpeedMax} value={animationSpeed}*/}
+          {/*          onChange={this.handleAnimationSpeedChange} />*/}
+          {/*</Form.Item>*/}
         </Form>
       </div>
     );

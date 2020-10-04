@@ -9,7 +9,7 @@ import _ from 'lodash';
 window.moment = moment;
 const f = chroma.scale('OrRd')
   .correctLightness()
-  .domain([0, 10000]);
+  .domain([0, 500000]);
 
 class ContractMap extends Component {
 
@@ -135,14 +135,17 @@ class ContractMap extends Component {
 
     this.setState({ spinner: true });
 
-    this.getData(API_URL + '/contract/get-simple-contracts', {
-      startDate: moment.unix(rangeStart).format('DD-MM-yyyy'),
-      endDate: moment.unix(rangeEnd).format('DD-MM-yyyy'),
-    })
+    this.getData(API_URL + '/contract/get-simple-contracts',
+      //   {
+      //   startDate: moment.unix(rangeStart).format('DD-MM-yyyy'),
+      //   endDate: moment.unix(rangeEnd).format('DD-MM-yyyy'),
+      // }
+    )
       .then(json => {
         this.setState({ spinner: false });
         this.parseApiData(json);
-      });
+      })
+      .catch(() => this.setState({ spinner: false }));
   });
 
   parseQueryParams = (data = {}) => {
