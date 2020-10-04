@@ -53,7 +53,7 @@ for year in range(1990, 2021):
         for key, value in header.items():
             row[key] = each[value]
 
-    db.meteor_magnitude.insert(row)
+        db.meteor_magnitude.insert(row)
 
     print("done")
 
@@ -85,7 +85,7 @@ for year in range(1990, 2021):
         for key, value in header.items():
             row[key] = each[value]
 
-    db.meteor_rate.insert(row)
+        db.meteor_rate.insert(row)
 
 
     #SESSION
@@ -115,7 +115,7 @@ for year in range(1990, 2021):
         for key, value in header.items():
             row[key] = each[value]
 
-    db.meteor_session.insert(row)
+        db.meteor_session.insert(row)
 
     print("done")
 

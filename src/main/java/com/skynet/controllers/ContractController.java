@@ -22,8 +22,9 @@ public class ContractController {
 	@GetMapping(value = "/get-simple-contracts",
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	@CrossOrigin(origins = "http://localhost:3000")
-	public List<CompanyConnectionDto> getSimpleContracts(@RequestParam String startDate,
-                                                         @RequestParam String endDate) {
+	public List<CompanyConnectionDto> getSimpleContracts(@RequestParam(defaultValue = "") String startDate,
+                                                         @RequestParam(defaultValue = "") String endDate) {
 		return contractService.getSimpleContracts(startDate, endDate);
 	}
+
 }
