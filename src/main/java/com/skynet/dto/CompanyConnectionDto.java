@@ -1,6 +1,5 @@
 package com.skynet.dto;
 
-import com.mongodb.client.model.geojson.Point;
 import org.bson.types.ObjectId;
 
 import java.util.ArrayList;

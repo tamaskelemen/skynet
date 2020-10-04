@@ -13,8 +13,6 @@ import com.skynet.repositories.ContractRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -46,40 +44,80 @@ public class ContractService {
 
 		List<ObjectNode> simpleContractsNode = simpleContracts.stream().map(doc -> getObjectNodeFromString(doc)).collect(Collectors.toList());;
 
+
 		for (ObjectNode currentContract : simpleContractsNode) {
+			fillFields(currentContract, companiesMap, contractsMap);
+			mergeContracts(currentContract);
 			companyConnectionDtos.add(getComnpanyConnectionDTOWithFields(currentContract, companiesMap, contractsMap));
 		}
 
 		return companyConnectionDtos;
 	}
 
+	public void fillFields(ObjectNode node, Map<String, ObjectNode> companies, Map<String, ObjectNode> contracts) {
+		String companyId = node.get("companyId").get("$oid").asText();
+		ObjectNode company = companies.get(companyId);
+		node.set("location", company.get("location"));
+		node.set("name", company.get("name"));
+		JsonNode contractIdNode = node.get("contractId");
+		if (contractIdNode != null) {
+			String contractId =  contractIdNode.get("$oid").asText();
+			ObjectNode contract = contracts.get(contractId);
+			if(contract != null) {
+				node.set("description", contract.get("description"));
+				node.set("price", contract.get("price"));
+			}
+		}
+		ArrayNode subs = (ArrayNode) node.get("simple_contracts");
+		if(subs != null) {
+			for (JsonNode childNode : subs) {
+				fillFields((ObjectNode) childNode, companies, contracts);
+			}
+		}
+		node.remove("companyId");
+	}
+
+	public void mergeContracts(ObjectNode simpleContractsNode) {
+		ArrayNode descriptionArray =  objectMapper.createArrayNode();
+		Double priceSum = 0.0;
+
+		ArrayNode subs = (ArrayNode) simpleContractsNode.get("simple_contracts");
+
+		if(subs != null) {
+			for (JsonNode node : subs) {
+				ObjectNode child = (ObjectNode) node;
+				descriptionArray.add(child.get("description"));
+				Double price = child.get("price") != null ? child.get("price").asDouble() : 0.0;
+				priceSum = priceSum + price;
+				child.remove("contractId");
+				child.remove("description");
+				child.remove("price");
+				mergeContracts(child);
+			}
+		}
+		simpleContractsNode.set("descriptionArray", descriptionArray);
+		simpleContractsNode.put("priceSum", priceSum);
+	}
+
 	public CompanyConnectionDto getComnpanyConnectionDTOWithFields(ObjectNode node, Map<String, ObjectNode> companies, Map<String, ObjectNode> contracts) {
 		CompanyConnectionDto companyConnectionDto = new CompanyConnectionDto();
 		try {
-			String companyId = node.get("companyId").get("$oid").asText();
-			ObjectNode company = companies.get(companyId);
-			if (company == null) {
-				return companyConnectionDto;
-			}
-			JsonNode contractIdNode = node.get("contractId");
-			if (contractIdNode != null) {
-				SimpleDateFormat formatter = new SimpleDateFormat("M/d/yyyy");
-				String contractId =  objectMapper.treeToValue(contractIdNode.get("$oid"), String.class);
-				ObjectNode contract = contracts.get(contractId);
-				ContractDTO contractDTO = new ContractDTO();
-				contractDTO.setDescription(contract.get("description").asText());
-				contractDTO.setStartDate(formatter.parse(contract.get("startDate").asText()));
-				contractDTO.setEndDate(formatter.parse(contract.get("endDate").asText()));
-				contractDTO.setPrice(contract.get("price").asText());
-				companyConnectionDto.setContract(contractDTO);
-			}
-
-			ArrayNode coordinatesNode = ((ArrayNode) company.get("location").get("coordinates"));
+			ArrayNode coordinatesNode = ((ArrayNode) node.get("location").get("coordinates"));
 			GpsCoordinate coordinate = new GpsCoordinate(
 					coordinatesNode.get(0).asText(),
 					coordinatesNode.get(1).asText());
 			companyConnectionDto.setLocation(coordinate);
-			companyConnectionDto.setName(company.get("name").asText());
+			companyConnectionDto.setName(node.get("name").asText());
+
+			ContractDTO contractDTO = new ContractDTO();
+			ArrayNode descriptionsNode = (ArrayNode) node.get("descriptionArray");
+			List<String> descriptions = new ArrayList<>();
+			for (JsonNode description : descriptionsNode) {
+				descriptions.add((description.asText()));
+			}
+			contractDTO.setDescription(descriptions.toArray(new String[0]));
+			contractDTO.setPrice(node.get("priceSum").asDouble());
+			companyConnectionDto.setContract(contractDTO);
 
 			ArrayNode simpleContracts = (ArrayNode) node.get("simple_contracts");
 			if (simpleContracts != null && !simpleContracts.isEmpty()) {
@@ -89,9 +127,6 @@ public class ContractService {
 				}
 				companyConnectionDto.setSub(sub);
 			}
-
-		} catch (JsonProcessingException e) {
-			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
