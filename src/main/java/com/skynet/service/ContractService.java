@@ -73,29 +73,50 @@ public class ContractService {
 				fillFields((ObjectNode) childNode, companies, contracts);
 			}
 		}
-		node.remove("companyId");
 	}
 
 	public void mergeContracts(ObjectNode simpleContractsNode) {
-		ArrayNode descriptionArray =  objectMapper.createArrayNode();
-		Double priceSum = 0.0;
-
+		Map<String, ObjectNode> newSubs = new HashMap<>();
 		ArrayNode subs = (ArrayNode) simpleContractsNode.get("simple_contracts");
 
 		if(subs != null) {
 			for (JsonNode node : subs) {
 				ObjectNode child = (ObjectNode) node;
-				descriptionArray.add(child.get("description"));
-				Double price = child.get("price") != null ? child.get("price").asDouble() : 0.0;
-				priceSum = priceSum + price;
+				String companyId = child.get("companyId").get("$oid").asText();
+				if (newSubs.get(companyId) != null) {
+					ObjectNode newChild = newSubs.get(companyId);
+					Double price = child.get("price") != null ? child.get("price").asDouble() : 0.0;
+					newChild.put("priceSum", newChild.get("priceSum").asDouble() + price);
+					ArrayNode descriptionArray = (ArrayNode) newChild.get("descriptionArray");
+					if (child.get("description") != null) {
+						descriptionArray.add(child.get("description"));
+					}
+					newChild.set("descriptionArray", descriptionArray);
+					newSubs.put(companyId, newChild);
+				} else {
+					Double price = child.get("price") != null ? child.get("price").asDouble() : 0.0;
+					child.put("priceSum", price);
+					ArrayNode descriptionArray = objectMapper.createArrayNode();
+					if (child.get("description") != null) {
+						descriptionArray.add(child.get("description"));
+					}
+					child.set("descriptionArray", descriptionArray);
+					newSubs.put(companyId, child);
+				}
+
 				child.remove("contractId");
 				child.remove("description");
 				child.remove("price");
+				child.remove("companyId");
 				mergeContracts(child);
 			}
 		}
-		simpleContractsNode.set("descriptionArray", descriptionArray);
-		simpleContractsNode.put("priceSum", priceSum);
+		if (simpleContractsNode.get("descriptionArray") == null) {
+			simpleContractsNode.set("descriptionArray", objectMapper.createArrayNode());
+		}
+		if (simpleContractsNode.get("priceSum") == null) {
+			simpleContractsNode.put("priceSum", 0.0);
+		}
 	}
 
 	public CompanyConnectionDto getComnpanyConnectionDTOWithFields(ObjectNode node, Map<String, ObjectNode> companies, Map<String, ObjectNode> contracts) {
