@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.BasicQuery;
+import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
@@ -22,9 +23,11 @@ public class ContractRepository {
 		return doc;
 	}
 
-	public List<String> getContractsWithoutProjects() {
+	public List<String> getContractsWithoutProjects(String startDate, String endDate) {
 		MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
-		List<String> doc = mongoOps.find(new BasicQuery("{}"), String.class, "contract");
+		List<String> doc = mongoOps.find(
+		        Query.query(Criteria.where("startDate").gte(startDate).lt(endDate)),
+                String.class, "contract");
 		return doc;
 	}
 }

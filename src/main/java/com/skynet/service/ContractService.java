@@ -33,11 +33,11 @@ public class ContractService {
 	@Autowired
 	ObjectMapper objectMapper;
 
-	public List<CompanyConnectionDto> getSimpleContracts() {
+	public List<CompanyConnectionDto> getSimpleContracts(String startDate, String endDate) {
 		List<CompanyConnectionDto> companyConnectionDtos = new ArrayList<>();
 		List<String> simpleContracts = contractRepository.getSimpleContracts();
 		List<String> companies = companyRepository.getCompanies();
-		List<String> contracts = getContractsWithoutProject();
+		List<String> contracts = getContractsWithoutProject(startDate, endDate);
 
 		List<ObjectNode> companiesNode = companies.stream().map(doc -> getObjectNodeFromString(doc)).collect(Collectors.toList());
 		List<ObjectNode> contractsNode = contracts.stream().map(doc -> getObjectNodeFromString(doc)).collect(Collectors.toList());
@@ -111,8 +111,8 @@ public class ContractService {
 		return resultMap;
 	}
 
-	public List<String> getContractsWithoutProject() {
-		return contractRepository.getContractsWithoutProjects();
+	public List<String> getContractsWithoutProject(String startDate, String endDate) {
+		return contractRepository.getContractsWithoutProjects(startDate, endDate);
 	}
 
 	public ObjectNode getObjectNodeFromString(String doc) {
