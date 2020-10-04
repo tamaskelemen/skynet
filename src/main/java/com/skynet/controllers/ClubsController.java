@@ -19,7 +19,7 @@ public class ClubsController {
     private ClubsService service;
 
     @GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://www.space-net.biz")
     public List<ClubsDTO> getAll() {
         return service.getAll();
     }

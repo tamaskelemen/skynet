@@ -98,7 +98,6 @@ class Index extends Component {
                   onChange={observationsChange}
                 />
               </Space>,
-
               <Space direction="vertical" size={12}>
                 <RangePicker
                   showTime={{ format: 'HH:mm' }}
