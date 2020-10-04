@@ -42,7 +42,6 @@ class Map extends Component {
 
   toggleGlobeSpinning = animation => {
     if (animation.enabled) {
-      console.log('here');
       const { wwd } = this;
       // wwd.navigator.lookAtLocation.latitude = 0;
       // wwd.navigator.lookAtLocation.longitude = 0;
