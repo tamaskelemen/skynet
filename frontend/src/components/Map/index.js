@@ -19,13 +19,25 @@ class Map extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    const { connections, companies } = this.props;
+    const { connections, companies, project } = this.props;
     if (prevProps.connections !== connections) {
       this.drawConnections(connections);
     }
     if (prevProps.companies !== companies) {
       this.drawCompanies(companies);
     }
+    if (prevProps.project !== project) {
+      this.drawProject(project)
+    }
+  }
+
+  drawProject(project) {
+    const { wwd } = this;
+    wwd.navigator.lookAtLocation.latitude = project.location.latitude;
+    wwd.navigator.lookAtLocation.longitude = project.location.longitude;
+    wwd.navigator.range = 2e6; // 2 million meters above the ellipsoid
+
+    wwd.redraw();
   }
 
   drawConnections = lines => {
@@ -199,10 +211,10 @@ class Map extends Component {
   componentDidMount() {
     // Tell WorldWind to log only warnings and errors.
     WorldWind.Logger.setLoggingLevel(WorldWind.Logger.LEVEL_WARNING);
-
+    
     // Create the WorldWindow.
     var wwd = this.wwd = new WorldWind.WorldWindow('canvasOne');
-
+    
     // Create and add layers to the WorldWindow.
     var layers = [
       // Imagery layers.
@@ -267,42 +279,6 @@ class Map extends Component {
     var tapRecognizer = new WorldWind.TapRecognizer(wwd, this.handlePick);
 
     document.onmousemove = this.handleMouseMove;
-  }
-
-  searchProject(wwd) {
-    this.getData('http://localhost:8080/api' + '/company/get', { projectName: 'test project'})
-    .then(result => {
-      wwd.navigator.lookAtLocation.latitude = result.location.latitude;
-      wwd.navigator.lookAtLocation.longitude = result.location.longitude;
-      wwd.navigator.range = 2e6; // 2 million meters above the ellipsoid
-
-      wwd.redraw();
-      console.log(result)
-    });
-  }
-
-  getData = async (url = '', data = {}) => {
-    const queryParam = this.parseQueryParams(data);
-    console.log(queryParam);
-    const response = await fetch(url + queryParam, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    return await response.json();
-  }
-
-  parseQueryParams = (data = {}) => {
-    let queryParam = '?';
-    for ( const property in data) {
-      queryParam += property;
-      queryParam += '=';
-      queryParam += data[property];
-      queryParam += '&';
-    }
-
-    return queryParam;
   }
 
   postData = async (url = '', data = {}) => {

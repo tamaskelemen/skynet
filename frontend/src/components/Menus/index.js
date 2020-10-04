@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Layout, Menu } from 'antd';
+import { Button, Layout, Menu, Form, Input } from 'antd';
 import { ContainerOutlined, DesktopOutlined, MenuOutlined, PieChartOutlined, SolutionOutlined } from '@ant-design/icons';
 
 const { Sider, Header } = Layout;
@@ -15,8 +15,12 @@ class Index extends Component {
   };
 
   render() {
-    const { children, activePage, handlePageChange } = this.props;
+    const { children, activePage, handlePageChange, searchValueChanged, searchValue } = this.props;
     const { collapsed } = this.state;
+    const layout = {
+      labelCol: { span: 8 },
+      wrapperCol: { span: 16 },
+    };
 
     return (
       <Layout>
@@ -46,6 +50,20 @@ class Index extends Component {
               <Menu.Item key="3" icon={<ContainerOutlined />}>
                 Option 3
               </Menu.Item>
+              
+              <Form
+                {...layout}
+                name="form"
+                onFinish={searchValueChanged}>
+                <Form.Item label="Project name" name="project_name">
+                  <Input value={searchValue}/>
+                </Form.Item>
+              <Form.Item>
+                <Button type="primary" htmlType="submit" onClick={searchValueChanged}>
+                  Submit
+                </Button>
+              </Form.Item>
+            </Form>
             </Menu>
           </Sider>
 
