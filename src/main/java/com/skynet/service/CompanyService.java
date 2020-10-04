@@ -108,4 +108,8 @@ public class CompanyService {
 
 		return null;
 	}
+
+	public List<String> getCompanies(){
+		return companyRepository.getCompanies();
+	}
 }

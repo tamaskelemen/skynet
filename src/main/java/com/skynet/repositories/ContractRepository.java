@@ -12,21 +12,20 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class CompanyRepository {
+public class ContractRepository {
 
 	@Autowired
 	MongoClient mongoClient;
 
-	public List<String> getCompaniesInArea(String startingLatitude, String startingLongitude, String endingLatitude, String endingLongitude) {
+	public List<String> getSimpleContracts() {
 		MongoOperations mongoOps = new MongoTemplate(MongoClients.create(), "mongodb_data");
-		String query = String.format("{location:{$geoWithin :{$box: [[%s,%s], [%s,%s]]}}}",startingLatitude, startingLongitude, endingLatitude, endingLongitude );
-		List<String> doc = mongoOps.find(new BasicQuery(query), String.class, "company");
+		List<String> doc = mongoOps.find(new Query(), String.class, "simple_contracts");
 		return doc;
 	}
 
-	public List<String> getCompanies() {
+	public List<String> getContractsWithoutProjects() {
 		MongoOperations mongoOps = new MongoTemplate(MongoClients.create(), "mongodb_data");
-		List<String> doc = mongoOps.find(new Query(), String.class, "company");
+		List<String> doc = mongoOps.find(new BasicQuery("{}"), String.class, "contract");
 		return doc;
 	}
 }
