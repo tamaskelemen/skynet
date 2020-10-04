@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoClients;
 import com.mongodb.client.model.geojson.Point;
 import com.mongodb.client.model.geojson.Position;
 import com.skynet.dto.CompanyConnectionDto;
@@ -50,7 +49,7 @@ public class CompanyService {
 	}
 
 	public CompanyConnectionDto getCompanyByProjectName(String projectName) {
-		MongoOperations mongoOps = new MongoTemplate(MongoClients.create(), "mongodb_data");
+		MongoOperations mongoOps = new MongoTemplate(mongoClient, "mongodb_data");
 		String queryString = String.format("{project: \"%s\"}", projectName);
 		BasicQuery basicQuery = new BasicQuery(queryString);
 		String doc = mongoOps.findOne(basicQuery, String.class, "company");
